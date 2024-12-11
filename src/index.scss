@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply border border-orangePrimary font-azeretMono text-sm font-medium leading-4 text-orangePrimary max-w-[224px] flex h-[39px] items-center justify-around mt-6 cursor-pointer;
+}
+
+.hover-div {
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-color 0.5s ease, border-color 1s ease;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.hover-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fe3402;
+  transition: left 1s ease;
+}
+
+.hover-div:hover::before {
+  left: 0;
+}
+
+.arrow-fill-color {
+  fill: #fe3402;
+  z-index: 10000;
+}
+
+.group-hover:hover .arrow-fill-color {
+  fill: white;
+}
+
+.rite-side img {
+  mix-blend-mode: darken;
+  background-color: transparent;
+}
+
+.section-title-text {
+  @apply text-sm  leading-4 text-whiteText max-w-[373px] mt-5 font-dmSans;
+}
+
+.collapse-title {
+  @apply font-dmSans text-base text-white border border-darkText w-[144px] h-12 flex justify-center items-center -mt-[1px] cursor-pointer;
+}
+
+.collapse-content {
+  @apply border border-darkText -mt-[1px] bg-custom-gradient  overflow-hidden ease-in-out transition-all duration-700;
+  mix-blend-mode: overlay;
+  background-color: transparent;
+}
+
+.left-scroll {
+  direction: rtl;
+}

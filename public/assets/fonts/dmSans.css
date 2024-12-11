@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "DMSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("DMSans/DMSans-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DMSans";
+  font-style: normal;
+  font-weight: medium;
+  src: url("DMSans/DMSans-Medium.ttf") format("truetype");
+  font-display: swap;
+}
