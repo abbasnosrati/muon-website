@@ -1,6 +1,5 @@
 import { useState } from "react";
 import BlackButton from "../common/Buttons/BlackButton";
-
 const News = () => {
   const [selectedNews, setSelectedNews] = useState(0);
   const news = [
@@ -69,8 +68,8 @@ const News = () => {
               </div>
             </div>
           ))}
-          <div className="flex items-end w-full font-azeretMono justify-end text-sm text-darkTextOpacity opacity-70  h-full mr-24">
-            <div className="flex items-center gap-2">
+          <div className="flex items-end w-full font-azeretMono justify-end text-sm text-darkTextOpacity opacity-70  h-full mr-24 ">
+            <div className="flex items-center gap-2 cursor-pointer">
               View More
               <svg
                 width="22"

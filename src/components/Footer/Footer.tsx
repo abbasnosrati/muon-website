@@ -12,12 +12,14 @@ const Footer = () => {
         </div>
         <div className="left-side pl-[52px] pt-[36px] text-darkTextOpacity opacity-70 w-full">
           <div className="flex flex-col">
-            {menuItems.map((item) => (
-              <div className="flex">
+            {menuItems.map((item, index) => (
+              <div className="flex" key={index}>
                 <div>{item.title}</div>
                 <div className="flex gap-5 ml-[44px]">
                   {item.subItems.length > 0 &&
-                    item.subItems.map((sub) => <div>{sub}</div>)}
+                    item.subItems.map((sub, index) => (
+                      <div key={index}>{sub}</div>
+                    ))}
                 </div>
               </div>
             ))}

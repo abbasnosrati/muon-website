@@ -28,16 +28,16 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex border-b border-darkText pb-48">
+    <div className="flex border-b border-darkText pb-48 ">
       <div className="left-side w-full">
         <div className="header mb-12">
           <div className="">
             <img src="/assets/images/logo/muonLogo.svg" alt="" />
           </div>
         </div>
-        <div className="relative navigation flex">
+        <div className="relative navigation flex set-zIndex">
           <div
-            className="w-[2px] bg-orangePrimary absolute h-5 left-0 z-50 transition-all duration-500"
+            className="w-[2px] bg-orangePrimary absolute h-5 left-0 z-50 transition-all duration-500 "
             style={{
               top: `${
                 hoveredMenu
@@ -50,7 +50,7 @@ const Navbar = () => {
               }px`,
             }}
           ></div>
-          <div className="min-h-[200px]  relative">
+          <div className="min-h-[200px]  relative ">
             <div className="flex flex-col gap-4 relative ">
               <div
                 className="bg-white w-[2px] absolute bottom-0 top-0 opacity-50"
