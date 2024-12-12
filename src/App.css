@@ -72,3 +72,71 @@ body {
 .news-box {
   direction: ltr;
 }
+
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle-animation {
+  animation: rotateCircle 4s linear forwards;
+  animation-play-state: paused;
+}
+
+@keyframes expandWidth {
+  0% {
+    width: 120px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.expand-animation-fast {
+  animation: expandWidth 2s ease-in-out forwards;
+  animation-play-state: paused;
+}
+
+.expand-animation-medium {
+  animation: expandWidth 3s ease-in-out forwards;
+  animation-play-state: paused;
+}
+
+.expand-animation {
+  animation: expandWidth 6s ease-in-out forwards;
+  animation-play-state: paused;
+}
+
+@keyframes showAndStay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.delayed-animation {
+  animation: showAndStay 0.5s ease-in-out 1.3s forwards;
+  opacity: 0;
+  animation-play-state: paused;
+}
+
+.delayed-animation-medium {
+  animation: showAndStay 0.5s ease-in-out 1.5s forwards;
+  opacity: 0;
+  animation-play-state: paused;
+}
+
+.delayed-animation-fast {
+  animation: showAndStay 0.5s ease-in-out 1.6s forwards;
+  opacity: 0;
+  animation-play-state: paused;
+}

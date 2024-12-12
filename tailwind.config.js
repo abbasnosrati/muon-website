@@ -23,6 +23,7 @@ export default {
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(90deg, #171919e6 -30%, transparent 40.47%)",
+        "circle-gradient": "radial-gradient(circle, #000000 50%, #3D3B3B 100%)",
       },
     },
   },
