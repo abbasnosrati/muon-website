@@ -28,6 +28,9 @@
 .hover-div:hover::before {
   left: 0;
 }
+.set-zIndex {
+  z-index: 10000;
+}
 
 .arrow-fill-color {
   fill: #fe3402;
@@ -38,9 +41,10 @@
   fill: white;
 }
 
-.rite-side img {
+.muon-gif {
   mix-blend-mode: darken;
   background-color: transparent;
+  z-index: 0 !important;
 }
 
 .section-title-text {
