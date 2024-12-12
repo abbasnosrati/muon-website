@@ -110,10 +110,7 @@ const Navbar = () => {
             xmlns="http://www.w3.org/2000/svg"
             className="arrow-fill-color"
           >
-            <path
-              d="M33 3L28 0.113251L28 5.88675L33 3ZM-4.37114e-08 3.5L28.5 3.5L28.5 2.5L4.37114e-08 2.5L-4.37114e-08 3.5Z"
-              // fill="#FF4518"
-            />
+            <path d="M33 3L28 0.113251L28 5.88675L33 3ZM-4.37114e-08 3.5L28.5 3.5L28.5 2.5L4.37114e-08 2.5L-4.37114e-08 3.5Z" />
           </svg>
         </div>
       </div>

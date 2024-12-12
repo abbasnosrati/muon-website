@@ -28,7 +28,7 @@ const News = () => {
   return (
     <div className="pb-[100px] border-b border-b-darkText ">
       <BlackButton btnText="04 // News" />
-      <div className="flex news-container w-full justify-between gap-[200px]">
+      <div className="flex news-container w-full justify-between gap-[158px] pr-[80px]">
         <div className="left-side  left-scroll w-full min-w-[364px]  max-w-[364px] mt-3 flex flex-col gap-6 max-h-[400px] overflow-y-auto overflow-hidden [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-orangePrimary [&::-webkit-scrollbar-track]:bg-gray-300">
           {news.map((item, index) => (
             <div
@@ -41,11 +41,11 @@ const News = () => {
             </div>
           ))}
         </div>
-        <div className="right-side  flex items-center justify-center font-azeretMono w-full max-w-[605px] pr-10">
+        <div className="right-side flex flex-col items-center justify-center font-azeretMono w-full ">
           {news.map((item, index) => (
             <div
               key={index}
-              className={` flex-col pt-5 ${
+              className={` flex-col mt-10 ${
                 item.id === selectedNews ? "flex" : "hidden"
               }`}
             >
@@ -55,9 +55,38 @@ const News = () => {
               <div className="text-sm text-darkTextOpacity opacity-70 mt-4">
                 {item.shortText}
               </div>
-              <div className="text-base text-darkText mt-10">{item.text}</div>
+              <div className="text-base text-darkText mt-10 leading-[18px]">
+                {item.text.split(".").map((sentence, index) => (
+                  <span key={index}>
+                    {sentence}
+                    {index < item.text.split(".").length - 1 && (
+                      <>
+                        . <br />
+                      </>
+                    )}
+                  </span>
+                ))}
+              </div>
             </div>
           ))}
+          <div className="flex items-end w-full font-azeretMono justify-end text-sm text-darkTextOpacity opacity-70  h-full mr-24">
+            <div className="flex items-center gap-2">
+              View More
+              <svg
+                width="22"
+                height="6"
+                viewBox="0 0 33 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="arrow-fill-color"
+              >
+                <path
+                  d="M33 3L28 0.113251L28 5.88675L33 3ZM-4.37114e-08 3.5L28.5 3.5L28.5 2.5L4.37114e-08 2.5L-4.37114e-08 3.5Z"
+                  fill="#FFFFFF"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
     </div>
