@@ -26,13 +26,13 @@ const Products = () => {
           >
             <div className="flex h-full w-full">
               <div className="left-side w-[70%]"></div>
-              <div className="right-side w-[24%] min-w-[24%] flex flex-col gap-5 justify-center">
-                <div className="font-azeretMono text-darkTextOpacity leading-5 opacity-70">
+              <div className="right-side w-[33%] min-w-[33%] flex flex-col gap-5 justify-center">
+                <div className="font-azeretMono text-darkTextOpacity leading-[18px] opacity-70">
                   Verify, process & access your critical app-data on
                   a permissionless oracle network and enjoy its fast modular
                   security architecture.‍
                 </div>
-                <div className="border border-darkText flex items-center w-full max-w-[364px] h-[47px] justify-between pl-3 pr-8">
+                <div className="border border-darkText font-dmSans leading-4 flex items-center w-full max-w-[364px] h-[47px] justify-between pl-3 pr-8">
                   <div>Visit Site</div>
                   <svg
                     width="66"
