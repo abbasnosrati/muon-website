@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar/Navbar";
 import MuonSection from "./components/MuonSection/MuonSection";
 import Products from "./components/Products/Products";
 import News from "./components/News/News";
+import MoveTopButton from "./components/common/Buttons/MoveTopButton";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -15,6 +17,10 @@ function App() {
           <MuonSection />
           <Products />
           <News />
+          <div className="">
+            <MoveTopButton />
+          </div>
+          <Footer />
         </div>
       </div>
     </div>

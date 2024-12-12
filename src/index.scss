@@ -60,3 +60,7 @@
 .left-scroll {
   direction: rtl;
 }
+
+.social-media {
+  @apply border border-darkText w-[160px] h-[34px] flex items-center justify-center cursor-pointer select-none;
+}
