@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <div className="flex border-b border-darkText pb-48">
-      <div className="left-side w-full z-1000">
+      <div className="left-side w-full">
         <div className="header mb-12">
           <div className="">
             <img src="/assets/images/logo/muonLogo.svg" alt="" />
@@ -50,7 +50,7 @@ const Navbar = () => {
               }px`,
             }}
           ></div>
-          <div className="min-h-[200px] set-zIndex relative">
+          <div className="min-h-[200px]  relative">
             <div className="flex flex-col gap-4 relative ">
               <div
                 className="bg-white w-[2px] absolute bottom-0 top-0 opacity-50"
@@ -85,12 +85,12 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="mt-[100px] relative set-zIndex">
-          <div className="text-white text-3xl leading-10 set-zIndex">
+        <div className="mt-[100px] w-full relative set-zIndex">
+          <div className="text-white text-3xl leading-10 ">
             Muon is the best thing that has happend <br /> since the slice of
             bread !
           </div>
-          <div className="text-base text-white leading-5 mt-12 set-zIndex">
+          <div className="text-base text-white leading-5 mt-12">
             Verify, process & access your critical app-data on
             <br />
             a permissionless oracle network and enjoy its fast
@@ -117,7 +117,7 @@ const Navbar = () => {
           </svg>
         </div>
       </div>
-      <div className="rite-side  w-full mt-20 ">
+      <div className="rite-side">
         <img
           src="./assets/animation/muonGif.gif"
           className="absolute  muon-gif top-8 -right-16 w-[1440px] h-[826px] z-0"
