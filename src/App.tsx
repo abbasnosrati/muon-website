@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="background-container overflow-hidden">
       <div className="content  pt-[60px] flex items-center justify-center">
-        <div className="max-w-[1440px] pr-[136px] pl-[136px]">
+        <div className="max-w-[1440px] w-full px-10 sm:px-[70px] above-1024:px-[136px]">
           <Navbar />
           <Features />
           <MuonSection />

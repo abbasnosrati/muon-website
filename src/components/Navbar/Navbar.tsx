@@ -28,7 +28,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex border-b border-darkText pb-48 ">
+    <div className="flex border-b relative border-darkText padding-between-section ">
       <div className="left-side w-full">
         <div className="header mb-12">
           <div className="">
@@ -86,7 +86,7 @@ const Navbar = () => {
         </div>
 
         <div className="mt-[100px] w-full relative set-zIndex">
-          <div className="text-white text-3xl leading-10 ">
+          <div className="text-white text-2xl sm:text-3xl leading-7 sm:leading-10 ">
             Muon is the best thing that has happend <br /> since the slice of
             bread !
           </div>
@@ -114,15 +114,15 @@ const Navbar = () => {
           </svg>
         </div>
       </div>
-      <div className="rite-side">
-        <img
-          src="./assets/animation/muonGif.gif"
-          className="absolute  muon-gif top-8 -right-16 w-[1440px] h-[826px] z-0"
-          alt=""
-        />
-      </div>
+      <img
+        src="./assets/animation/muonGif.gif"
+        className="absolute muon-gif top-[30px] -right-24 sm:-top-[40px] sm:-right-36 custom-1024:-top-20 custom-1024:-right-[300px] z-0 above-1024:-right-72  above-1024:top-1"
+        alt=""
+      />
     </div>
   );
 };
 
 export default Navbar;
+
+// above-1024:-right-72 above-1024:w-[1440px] above-1024:h-[826px]  above-1024:top-1

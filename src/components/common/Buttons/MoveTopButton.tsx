@@ -6,7 +6,7 @@ const MoveTopButton = () => {
     });
   };
   return (
-    <div className="flex w-full pt-20 pb-10 justify-center ">
+    <div className="flex w-full pt-10 above-1024::pt-20 pb-10 justify-center ">
       <div
         className="border border-darkText h-14 w-14 rounded-full flex items-center justify-center cursor-pointer"
         onClick={() => scrollTop()}

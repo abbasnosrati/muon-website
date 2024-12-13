@@ -27,8 +27,8 @@ const News = () => {
   return (
     <div className="pb-[100px] border-b border-b-darkText ">
       <BlackButton btnText="04 // News" />
-      <div className="flex news-container w-full justify-between gap-[158px] pr-[80px]">
-        <div className="left-side  left-scroll w-full min-w-[364px]  max-w-[364px] mt-3 flex flex-col gap-6 max-h-[400px] overflow-y-auto overflow-hidden [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-orangePrimary [&::-webkit-scrollbar-track]:bg-gray-300">
+      <div className="flex flex-col lg:flex-row news-container w-full justify-between custom-1024:gap-10 above-1024:gap-[158px] above-1024::pr-[80px]">
+        <div className="left-side  left-scroll w-full sm:min-w-[364px] sm:max-w-[364px] mt-3 flex flex-col gap-6 max-h-[400px] overflow-y-auto overflow-hidden [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-orangePrimary [&::-webkit-scrollbar-track]:bg-gray-300">
           {news.map((item, index) => (
             <div
               onClick={() => setSelectedNews(index)}
@@ -68,7 +68,7 @@ const News = () => {
               </div>
             </div>
           ))}
-          <div className="flex items-end w-full font-azeretMono justify-end text-sm text-darkTextOpacity opacity-70  h-full mr-24 ">
+          <div className="flex items-end w-full font-azeretMono justify-end text-sm text-darkTextOpacity opacity-70  h-full above-1024:mr-24 ">
             <div className="flex items-center gap-2 cursor-pointer">
               View More
               <svg

@@ -34,7 +34,7 @@ const Features = () => {
   }, []);
 
   return (
-    <div className="font-azeretMono text-base border-b border-b-darkText pb-[200px]">
+    <div className="font-azeretMono text-base border-b border-b-darkText padding-between-section">
       <div>
         <BlackButton btnText={"01 // FEATURES"} />
         <div className="section-title-text">
@@ -43,25 +43,25 @@ const Features = () => {
         </div>
       </div>
 
-      <div className="flex items-center w-full gap-8">
-        <div className="features w-full ">
-          <div className="flex items-center gap-8">
+      <div className="features-box gap-8">
+        <div className="features w-full">
+          <div className="flex items-center gap-4 above-1024:gap-8">
             <div className="h-[1px] bg-white w-[178px] expand-animation-fast"></div>
-            <div className="min-h-[80px] min-w-[80px] bg-circle-gradient relative rounded-full flex items-center justify-center mix-blend-overlay circle-animation">
+            <div className="min-h-[40px] min-w-[40px] above-1024:min-h-[80px] above-1024:min-w-[80px] bg-circle-gradient relative rounded-full flex items-center justify-center mix-blend-overlay circle-animation">
               <div className="h-[10px] w-[10px] bg-orangePrimary z-100 rounded-full "></div>
               <img
                 src="./assets/images/features/smallShadow.svg"
                 alt=""
-                className="z-1000 opacity-20 absolute -left-[6px] min-w-[140px] h-[140px]"
+                className="z-1000 opacity-20 absolute left-2 above-1024:-left-[6px] above-1024:min-w-[140px] h-[140px]"
               />
             </div>
           </div>
-          <div className="text-white ">
+          <div className="text-white features-title">
             <div>01</div>
             <div>Lorem Ipsum</div>
           </div>
         </div>
-        <div className="font-azeretMono leading-4 flex items-center max-w-[440px] border-t border-white w-full mt-28 delayed-animation">
+        <div className="feature-items max-w-[440px] delayed-animation">
           <div className="pt-[40px] text-base font-normal w-full max-w-[440px]">
             Muon network enjoys a multi-layered security model made up of a TSS
             network, a Shield Server, and an Eigen Layer node. Based on your
@@ -70,25 +70,25 @@ const Features = () => {
         </div>
       </div>
 
-      <div className="flex items-center w-full gap-10">
+      <div className="features-box gap-8">
         <div className="features w-full max-w-[500px]">
-          <div className="flex items-center gap-10">
+          <div className="flex items-center gap-5 above-1024:gap-10">
             <div className="h-[1px] bg-white w-[330px] expand-animation-medium"></div>
-            <div className="min-h-[120px] min-w-[120px] bg-circle-gradient relative rounded-full flex items-center justify-center mix-blend-overlay circle-animation">
+            <div className="above-1024:min-h-[120px] above-1024:min-w-[120px] min-h-[60px] min-w-[60px] bg-circle-gradient relative rounded-full flex items-center justify-center mix-blend-overlay circle-animation">
               <div className="h-[10px] w-[10px] bg-orangePrimary z-100 rounded-full "></div>
               <img
                 src="./assets/images/features/mediumShadow.svg"
                 alt=""
-                className="z-1000 opacity-20 absolute -left-[40px] min-w-[200px] h-[200px]"
+                className="z-1000 opacity-20 absolute above-1024:-left-[40px] min-w-[100px] above-1024:min-w-[200px] h-[200px]"
               />
             </div>
           </div>
-          <div className="text-white">
+          <div className="text-white features-title">
             <div>02</div>
             <div>Lorem Ipsum</div>
           </div>
         </div>
-        <div className="font-azeretMono leading-4 flex items-center  border-t border-white w-full max-w-[700px]  mt-28 delayed-animation-medium">
+        <div className="feature-items max-w-[700px] delayed-animation-medium">
           <div className="pt-[40px] text-base font-normal w-full max-w-[440px]">
             Muon network enjoys a multi-layered security model made up of a TSS
             network, a Shield Server, and an Eigen Layer node. Based on your
@@ -97,25 +97,25 @@ const Features = () => {
         </div>
       </div>
 
-      <div className="flex items-center w-full gap-16">
+      <div className="features-box gap-8">
         <div className="w-full max-w-[350px] ">
-          <div className="flex items-center gap-16">
+          <div className="flex items-center gap-8 above-1024:gap-16">
             <div className="h-[1px] bg-white w-[230px] expand-animation"></div>
-            <div className="min-h-[150px] min-w-[150px] bg-circle-gradient relative rounded-full flex items-center justify-center mix-blend-overlay  circle-animation">
+            <div className="min-h-[75px] min-w-[75px] above-1024:min-h-[150px] above-1024:min-w-[150px] bg-circle-gradient relative rounded-full flex items-center justify-center mix-blend-overlay  circle-animation">
               <div className="h-[10px] w-[10px] bg-orangePrimary z-100 rounded-full "></div>
               <img
                 src="./assets/images/features/largeShadow.svg"
                 alt=""
-                className="z-1000 opacity-20 absolute -left-[62px] -top-4 min-w-[170px] h-[280px]"
+                className="z-1000 opacity-20 absolute above-1024:-left-[62px] above-1024:-top-4 -top-20 -left-6  min-w-[75px] above:min-w-[170px] h-[280px]"
               />
             </div>
           </div>
-          <div className="text-white">
+          <div className="text-white features-title">
             <div>03</div>
             <div>Lorem Ipsum</div>
           </div>
         </div>
-        <div className="font-azeretMono leading-4 flex items-center border-t border-white w-full max-w-[700px]  mt-28 delayed-animation-fast">
+        <div className="feature-items max-w-[700px] delayed-animation-fast">
           <div className="pt-[40px] text-base font-normal w-full max-w-[440px]">
             Muon network enjoys a multi-layered security model made up of a TSS
             network, a Shield Server, and an Eigen Layer node. Based on your

@@ -66,5 +66,21 @@
 }
 
 .social-media {
-  @apply border border-darkText w-[160px] h-[34px] flex items-center justify-center cursor-pointer select-none;
+  @apply border border-darkText w-full max-w-[48%] lg:w-[160px] h-[34px] flex items-center justify-center cursor-pointer select-none;
+}
+
+.feature-items {
+  @apply font-azeretMono leading-4 flex items-center border-t border-white w-full mt-0 lg:mt-32;
+}
+
+.features-box {
+  @apply flex flex-col md:flex-row items-center w-full mt-20 sm:mt-0;
+}
+
+.features-title {
+  @apply -mt-3;
+}
+
+.padding-between-section {
+  @apply pb-[120px] sm:pb-[200px];
 }
