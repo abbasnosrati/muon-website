@@ -30,13 +30,29 @@ body {
   transition: all 0.4s;
 }
 
-.img-container:hover .img-box img {
+.other-images:hover img {
   filter: brightness(0) contrast(5);
   transform: scale(1.2);
   transition: all 1s;
   cursor: pointer;
   animation-play-state: paused;
 }
+
+.zelullar_img:hover img {
+  filter: brightness(0) contrast(5);
+  transform: scale(1.2);
+  transition: all 1s;
+  cursor: pointer;
+  animation-play-state: paused;
+}
+
+/* .img-box img:hover {
+  filter: brightness(0) contrast(5);
+  transform: scale(1.2);
+  transition: all 1s;
+  cursor: pointer;
+  animation-play-state: paused;
+} */
 
 .img-container {
   padding-left: 2.5rem;

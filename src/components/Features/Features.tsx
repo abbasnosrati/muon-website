@@ -106,7 +106,7 @@ const Features = () => {
               <img
                 src="./assets/images/features/largeShadow.svg"
                 alt=""
-                className="z-1000 opacity-20 absolute above-1024:-left-[62px] above-1024:-top-4 -top-20 -left-6  min-w-[75px] above:min-w-[170px] h-[280px]"
+                className="z-1000 opacity-20 absolute above-1024:-left-[50px] above-1024:-top-5 -top-20 -left-6  min-w-[75px] above:min-w-[170px] h-[280px]"
               />
             </div>
             <div className="text-white features-title absolute top-10 lg:top-20">
