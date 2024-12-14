@@ -8,3 +8,5 @@ export const menuItems = [
   { id: "2", title: "Products", subItems: [] },
   { id: "3", title: "About us", subItems: [] },
 ];
+
+export const letters = "abcdefghijklmnopqrstuvwxyz";

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { menuItems } from "../../constants/constants";
+import ScrambleText from "../../helper/ScrambleText";
 
 const Navbar = () => {
   const [hoveredMenu, setHoveredMenu] = useState(null);
@@ -64,7 +65,9 @@ const Navbar = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <div className="" ref={menuItemRef}>
-                    <div className="cursor-pointer">{menu.title}</div>
+                    <div className="cursor-pointer">
+                      <ScrambleText value={menu.title} />
+                    </div>
                     <div
                       className={`mt-2 text-white  sum-menu-items h-0 overflow-hidden hover:transition-all duration-500 ${
                         hoveredMenu === index &&
@@ -74,7 +77,7 @@ const Navbar = () => {
                     >
                       {menu.subItems.map((sub, subIndex) => (
                         <div key={subIndex} className="cursor-pointer ">
-                          {sub}
+                          <ScrambleText value={sub} />
                         </div>
                       ))}
                     </div>
