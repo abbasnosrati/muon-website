@@ -70,17 +70,21 @@
 }
 
 .feature-items {
-  @apply font-azeretMono leading-4 flex items-center border-t border-white w-full mt-0 lg:mt-32;
+  @apply font-azeretMono leading-4 flex items-center border-t border-white w-full mt-0 lg:mt-40;
 }
 
 .features-box {
-  @apply flex flex-col md:flex-row items-center w-full mt-20 sm:mt-0;
+  @apply flex flex-col lg:flex-row items-center w-full mt-20 lg:mt-0;
 }
 
 .features-title {
-  @apply -mt-3;
+  @apply text-[10px] lg:text-base;
 }
 
 .padding-between-section {
   @apply pb-[120px] sm:pb-[200px];
+}
+
+.feature-items-description {
+  @apply pt-[10px] lg:pt-[40px] text-sm lg:text-base font-normal w-full max-w-[440px];
 }

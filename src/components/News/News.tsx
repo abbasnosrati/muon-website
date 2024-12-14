@@ -54,7 +54,7 @@ const News = () => {
               <div className="text-sm text-darkTextOpacity opacity-70 mt-4">
                 {item.shortText}
               </div>
-              <div className="text-base text-darkText mt-10 leading-[18px]">
+              <div className="text-[10px]  sm:text-sm lg:text-base text-darkText mt-10 leading-[18px]">
                 {item.text.split(".").map((sentence, index) => (
                   <span key={index}>
                     {sentence}
