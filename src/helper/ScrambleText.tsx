@@ -7,7 +7,7 @@ interface ScrambleTextProps {
 
 const ScrambleText = ({ value }: ScrambleTextProps) => {
   const [displayedText, setDisplayedText] = useState(value);
-  const [isHovered, setIsHovered] = useState(false); // وضعیت هاور
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     if (!isHovered) {
