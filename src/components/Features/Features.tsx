@@ -72,7 +72,7 @@ const Features = () => {
 
       <div className="features-box gap-10 custom-1024:gap-5 above-1024:gap-10">
         <div className="features w-full lg:max-w-[500px]">
-          <div className="flex relative gap-5 above-1024:gap-11 items-center">
+          <div className="flex relative gap-5 above-1024:gap-10 items-center">
             <div className="h-[1px] bg-white w-[330px] expand-animation-medium"></div>
             <div className="above-1024:min-h-[120px] above-1024:min-w-[120px] min-h-[60px] min-w-[60px] bg-circle-gradient relative rounded-full flex items-center justify-center mix-blend-overlay circle-animation">
               <div className="h-[10px] w-[10px] bg-orangePrimary z-100 rounded-full "></div>
@@ -99,7 +99,7 @@ const Features = () => {
 
       <div className="features-box gap-16 custom-1024:gap-0 above-1024:gap-16">
         <div className="features w-full  lg:max-w-[350px] ">
-          <div className="flex relative items-center gap-6 above-1024:gap-16">
+          <div className="flex relative items-center gap-6 above-1024:gap-[50px]">
             <div className="h-[1px] bg-white w-[230px] expand-animation"></div>
             <div className="min-h-[75px] min-w-[75px] above-1024:min-h-[150px] above-1024:min-w-[150px] bg-circle-gradient relative rounded-full flex items-center justify-center mix-blend-overlay  circle-animation">
               <div className="h-[10px] w-[10px] bg-orangePrimary z-100 rounded-full "></div>
