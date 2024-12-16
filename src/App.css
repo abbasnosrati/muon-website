@@ -11,6 +11,10 @@ body {
   z-index: 1;
 }
 
+.other-images {
+  position: relative;
+  height: 37px;
+}
 .zelullar_img {
   position: relative;
   height: 25px;
@@ -26,7 +30,7 @@ body {
 }
 
 .other-images:hover .img-box {
-  margin-top: -30px;
+  margin-top: -10px;
   transition: all 0.4s;
 }
 
@@ -45,14 +49,6 @@ body {
   cursor: pointer;
   animation-play-state: paused;
 }
-
-/* .img-box img:hover {
-  filter: brightness(0) contrast(5);
-  transform: scale(1.2);
-  transition: all 1s;
-  cursor: pointer;
-  animation-play-state: paused;
-} */
 
 .img-container {
   padding-left: 2.5rem;
@@ -73,7 +69,7 @@ body {
 
 .scroller[data-animated="true"] .scroller__inner {
   flex-wrap: nowrap;
-  animation: scroll 15s linear infinite;
+  animation: scroll 50s linear infinite;
 }
 
 .scroller__inner {
@@ -81,7 +77,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: end;
-  /* gap: 5rem; */
 }
 
 .scroller[data-animated="true"] .scroller__inner:hover {
