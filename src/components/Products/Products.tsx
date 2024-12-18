@@ -8,7 +8,7 @@ const Products = () => {
   return (
     <div className="pb-[200px] sm:pb-[270px] border-b border-b-darkText">
       <div>
-        <BlackButton btnText="03 // Products" />
+        <BlackButton btnText="03 // Ecosystem" />
         <div className="section-title-text">
           Verify, process & access your critical app-data on a permissionless
           oracle network and enjoy its fast modular security architecture.‍
