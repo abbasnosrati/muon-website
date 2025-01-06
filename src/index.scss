@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 .btn {
-  @apply border border-orangePrimary font-azeretMono text-sm font-medium leading-4 text-orangePrimary max-w-[224px] flex h-[39px] items-center justify-around mt-6 cursor-pointer;
+  @apply border border-white font-azeretMono text-sm font-medium leading-4 text-white max-w-[224px] flex h-[39px] items-center justify-around mt-6 cursor-pointer;
+}
+
+.btn:hover {
+  border: 1px solid #fe3402;
 }
 
 .hover-div {
@@ -33,7 +37,7 @@
 }
 
 .arrow-fill-color {
-  fill: #fe3402;
+  fill: white;
   z-index: 10000;
 }
 
