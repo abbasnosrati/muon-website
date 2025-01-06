@@ -88,20 +88,16 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="mt-[100px] w-full relative set-zIndex">
-          <div className="text-white text-2xl sm:text-3xl leading-7 sm:leading-10 ">
-            Muon is the best thing that has happend <br /> since the slice of
-            bread !
+        <div className="mt-[100px] w-full relative set-zIndex mb-[68px]">
+          <div className="text-white text-2xl sm:text-[42px] leading-7 sm:leading-[60px] font-dosis">
+            General-Purpose, <br /> Request-Based Validation Layer
           </div>
-          <div className="text-base text-white leading-5 mt-12">
-            Verify, process & access your critical app-data on
-            <br />
-            a permissionless oracle network and enjoy its fast
-            <br /> modular security architecture.‍
+          <div className="text-[20px] text-white leading-5 mt-8 font-dmSans opacity-70">
+            Powering the Intent-Centric Economy of the Future
           </div>
         </div>
 
-        <div className=" group-hover set-zIndex btn relative hover:text-white transition-all duration-300 hover-div ease-in-out">
+        <div className="group-hover set-zIndex btn relative hover:text-white transition-all duration-300 hover-div ease-in-out">
           <span className="z-50 transition-all duration-300 ease-in-out hover:text-white group-hover:delay-500">
             Build on Muon
           </span>

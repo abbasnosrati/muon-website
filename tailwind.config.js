@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         azeretMono: ["AzeretMono"],
         dmSans: ["DMSans"],
+        dosis: ["Dosis"],
       },
       colors: {
         darkText: "#242124",
