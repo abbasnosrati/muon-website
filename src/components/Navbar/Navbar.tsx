@@ -114,7 +114,7 @@ const Navbar = () => {
         </div>
       </div>
       <img
-        src="./assets/animation/muonGif.gif"
+        src="./assets/animation/muonGif.webp"
         className="absolute muon-gif top-[30px] -right-24 sm:-top-[40px] sm:-right-36 custom-1024:-top-20 custom-1024:-right-[300px] z-0 above-1024:-right-72  above-1024:top-1"
         alt=""
       />
