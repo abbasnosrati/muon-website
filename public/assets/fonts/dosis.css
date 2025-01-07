@@ -3,21 +3,18 @@
   font-style: normal;
   font-weight: normal;
   src: url("Dosis/Dosis-Regular.ttf") format("truetype");
-  font-display: swap;
 }
 
 @font-face {
   font-family: "Dosis";
-  font-style: normal;
-  font-weight: medium;
+  font-style: medium;
+  font-weight: 500;
   src: url("Dosis/Dosis-Medium.ttf") format("truetype");
-  font-display: swap;
 }
 
 @font-face {
   font-family: "Dosis";
-  font-style: normal;
+  font-style: bold;
   font-weight: bold;
   src: url("Dosis/Dosis-Bold.ttf") format("truetype");
-  font-display: swap;
 }

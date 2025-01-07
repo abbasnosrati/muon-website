@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 .btn {
-  @apply border border-white font-azeretMono text-sm font-medium leading-4 text-white max-w-[224px] flex h-[39px] items-center justify-around mt-6 cursor-pointer;
+  @apply border border-white font-azeretMono text-sm leading-4 text-white max-w-[224px] flex h-[39px] items-center justify-around mt-6 cursor-pointer;
+}
+
+body {
+  @apply font-normal;
 }
 
 .btn:hover {
@@ -90,5 +94,5 @@
 }
 
 .feature-items-description {
-  @apply pt-[10px] lg:pt-[40px] text-sm lg:text-base font-normal w-full max-w-[440px];
+  @apply pt-[10px] lg:pt-[40px] text-sm lg:text-base font-normal w-full max-w-[440px] opacity-75;
 }

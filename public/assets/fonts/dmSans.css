@@ -8,8 +8,8 @@
 
 @font-face {
   font-family: "DMSans";
-  font-style: normal;
-  font-weight: medium;
+  font-style: medium;
+  font-weight: 500;
   src: url("DMSans/DMSans-Medium.ttf") format("truetype");
   font-display: swap;
 }

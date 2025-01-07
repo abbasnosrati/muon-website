@@ -25,7 +25,13 @@ const Products = () => {
             }`}
           >
             <div className="flex flex-col sm:flex-row h-full w-full">
-              <div className="left-side w-full sm:w-[70%]"></div>
+              <div className="left-side w-full sm:w-[70%] relative">
+                <img
+                  className="absolute bottom-12 left-8"
+                  src="./assets/images/products/derand-logo.svg"
+                  alt=""
+                />
+              </div>
               <div className="right-side w-full sm:w-[33%] sm:min-w-[33%] flex flex-col gap-5 justify-center p-5 sm:p-0">
                 <div className="font-azeretMono text-darkTextOpacity leading-[18px] opacity-70 text-[12px] sm:text-[14px] lg:text-base">
                   Verify, process & access your critical app-data on

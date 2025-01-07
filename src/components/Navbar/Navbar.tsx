@@ -89,7 +89,7 @@ const Navbar = () => {
         </div>
 
         <div className="mt-[100px] w-full relative set-zIndex mb-[68px]">
-          <div className="text-white text-2xl sm:text-[42px] leading-7 sm:leading-[60px] font-dosis">
+          <div className="text-white text-2xl sm:text-[42px] leading-7 sm:leading-[60px] font-dosis font-normal">
             General-Purpose, <br /> Request-Based Validation Layer
           </div>
           <div className="text-[20px] text-white leading-5 mt-8 font-dmSans opacity-70">
