@@ -25,7 +25,7 @@ const Products = () => {
             }`}
           >
             <img
-              className="absolute bottom-4 left-4 sm:bottom-12 sm:left-8"
+              className="absolute bottom-3 left-4 sm:bottom-10 sm:left-8"
               src="./assets/images/products/derand-logo.svg"
               alt=""
             />
