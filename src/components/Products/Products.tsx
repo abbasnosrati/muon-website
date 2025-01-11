@@ -28,6 +28,8 @@ const Products = () => {
               className="absolute bottom-3 left-4 sm:bottom-10 sm:left-8"
               src="./assets/images/products/derand-logo.svg"
               alt=""
+              width={164}
+              height={23}
             />
             <div className="flex flex-col sm:flex-row h-full w-full">
               <div className="left-side w-full sm:w-[70%] relative "></div>

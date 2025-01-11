@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { menuItems } from "../../constants/constants";
-import ScrambleText from "../../helper/ScrambleText";
+// import ScrambleText from "../../helper/ScrambleText";
 
 const Navbar = () => {
   const [hoveredMenu, setHoveredMenu] = useState(null);
@@ -29,11 +29,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex border-b relative border-darkText padding-between-section ">
+    <div className="flex border-b relative border-darkText pb-[270px]">
       <div className="left-side w-full">
         <div className="header mb-12">
           <div className="">
-            <img src="/assets/images/logo/muonLogo.svg" alt="" />
+            <img src="/assets/images/logo/muonLogo-1.svg" alt="" />
           </div>
         </div>
         <div className="relative navigation flex set-zIndex">
@@ -47,37 +47,39 @@ const Navbar = () => {
               }px`,
               height: `${
                 menuItemHeight +
-                menuItems[hoveredMenu ? hoveredMenu : 0].subItems.length * 15
+                menuItems[hoveredMenu ? hoveredMenu : 0].subItems.length * 20
               }px`,
             }}
           ></div>
           <div className="min-h-[200px]  relative ">
             <div className="flex flex-col gap-4 relative ">
               <div
-                className="bg-white w-[2px] absolute bottom-0 top-0 opacity-50"
+                className="bg-white w-[1px] absolute bottom-0 top-0 opacity-50"
                 ref={elementRef}
               ></div>
               {menuItems.map((menu, index) => (
                 <div
                   key={index}
-                  className="font-azeretMono text-xs text-darkText pl-[12px] "
+                  className="font-azeretMono text-sm text-darkText pl-[12px] "
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={handleMouseLeave}
                 >
                   <div className="" ref={menuItemRef}>
                     <div className="cursor-pointer">
-                      <ScrambleText value={menu.title} />
+                      {/* <ScrambleText value={menu.title} /> */}
+                      {menu.title}
                     </div>
                     <div
                       className={`mt-2 text-white  sum-menu-items h-0 overflow-hidden hover:transition-all duration-500 ${
                         hoveredMenu === index &&
                         menu.subItems.length > 0 &&
-                        "h-[50px]"
+                        "h-[60px]"
                       }`}
                     >
                       {menu.subItems.map((sub, subIndex) => (
                         <div key={subIndex} className="cursor-pointer ">
-                          <ScrambleText value={sub} />
+                          {/* <ScrambleText value={sub} /> */}
+                          {sub}
                         </div>
                       ))}
                     </div>
@@ -88,11 +90,11 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="mt-[100px] w-full relative set-zIndex mb-[68px]">
-          <div className="text-white text-2xl sm:text-[42px] leading-7 sm:leading-[60px] font-dosis font-normal">
+        <div className=" w-full relative set-zIndex mb-[50px]">
+          <div className="text-[#EDEDED] text-2xl sm:text-[44px] leading-5 sm:leading-[50px] font-dosis font-normal">
             General-Purpose, <br /> Request-Based Validation Layer
           </div>
-          <div className="text-[20px] text-white leading-5 mt-8 font-dmSans opacity-70">
+          <div className="text-[24px] text-white leading-5 mt-5 font-dmSans opacity-70">
             Powering the Intent-Centric Economy of the Future
           </div>
         </div>
@@ -115,7 +117,7 @@ const Navbar = () => {
       </div>
       <img
         src="./assets/animation/muonGif.webp"
-        className="absolute muon-gif top-[30px] -right-24 sm:-top-[40px] sm:-right-36 custom-1024:-top-20 custom-1024:-right-[300px] z-0 above-1024:-right-72  above-1024:top-1"
+        className="w-full absolute muon-gif top-[30px] -right-24 sm:-top-[40px] sm:-right-36 custom-1024:-top-20 custom-1024:-right-[300px] z-0 above-1024:-right-72  above-1024:top-1"
         alt=""
       />
     </div>
