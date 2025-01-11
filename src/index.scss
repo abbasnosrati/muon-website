@@ -60,7 +60,11 @@ body {
 }
 
 .collapse-title {
-  @apply font-dmSans text-base text-white border border-darkText w-[144px] h-12 flex justify-center items-center -mt-[1px] cursor-pointer;
+  @apply font-dmSans text-base text-white border border-b-0 border-darkText w-[144px] h-12 flex justify-center items-center -mt-[1px] cursor-pointer;
+}
+
+.collapse-title-3 {
+  @apply font-dmSans text-base text-white border  border-darkText w-[144px] h-12 flex justify-center items-center -mt-[1px] cursor-pointer;
 }
 
 .collapse-content {

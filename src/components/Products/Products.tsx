@@ -20,8 +20,8 @@ const Products = () => {
             Derand
           </div>
           <div
-            className={`collapse-content sm:pr-5 lg:pr-14 font-azeretMono text-darkTextOpacity relative ${
-              selectedItem === 0 ? "h-[243px]" : "h-0 border-none"
+            className={`collapse-content sm:pr-5 lg:pr-14 font-azeretMono  text-darkTextOpacity relative ${
+              selectedItem === 0 ? "h-[243px]" : "h-0 opacity-0"
             }`}
           >
             <img
@@ -64,17 +64,17 @@ const Products = () => {
           </div>
           <div
             className={`collapse-content ${
-              selectedItem === 1 ? "h-[243px]" : "h-0 border-none"
+              selectedItem === 1 ? "h-[243px]" : "h-0 opacity-0"
             }`}
           ></div>
         </div>
         <div className="collapse-box-3 ">
-          <div className="collapse-title" onClick={() => setSelectedItem(2)}>
+          <div className="collapse-title-3" onClick={() => setSelectedItem(2)}>
             Price feed
           </div>
           <div
             className={`collapse-content ${
-              selectedItem === 2 ? "h-[243px]" : "h-0 border-none"
+              selectedItem === 2 ? "h-[243px]" : "h-0 opacity-0"
             }`}
           ></div>
         </div>
