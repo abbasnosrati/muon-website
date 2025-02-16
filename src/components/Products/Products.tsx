@@ -17,7 +17,7 @@ const Products = () => {
       <div className="collapse-container mt-16 sm:mt-28 select-none">
         <div className="collapse-box-1">
           <div className="collapse-title" onClick={() => setSelectedItem(0)}>
-            Derand
+            DeRand
           </div>
           <div
             className={`collapse-content sm:pr-5 lg:pr-14 font-azeretMono  text-darkTextOpacity relative ${

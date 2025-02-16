@@ -13,6 +13,7 @@ export default {
         darkTextOpacity: "#242424",
         orangePrimary: "#FE3402",
         whiteText: "#EAEAEA",
+        whiteTextSecond: "#EDEDED",
       },
       transitionProperty: {
         height: "height",
@@ -29,6 +30,7 @@ export default {
       screens: {
         "custom-1024": "1024px",
         "above-1024": "1025px",
+        "above-1440": "1441px",
       },
     },
   },

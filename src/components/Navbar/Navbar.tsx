@@ -29,11 +29,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex border-b relative border-darkText pb-[270px]">
+    <div className="flex border-b relative border-darkText pb-[320px]">
       <div className="left-side w-full">
-        <div className="header mb-12">
+        <div className="header mb-8">
           <div className="">
-            <img src="/assets/images/logo/muonLogo-1.svg" alt="" />
+            <img src="/assets/images/logo/muonLogo.svg" alt="" />
           </div>
         </div>
         <div className="relative navigation flex set-zIndex">
@@ -42,17 +42,17 @@ const Navbar = () => {
             style={{
               top: `${
                 hoveredMenu
-                  ? hoveredMenu * ((height + 20) / menuItems.length)
+                  ? hoveredMenu * ((height + 12) / menuItems.length)
                   : 0
               }px`,
               height: `${
                 menuItemHeight +
-                menuItems[hoveredMenu ? hoveredMenu : 0].subItems.length * 20
+                menuItems[hoveredMenu ? hoveredMenu : 0].subItems.length * 25
               }px`,
             }}
           ></div>
-          <div className="min-h-[200px]  relative ">
-            <div className="flex flex-col gap-4 relative ">
+          <div className="min-h-[320px] relative ">
+            <div className="flex flex-col gap-3 above-1440:gap-4 relative ">
               <div
                 className="bg-white w-[1px] absolute bottom-0 top-0 opacity-50"
                 ref={elementRef}
@@ -60,25 +60,25 @@ const Navbar = () => {
               {menuItems.map((menu, index) => (
                 <div
                   key={index}
-                  className="font-azeretMono text-sm text-darkText pl-[12px] "
+                  className="font-azeretMono  text-sm text-darkText pl-[12px] "
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={handleMouseLeave}
                 >
                   <div className="" ref={menuItemRef}>
-                    <div className="cursor-pointer">
-                      {/* <ScrambleText value={menu.title} /> */}
+                    <div className="cursor-pointer tracking-[1px] leading-[13px]">
                       {menu.title}
                     </div>
                     <div
-                      className={`mt-2 text-white  sum-menu-items h-0 overflow-hidden hover:transition-all duration-500 ${
-                        hoveredMenu === index &&
-                        menu.subItems.length > 0 &&
-                        "h-[60px]"
-                      }`}
+                      className={`text-white sum-menu-items h-0 overflow-hidden hover:transition-all duration-500`}
+                      style={{
+                        height:
+                          hoveredMenu === index && menu.subItems.length > 0
+                            ? `${menu.subItems.length * 24}px`
+                            : "0px",
+                      }}
                     >
                       {menu.subItems.map((sub, subIndex) => (
-                        <div key={subIndex} className="cursor-pointer ">
-                          {/* <ScrambleText value={sub} /> */}
+                        <div key={subIndex} className="cursor-pointer mt-[2px]">
                           {sub}
                         </div>
                       ))}
@@ -117,7 +117,7 @@ const Navbar = () => {
       </div>
       <img
         src="./assets/animation/muonGif.webp"
-        className="w-full absolute muon-gif top-[30px] -right-24 sm:-top-[40px] sm:-right-36 custom-1024:-top-20 custom-1024:-right-[300px] z-0 above-1024:-right-72  above-1024:top-1"
+        className="w-full absolute muon-gif top-[30px] -right-24 sm:-top-[40px] sm:-right-36 custom-1024:-top-20 custom-1024:-right-[300px] z-0 above-1024:-right-[500px]  above-1024:-top-9"
         alt=""
       />
     </div>
