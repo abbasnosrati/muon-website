@@ -1,16 +1,17 @@
 body {
-  background-image: url("./public/assets/images/bg/bg.svg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("./public/assets/images/bg/1.png");
+  /* background-size: cover; */
+  /* background-position: center; */
   position: relative;
   overflow-x: hidden;
 }
 
-.content {
+/* .content {
   background-image: url("./public/assets/images/bg/bgNoiseEffect.svg");
   z-index: 1;
   background-size: cover;
-}
+  background-repeat: repeat;
+} */
 
 .other-images {
   position: relative;
