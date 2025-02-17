@@ -14,7 +14,7 @@ const Products = () => {
           oracle network and enjoy its fast modular security architecture.‍
         </div>
       </div>
-      <div className="collapse-container mt-16 sm:mt-28 select-none">
+      <div className="collapse-container mt-16 sm:mt-70 select-none">
         <div className="collapse-box-1">
           <div className="collapse-title " onClick={() => setSelectedItem(0)}>
             <p className="!border-b-0">DeRand</p>
@@ -22,28 +22,24 @@ const Products = () => {
           <div
             className={`collapse-content flex items-center  font-azeretMono  text-darkTextOpacity relative px-[68px] ${
               selectedItem === 0
-                ? "h-[243px] above-1440:h-[320px]"
+                ? "h-[243px] above-1440:h-[320px] opacity-100"
                 : "h-0 opacity-0"
             }`}
           >
-            <div className=" flex w-full h-full gap-[50px] ">
+            <div className=" flex w-full h-full items-center gap-[50px] ">
               <img
-                className=""
+                className="w-[165px] h-[191px] above-1440:w-[218px] above-1440:h-[25px]"
                 src="./assets/images/products/derand-logo.svg"
                 alt=""
-                width={218}
-                height={25}
               />
               <img
-                className=""
+                className="w-[300px] h-[200px] above-1440:w-[450px] above-1440:h-[154px]"
                 src="./assets/images/products/derand-item.svg"
                 alt=""
-                width={450}
-                height={154}
               />
             </div>
             <div className="flex flex-col sm:flex-row h-full w-full justify-end">
-              <div className="right-side w-full flex flex-col gap-5 above-1440:gap-[50px] justify-center p-5 sm:p-0 max-w-[494px]">
+              <div className="right-side w-full flex flex-col gap-5 above-1440:gap-[50px] justify-center p-5 sm:p-0 lg:max-w-[392px] above-1440:max-w-[494px]">
                 <div className="font-azeretMono text-whiteTextSecond leading-[18px] opacity-70 text-[12px] sm:text-[14px] lg:text-base above-1440:text-[20px]">
                   Verify, process & access your critical app-data on
                   a permissionless oracle network and enjoy its fast modular

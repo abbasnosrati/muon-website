@@ -20,11 +20,11 @@ const MuonSection = () => {
         </div>
       </div>
 
-      <div className=" w-full flex justify-center items-center mt-4">
+      <div className=" w-full flex justify-center items-center mt-4 above-1440:mt-[23px]">
         <div className="w-full max-w-[940px] above-1440:max-w-[1256px] flex items-end justify-end mr-5 above-1440:mr-[310px]">
           <div>
             <MoreButton btnText="More about Muon" />
-            <div className="mt-2">
+            <div className="mt-2 above-1440:mt-[23px]">
               <MoreButton btnText="Run a node" />
             </div>
           </div>

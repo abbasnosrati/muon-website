@@ -28,7 +28,7 @@ const News = () => {
     <div className="pb-[100px] border-b border-b-darkText font-azeretMono">
       <BlackButton btnText="05 // News" />
       <div className="flex flex-col lg:flex-row news-container w-full justify-between custom-1024:gap-10 above-1024:gap-[158px] above-1024::pr-[80px]">
-        <div className="left-side left-scroll w-full sm:min-w-[364px] sm:max-w-[364px] above-1440:max-w-[484px] mt-3 flex flex-col gap-6 above-1440:gap-[45px] max-h-[520px]  overflow-y-auto overflow-hidden [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-orangePrimary [&::-webkit-scrollbar-track]:bg-gray-300">
+        <div className="left-side left-scroll w-full sm:min-w-[364px] sm:max-w-[364px] above-1440:max-w-[484px] mt-3 flex flex-col gap-6 above-1440:gap-[45px] max-h-[385px] above-1440:max-h-[520px]  overflow-y-auto overflow-hidden [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-orangePrimary [&::-webkit-scrollbar-track]:bg-gray-300">
           {news.map((item, index) => (
             <div
               onClick={() => setSelectedNews(index)}
@@ -53,11 +53,11 @@ const News = () => {
               <div className="text-sm text-darkTextOpacity opacity-70 underline decoration-whiteTextSecond underline-offset-4">
                 {item.date}
               </div>
-              <div className="text-sm above-1440:text-[18px] relative text-darkTextOpacity opacity-70 above-1440:text-whiteTextSecond mt-4 above-1440:max-w-[412px]">
+              <div className="text-sm above-1440:text-[18px] relative text-darkTextOpacity opacity-70 above-1440:text-whiteTextSecond mt-4 max-w-[319px] above-1440:max-w-[412px]">
                 <div className="absolute -left-3">-</div>
                 {item.shortText}
               </div>
-              <div className="text-[10px] above-1440:leading-[30px] above-1440:max-w-[688px] sm:text-sm lg:text-base above-1440:text-[22px] text-darkText above-1440:text-whiteTextSecond mt-20 leading-[18px]">
+              <div className="text-[10px] above-1440:leading-[30px] above-1440:max-w-[688px] sm:text-sm lg:text-base above-1440:text-[22px] text-whiteTextSecond mt-20 leading-[18px]">
                 {item.text.split(".").map((sentence, index) => (
                   <span key={index}>
                     {sentence}

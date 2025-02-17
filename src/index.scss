@@ -72,7 +72,7 @@ body {
 }
 
 .collapse-content {
-  @apply border border-darkText -mt-[1px] bg-custom-gradient  overflow-hidden ease-in-out transition-all duration-700;
+  @apply border border-darkText -mt-[1px] bg-custom-gradient overflow-hidden ease-in-out transition-all duration-700;
   mix-blend-mode: overlay;
   background-color: transparent;
 }

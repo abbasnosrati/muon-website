@@ -50,19 +50,22 @@ const MuonStructure = () => {
         <div className="section-title-text"></div>
       </div>
 
-      <div className="flex justify-between ">
-        <div className="right-side flex gap-3  ">
+      <div className="flex justify-between">
+        <div className="right-side flex above-1440:gap-3 w-full max-w-[400px] above-1440:max-w-[500px]">
           <div>
             {structureItems.map((item, index) => (
               <div
                 key={index}
                 className={`${selectedItem === index ? "flex" : "hidden"}`}
               >
-                <img src={item.titleImgSrc} alt="" />
+                <img
+                  src={item.titleImgSrc}
+                  className="w-[80%] above-1440:w-full"
+                />
               </div>
             ))}
           </div>
-          <div className="structure-titles text-[18px] font-normal leading-[10px] flex flex-col gap-6 mt-[3px]">
+          <div className="structure-titles -ml-8 above-1440:ml-0 font-azeretMono text-sm above-1440:text-[18px] font-normal leading-[10px] flex flex-col gap-[14px] above-1440:gap-6 mt-[3px]">
             {structureItems.map((item, index) => (
               <div
                 key={index}
@@ -77,13 +80,13 @@ const MuonStructure = () => {
           </div>
         </div>
 
-        <div className="flex items-end max-w-[599px]">
+        <div className="flex items-end above-1440:max-w-[599px] max-w-[500px] ">
           {structureItems.map((item, index) => (
             <div
               key={index}
               className={`${
                 selectedItem === index
-                  ? "flex text-[20px] font-azeretMono"
+                  ? "flex text-base above-1440:text-[20px] font-azeretMono mr-5"
                   : "hidden"
               }  ${item.description.length == 0 && "hidden"}`}
             >
@@ -98,7 +101,11 @@ const MuonStructure = () => {
               key={index}
               className={`${selectedItem === index ? "flex w-full" : "hidden"}`}
             >
-              <img src={item.descriptionImgSrc} alt="" />
+              <img
+                src={item.descriptionImgSrc}
+                alt=""
+                className="max-w-[100%] above-1440:w-full"
+              />
             </div>
           ))}
         </div>
