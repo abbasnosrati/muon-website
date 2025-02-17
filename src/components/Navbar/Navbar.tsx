@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { menuItems } from "../../constants/constants";
-// import ScrambleText from "../../helper/ScrambleText";
 
 const Navbar = () => {
   const [hoveredMenu, setHoveredMenu] = useState(null);
@@ -29,9 +28,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex border-b relative border-darkText pb-[380px]">
+    <div className="flex border-b relative border-darkText above-1440:pb-[380px] pb-[150px]">
       <div className="left-side w-full">
-        <div className="header mb-10">
+        <div className="header above-1440:mb-10 mb-[26px]">
           <img src="/assets/images/logo/muonLogo.svg" alt="" />
         </div>
 
@@ -50,16 +49,16 @@ const Navbar = () => {
               }px`,
             }}
           ></div>
-          <div className="min-h-[340px] relative">
-            <div className="flex flex-col gap-2 above-1440:gap-2 relative pl-1">
+          <div className="above-1440:min-h-[340px] min-h-[270px] relative">
+            <div className="flex flex-col gap-1 above-1440:gap-2 relative pl-1">
               <div
-                className="bg-white  w-[1px] absolute bottom-0 top-0 opacity-50 -left-[0px]"
+                className="bg-white w-[1px] absolute bottom-0 top-0 opacity-50 left-[0px]"
                 ref={elementRef}
               ></div>
               {menuItems.map((menu, index) => (
                 <div
                   key={index}
-                  className="font-azeretMono  text-sm above-1440:text-base text-darkText pl-[12px] "
+                  className="font-azeretMono text-[12px] above-1440:text-base text-darkText pl-[12px] "
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={handleMouseLeave}
                 >
@@ -68,7 +67,7 @@ const Navbar = () => {
                       {menu.title}
                     </div>
                     <div
-                      className={`text-white sub-menu-items h-0 flex flex-col mt-2 overflow-hidden hover:transition-all duration-500 `}
+                      className={`text-whiteTextSecond sub-menu-items h-0 flex flex-col mt-2 overflow-hidden hover:transition-all duration-500 `}
                       style={{
                         height:
                           hoveredMenu === index && menu.subItems.length > 0
@@ -119,7 +118,7 @@ const Navbar = () => {
       </div>
       <img
         src="./assets/animation/muonGif.webp"
-        className="w-full absolute muon-gif top-[30px] -right-24 sm:-top-[40px] sm:-right-36 custom-1024:-top-20 custom-1024:-right-[300px] z-0 above-1024:-right-[500px]  above-1024:-top-9"
+        className="w-full absolute muon-gif top-[30px] -right-24 sm:-top-[40px] sm:-right-36 custom-1024:-top-20 custom-1024:-right-[300px] z-0 above-1024:-right-[400px]  above-1024:-top-9"
         alt=""
       />
     </div>

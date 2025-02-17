@@ -53,13 +53,13 @@ const Features = () => {
               className="z-1000 opacity-20 absolute left-2 above-1024:left-[1px] above-1024:min-w-[140px] h-[140px] above-1440:w-[159px]"
             />
           </div>
-          <div className="text-whiteTextSecond pt-[30px] above-1440:text-[20px] leading-[18px] font-azeretMono font-normal">
+          <div className="text-whiteTextSecond above-1440:pt-[30px] opacity-70 above-1440:opacity-100 pt-[20px] above-1440:text-[20px] leading-[18px] font-azeretMono font-normal">
             <div className="mb-2">01</div>
             <div>Lorem Ipsum</div>
           </div>
         </div>
         <div className="border-t border-white w-full max-w-[594px] flex items-center justify-center">
-          <div className="!text-whiteTextSecond  max-w-[541px] pt-[26px] text-[20px] font-normal leading-[28px]">
+          <div className="!text-whiteTextSecond  max-w-[541px] pt-[26px] text-base above-1440:text-[20px] font-normal leading-[28px]">
             Muon network enjoys a multi-layered security model made up of a TSS
             network, a Shield Server, and an Eigen Layer node. Based on your
             needs, you can choose one or a combination.
@@ -77,13 +77,13 @@ const Features = () => {
               className="z-1000 opacity-20 absolute above-1024:-left-[40px] min-w-[100px] above-1024:min-w-[200px] h-[200px]"
             />
           </div>
-          <div className="text-whiteTextSecond pt-[30px] above-1440:text-[20px] leading-[18px] font-azeretMono font-normal">
+          <div className="text-whiteTextSecond above-1440:pt-[30px] opacity-70 above-1440:opacity-100 pt-[20px] above-1440:text-[20px] leading-[18px] font-azeretMono font-normal">
             <div className="mb-2">02</div>
             <div>Lorem Ipsum</div>
           </div>
         </div>
-        <div className="border-t border-white w-full min-w-[853px] ">
-          <div className="max-w-[541px] text-[20px] leading-[28px] font-normal mt-[26px] text-whiteTextSecond  ml-14">
+        <div className="border-t border-white w-full min-w-[622px] above-1440:min-w-[853px] ">
+          <div className="max-w-[541px] text-base above-1440:text-[20px] leading-[28px] font-normal mt-[26px] text-whiteTextSecond  ml-14">
             Muon network enjoys a multi-layered security model made up of a TSS
             network, a Shield Server, and an Eigen Layer node. Based on your
             needs, you can choose one or a combination.
@@ -101,14 +101,14 @@ const Features = () => {
               className="z-1000 opacity-20 absolute above-1024:-left-[50px] above-1024:-top-5 -top-20 -left-6  min-w-[75px] above:min-w-[170px] h-[280px]"
             />
           </div>
-          <div className="text-whiteTextSecond pt-[30px] above-1440:text-[20px] leading-[18px] font-azeretMono font-normal">
+          <div className="text-whiteTextSecond above-1440:pt-[30px] opacity-70 above-1440:opacity-100 pt-[20px] above-1440:text-[20px] leading-[18px] font-azeretMono font-normal">
             <div className="mb-2">03</div>
             <div>Lorem Ipsum</div>
           </div>
         </div>
 
-        <div className="border-t border-white w-full min-w-[1007px]">
-          <div className="max-w-[541px] text-[20px] leading-[28px] font-normal mt-[26px] text-whiteTextSecond  ml-14">
+        <div className="border-t border-white w-full above-1440:min-w-[1007px] min-w-[700px]">
+          <div className="max-w-[541px] text-base above-1440:text-[20px] leading-[28px] font-normal mt-[26px] text-whiteTextSecond  ml-14">
             Muon network enjoys a multi-layered security model made up of a TSS
             network, a Shield Server, and an Eigen Layer node. Based on your
             needs, you can choose one or a combination.
