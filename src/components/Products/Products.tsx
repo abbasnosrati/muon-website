@@ -20,26 +20,36 @@ const Products = () => {
             DeRand
           </div>
           <div
-            className={`collapse-content sm:pr-5 lg:pr-14 font-azeretMono  text-darkTextOpacity relative ${
-              selectedItem === 0 ? "h-[243px]" : "h-0 opacity-0"
+            className={`collapse-content flex items-center  font-azeretMono  text-darkTextOpacity relative px-[68px] ${
+              selectedItem === 0
+                ? "h-[243px] above-1440:h-[320px]"
+                : "h-0 opacity-0"
             }`}
           >
-            <img
-              className="absolute bottom-3 left-4 sm:bottom-10 sm:left-8"
-              src="./assets/images/products/derand-logo.svg"
-              alt=""
-              width={164}
-              height={23}
-            />
-            <div className="flex flex-col sm:flex-row h-full w-full">
-              <div className="left-side w-full sm:w-[70%] relative "></div>
-              <div className="right-side w-full sm:w-[33%] sm:min-w-[33%] flex flex-col gap-5 justify-center p-5 sm:p-0">
-                <div className="font-azeretMono text-darkTextOpacity leading-[18px] opacity-70 text-[12px] sm:text-[14px] lg:text-base">
+            <div className=" flex w-full h-full gap-[50px] ">
+              <img
+                className=""
+                src="./assets/images/products/derand-logo.svg"
+                alt=""
+                width={218}
+                height={25}
+              />
+              <img
+                className=""
+                src="./assets/images/products/derand-item.svg"
+                alt=""
+                width={450}
+                height={154}
+              />
+            </div>
+            <div className="flex flex-col sm:flex-row h-full w-full justify-end">
+              <div className="right-side w-full flex flex-col gap-5 above-1440:gap-[50px] justify-center p-5 sm:p-0 max-w-[400px]">
+                <div className="font-azeretMono text-whiteTextSecond leading-[18px] opacity-70 text-[12px] sm:text-[14px] lg:text-base">
                   Verify, process & access your critical app-data on
                   a permissionless oracle network and enjoy its fast modular
                   security architecture.‍
                 </div>
-                <div className="border border-darkText font-dmSans leading-4 flex items-center w-full max-w-[364px] h-[47px] justify-between pl-3 pr-8">
+                <div className="border cursor-pointer border-darkText font-dmSans leading-4 flex items-center w-full max-w-[364px] above-1440:max-w-[487px] h-[47px] justify-between pl-3 pr-8">
                   <div>Visit Site</div>
                   <svg
                     width="66"
@@ -60,7 +70,7 @@ const Products = () => {
         </div>
         <div className="collapse-box-2">
           <div className="collapse-title" onClick={() => setSelectedItem(1)}>
-            Metabridge
+            AI Safe Infstra
           </div>
           <div
             className={`collapse-content ${
@@ -68,13 +78,46 @@ const Products = () => {
             }`}
           ></div>
         </div>
-        <div className="collapse-box-3 ">
-          <div className="collapse-title-3" onClick={() => setSelectedItem(2)}>
-            Price feed
+        <div className="collapse-box-3">
+          <div className="collapse-title" onClick={() => setSelectedItem(2)}>
+            Metabridge
           </div>
           <div
             className={`collapse-content ${
               selectedItem === 2 ? "h-[243px]" : "h-0 opacity-0"
+            }`}
+          ></div>
+        </div>
+        <div className="collapse-box-4">
+          <div className="collapse-title" onClick={() => setSelectedItem(3)}>
+            LayerZero DVN
+          </div>
+          <div
+            className={`collapse-content ${
+              selectedItem === 3 ? "h-[243px]" : "h-0 opacity-0"
+            }`}
+          ></div>
+        </div>
+        <div className="collapse-box-5 ">
+          <div className=" collapse-title" onClick={() => setSelectedItem(4)}>
+            Price feed
+          </div>
+          <div
+            className={`collapse-content ${
+              selectedItem === 4 ? "h-[243px]" : "h-0 opacity-0"
+            }`}
+          ></div>
+        </div>
+        <div className="collapse-box-6">
+          <div
+            className="collapse-title collapse-title-3"
+            onClick={() => setSelectedItem(5)}
+          >
+            FactGPT
+          </div>
+          <div
+            className={`collapse-content ${
+              selectedItem === 5 ? "h-[243px]" : "h-0 opacity-0"
             }`}
           ></div>
         </div>

@@ -114,7 +114,7 @@ body {
 
 @keyframes expandWidth {
   0% {
-    width: 200px;
+    width: 240px;
   }
   100% {
     width: 100%;

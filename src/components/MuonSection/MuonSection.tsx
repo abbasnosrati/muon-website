@@ -6,7 +6,7 @@ const MuonSection = () => {
     <div className="font-azeretMono border-b border-darkText pb-[150px]">
       <div>
         <BlackButton btnText={"02 // Muon"} />
-        <div className="section-title-text">Lorem ipsum Lorem</div>
+        {/* <div className="section-title-text">Lorem ipsum Lorem</div> */}
       </div>
 
       <div className="video-container w-full flex items-center justify-center mt-[105px]">
@@ -21,7 +21,7 @@ const MuonSection = () => {
       </div>
 
       <div className=" w-full flex justify-center items-center mt-4">
-        <div className="w-full max-w-[940px] flex items-end justify-end mr-5">
+        <div className="w-full max-w-[940px] above-1440:max-w-[1256px] flex items-end justify-end mr-5 above-1440:mr-[310px]">
           <div>
             <MoreButton btnText="More about Muon" />
             <div className="mt-2">

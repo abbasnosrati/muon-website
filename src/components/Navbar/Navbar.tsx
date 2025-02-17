@@ -29,16 +29,15 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex border-b relative border-darkText pb-[320px]">
+    <div className="flex border-b relative border-darkText pb-[380px]">
       <div className="left-side w-full">
-        <div className="header mb-8">
-          <div className="">
-            <img src="/assets/images/logo/muonLogo.svg" alt="" />
-          </div>
+        <div className="header mb-10">
+          <img src="/assets/images/logo/muonLogo.svg" alt="" />
         </div>
+
         <div className="relative navigation flex set-zIndex">
           <div
-            className="w-[2px] bg-orangePrimary absolute h-5 left-0 z-50 transition-all duration-500 "
+            className="w-[2px] bg-orangePrimary absolute h-5 left-0 z-50 transition-all duration-500"
             style={{
               top: `${
                 hoveredMenu
@@ -51,16 +50,16 @@ const Navbar = () => {
               }px`,
             }}
           ></div>
-          <div className="min-h-[320px] relative ">
-            <div className="flex flex-col gap-3 above-1440:gap-4 relative ">
+          <div className="min-h-[340px] relative">
+            <div className="flex flex-col gap-2 above-1440:gap-2 relative pl-1">
               <div
-                className="bg-white w-[1px] absolute bottom-0 top-0 opacity-50"
+                className="bg-white  w-[1px] absolute bottom-0 top-0 opacity-50 -left-[0px]"
                 ref={elementRef}
               ></div>
               {menuItems.map((menu, index) => (
                 <div
                   key={index}
-                  className="font-azeretMono  text-sm text-darkText pl-[12px] "
+                  className="font-azeretMono  text-sm above-1440:text-base text-darkText pl-[12px] "
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={handleMouseLeave}
                 >
@@ -69,7 +68,7 @@ const Navbar = () => {
                       {menu.title}
                     </div>
                     <div
-                      className={`text-white sum-menu-items h-0 overflow-hidden hover:transition-all duration-500`}
+                      className={`text-white sub-menu-items h-0 flex flex-col mt-2 overflow-hidden hover:transition-all duration-500 `}
                       style={{
                         height:
                           hoveredMenu === index && menu.subItems.length > 0
@@ -78,7 +77,10 @@ const Navbar = () => {
                       }}
                     >
                       {menu.subItems.map((sub, subIndex) => (
-                        <div key={subIndex} className="cursor-pointer mt-[2px]">
+                        <div
+                          key={subIndex}
+                          className="cursor-pointer text-[12px] above-1440:text-[16px] font-normal font-azeretMono "
+                        >
                           {sub}
                         </div>
                       ))}
@@ -91,16 +93,16 @@ const Navbar = () => {
         </div>
 
         <div className=" w-full relative set-zIndex mb-[50px]">
-          <div className="text-[#EDEDED] text-2xl sm:text-[44px] leading-5 sm:leading-[50px] font-dosis font-normal">
+          <div className="text-[#EDEDED] text-2xl sm:text-[44px] above-1440:text-[58px] above-1440:leading-[70px] leading-5 sm:leading-[50px] font-dosis font-normal">
             General-Purpose, <br /> Request-Based Validation Layer
           </div>
-          <div className="text-[24px] text-white leading-5 mt-5 font-dmSans opacity-70">
+          <div className="text-[24px] above-1440:text-[32px] above-1440:leading-[42px] text-white leading-5 mt-5 font-dmSans  opacity-60">
             Powering the Intent-Centric Economy of the Future
           </div>
         </div>
 
         <div className="group-hover set-zIndex btn relative hover:text-white transition-all duration-300 hover-div ease-in-out">
-          <span className="z-50 transition-all duration-300 ease-in-out hover:text-white group-hover:delay-500">
+          <span className="z-50 opacity-90 transition-all duration-300 ease-in-out hover:text-white group-hover:delay-500">
             Build on Muon
           </span>
           <svg

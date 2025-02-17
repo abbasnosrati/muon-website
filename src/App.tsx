@@ -6,6 +6,7 @@ import Products from "./components/Products/Products";
 import News from "./components/News/News";
 import MoveTopButton from "./components/common/Buttons/MoveTopButton";
 import Footer from "./components/Footer/Footer";
+import MuonStructure from "./components/MuonStructure/MuonStructure";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <div className="max-w-[1920px] w-full px-10 sm:px-[70px] above-1024:px-[136px] above-1440:px-[182px]">
           <Navbar />
           <Features />
+          <MuonStructure />
           <MuonSection />
           <Products />
           <News />
