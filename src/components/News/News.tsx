@@ -33,7 +33,9 @@ const News = () => {
             <div
               onClick={() => setSelectedNews(index)}
               key={index}
-              className="border ml-2 cursor-pointer  news-box border-darkText min-h-[112px] above-1440:min-h-[143px] p-[10px] text-darkTextOpacity text-sm above-1440:text-[18px] leading-4 flex flex-col gap-5"
+              className={`border ml-2 cursor-pointer  news-box border-darkText min-h-[112px] above-1440:min-h-[143px] p-[10px] text-darkTextOpacity ${
+                selectedNews == index && "text-whiteTextSecond"
+              } text-sm above-1440:text-[18px] leading-4 flex flex-col gap-5`}
             >
               <div className="opacity-70">{item.date}</div>
               <div className="leading-[22px] opacity-70">{item.shortText}</div>
