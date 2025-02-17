@@ -10,7 +10,7 @@ export default {
       },
       colors: {
         darkText: "#242124",
-        darkTextOpacity: "#242424",
+        darkTextOpacity: "#262626",
         orangePrimary: "#FE3402",
         whiteText: "#EAEAEA",
         whiteTextSecond: "#EDEDED",

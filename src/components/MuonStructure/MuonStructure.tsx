@@ -42,7 +42,7 @@ const MuonStructure = () => {
   return (
     <div
       className={`select-none border-b border-b-darkText text-whiteTextSecond ${
-        selectedItem !== 0 ? "padding-between-section" : "pb-[50px]"
+        selectedItem !== 0 ? "padding-between-section" : "pb-[100px]"
       }`}
     >
       <div>

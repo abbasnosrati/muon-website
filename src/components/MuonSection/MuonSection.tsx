@@ -5,7 +5,7 @@ const MuonSection = () => {
   return (
     <div className="font-azeretMono border-b border-darkText pb-[150px]">
       <div>
-        <BlackButton btnText={"02 // Muon"} />
+        <BlackButton btnText={"03 // Muon"} />
         {/* <div className="section-title-text">Lorem ipsum Lorem</div> */}
       </div>
 

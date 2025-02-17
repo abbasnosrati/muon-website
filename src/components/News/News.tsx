@@ -25,18 +25,18 @@ const News = () => {
     },
   ];
   return (
-    <div className="pb-[100px] border-b border-b-darkText ">
-      <BlackButton btnText="04 // News" />
+    <div className="pb-[100px] border-b border-b-darkText font-azeretMono">
+      <BlackButton btnText="05 // News" />
       <div className="flex flex-col lg:flex-row news-container w-full justify-between custom-1024:gap-10 above-1024:gap-[158px] above-1024::pr-[80px]">
-        <div className="left-side  left-scroll w-full sm:min-w-[364px] sm:max-w-[364px] mt-3 flex flex-col gap-6 max-h-[400px] overflow-y-auto overflow-hidden [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-orangePrimary [&::-webkit-scrollbar-track]:bg-gray-300">
+        <div className="left-side left-scroll w-full sm:min-w-[364px] sm:max-w-[364px] above-1440:max-w-[484px] mt-3 flex flex-col gap-6 above-1440:gap-[45px] max-h-[520px]  overflow-y-auto overflow-hidden [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-orangePrimary [&::-webkit-scrollbar-track]:bg-gray-300">
           {news.map((item, index) => (
             <div
               onClick={() => setSelectedNews(index)}
               key={index}
-              className="border ml-2 cursor-pointer  news-box border-darkText min-h-[112px] p-[10px] text-darkTextOpacity text-sm leading-4 flex flex-col gap-5"
+              className="border ml-2 cursor-pointer  news-box border-darkText min-h-[112px] above-1440:min-h-[143px] p-[10px] text-darkTextOpacity text-sm above-1440:text-[18px] leading-4 flex flex-col gap-5"
             >
-              <div>{item.date}</div>
-              <div>{item.shortText}</div>
+              <div className="opacity-70">{item.date}</div>
+              <div className="leading-[22px] opacity-70">{item.shortText}</div>
             </div>
           ))}
         </div>
@@ -48,13 +48,14 @@ const News = () => {
                 item.id === selectedNews ? "flex" : "hidden"
               }`}
             >
-              <div className="text-sm text-darkTextOpacity opacity-70">
+              <div className="text-sm text-darkTextOpacity opacity-70 underline decoration-whiteTextSecond underline-offset-4">
                 {item.date}
               </div>
-              <div className="text-sm text-darkTextOpacity opacity-70 mt-4">
+              <div className="text-sm above-1440:text-[18px] relative text-darkTextOpacity opacity-70 above-1440:text-whiteTextSecond mt-4 above-1440:max-w-[412px]">
+                <div className="absolute -left-3">-</div>
                 {item.shortText}
               </div>
-              <div className="text-[10px]  sm:text-sm lg:text-base text-darkText mt-10 leading-[18px]">
+              <div className="text-[10px] above-1440:leading-[30px] above-1440:max-w-[688px] sm:text-sm lg:text-base above-1440:text-[22px] text-darkText above-1440:text-whiteTextSecond mt-20 leading-[18px]">
                 {item.text.split(".").map((sentence, index) => (
                   <span key={index}>
                     {sentence}
@@ -68,7 +69,7 @@ const News = () => {
               </div>
             </div>
           ))}
-          <div className="flex items-end w-full font-azeretMono justify-end text-sm text-darkTextOpacity opacity-70  h-full above-1024:mr-24 ">
+          <div className="flex items-end w-full font-azeretMono justify-end text-sm text-darkTextOpacity above-1440:text-whiteTextSecond above-1440:underline opacity-70  h-full above-1024:mr-24 above-1440:mr-48 ">
             <div className="flex items-center gap-2 cursor-pointer">
               View More
               <svg

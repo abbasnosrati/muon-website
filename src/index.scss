@@ -60,11 +60,15 @@ body {
 }
 
 .collapse-title {
-  @apply font-dmSans  text-base text-white border border-b-0 border-darkText w-[144px] h-12 flex justify-center items-center -mt-[1px] cursor-pointer;
+  @apply font-azeretMono text-nowrap   text-base above-1440:text-[18px] leading-[18px] text-whiteTextSecond  border-darkText w-[144px]  h-12 above-1440:h-[60px] flex justify-start items-center -mt-[1px] cursor-pointer;
+}
+
+.collapse-title p {
+  @apply border border-darkTextOpacity h-full flex items-center px-7 opacity-70;
 }
 
 .collapse-title-3 {
-  @apply font-dmSans text-base text-white border  border-darkText w-[144px] h-12 flex justify-center items-center -mt-[1px] cursor-pointer;
+  @apply font-azeretMono text-base text-white border  border-darkText w-[144px] opacity-70 h-12 flex justify-center items-center -mt-[1px] cursor-pointer;
 }
 
 .collapse-content {
@@ -78,7 +82,7 @@ body {
 }
 
 .social-media {
-  @apply border border-darkText w-full max-w-[48%] lg:w-[160px] h-[34px] flex items-center justify-center cursor-pointer select-none;
+  @apply border border-darkText w-full max-w-[48%] lg:w-[160px] above-1440:w-[213px] h-[34px] above-1440:h-[41px] flex items-center justify-center cursor-pointer select-none;
 }
 
 .feature-items {
