@@ -65,7 +65,7 @@ const MuonStructure = () => {
               </div>
             ))}
           </div>
-          <div className="structure-titles -ml-8 above-1440:ml-0 font-azeretMono text-sm above-1440:text-[18px] font-normal leading-[10px] flex flex-col gap-[14px] above-1440:gap-6 mt-[3px]">
+          <div className="structure-titles -ml-8 above-1440:ml-0 font-azeretMono text-sm above-1440:text-[18px] 1024-1279:text-[12px] font-normal leading-[10px] flex flex-col gap-[14px] above-1440:gap-6 mt-[3px]">
             {structureItems.map((item, index) => (
               <div
                 key={index}
@@ -80,13 +80,13 @@ const MuonStructure = () => {
           </div>
         </div>
 
-        <div className="flex items-end above-1440:max-w-[599px] max-w-[500px] ">
+        <div className="flex items-end above-1440:max-w-[599px] max-w-[380px]  above-1280:max-w-[500px] 1024-1279:max-w-[250px]">
           {structureItems.map((item, index) => (
             <div
               key={index}
               className={`${
                 selectedItem === index
-                  ? "flex text-base above-1440:text-[20px] font-azeretMono mr-5"
+                  ? "flex text-[12px] 1024-1279:text-[10px] above-1280:text-base above-1440:text-[20px] font-azeretMono mr-5"
                   : "hidden"
               }  ${item.description.length == 0 && "hidden"}`}
             >

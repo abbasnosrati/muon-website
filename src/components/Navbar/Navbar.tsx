@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { menuItems } from "../../constants/constants";
 
-const Navbar = () => {
+const BigMenu = () => {
   const [hoveredMenu, setHoveredMenu] = useState(null);
 
   const handleMouseEnter = (index: any) => {
@@ -28,68 +28,158 @@ const Navbar = () => {
   }, []);
 
   return (
+    <div className="hidden above-1440:flex relative navigation  set-zIndex">
+      <div
+        className="w-[2px] bg-orangePrimary absolute h-5 left-0 z-50 transition-all duration-500"
+        style={{
+          top: `${
+            hoveredMenu ? hoveredMenu * ((height + 12) / menuItems.length) : 0
+          }px`,
+          height: `${
+            menuItemHeight +
+            menuItems[hoveredMenu ? hoveredMenu : 0].subItems.length * 25
+          }px`,
+        }}
+      ></div>
+      <div className="above-1440:min-h-[340px] min-h-[270px] relative">
+        <div className="flex flex-col gap-1 above-1440:gap-2 relative pl-1">
+          <div
+            className="bg-white w-[1px] absolute bottom-0 top-0 opacity-50 left-[0px]"
+            ref={elementRef}
+          ></div>
+          {menuItems.map((menu, index) => (
+            <div
+              key={index}
+              className="font-azeretMono text-[12px] above-1440:text-base text-darkText pl-[12px] "
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <div className="" ref={menuItemRef}>
+                <div className="cursor-pointer tracking-[1px] leading-[13px]">
+                  {menu.title}
+                </div>
+                <div
+                  className={`text-whiteTextSecond sub-menu-items h-0 flex flex-col mt-2 overflow-hidden hover:transition-all duration-500 `}
+                  style={{
+                    height:
+                      hoveredMenu === index && menu.subItems.length > 0
+                        ? `${menu.subItems.length * 24}px`
+                        : "0px",
+                  }}
+                >
+                  {menu.subItems.map((sub, subIndex) => (
+                    <div
+                      key={subIndex}
+                      className="cursor-pointer text-[12px] above-1440:text-[16px] font-normal font-azeretMono "
+                    >
+                      {sub}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const SmallMenu = () => {
+  const [hoveredMenu, setHoveredMenu] = useState(null);
+
+  const handleMouseEnter = (index: any) => {
+    setHoveredMenu(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredMenu(null);
+  };
+
+  const elementRef = useRef<HTMLDivElement | null>(null);
+  const [height, setHeight] = useState(0);
+  const [menuItemHeight, setMenuItemHeight] = useState(0);
+
+  const menuItemRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (elementRef.current) {
+      setHeight(elementRef.current.getBoundingClientRect().height);
+    }
+    if (menuItemRef.current) {
+      setMenuItemHeight(menuItemRef.current.getBoundingClientRect().height);
+    }
+  }, []);
+
+  return (
+    <div className={`above-1440:hidden relative navigation flex set-zIndex`}>
+      <div
+        className="w-[2px] bg-orangePrimary absolute h-5 left-0 z-50 transition-all duration-500"
+        style={{
+          top: `${
+            hoveredMenu ? hoveredMenu * ((height + 2) / menuItems.length) : 0
+          }px`,
+          height: `${
+            menuItemHeight +
+            menuItems[hoveredMenu ? hoveredMenu : 0].subItems.length * 20
+          }px`,
+        }}
+      ></div>
+      <div className="min-h-[240px] relative">
+        <div className="flex flex-col gap-1 relative pl-1">
+          <div
+            className="bg-white w-[1px] absolute bottom-0 top-0 opacity-50 left-[0px]"
+            ref={elementRef}
+          ></div>
+          {menuItems.map((menu, index) => (
+            <div
+              key={index}
+              className="font-azeretMono text-[12px]  text-darkText pl-[12px] "
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <div className="" ref={menuItemRef}>
+                <div className="cursor-pointer tracking-[1px] leading-[13px]">
+                  {menu.title}
+                </div>
+                <div
+                  className={`text-whiteTextSecond sub-menu-items h-0 flex flex-col mt-1 overflow-hidden hover:transition-all duration-500 `}
+                  style={{
+                    height:
+                      hoveredMenu === index && menu.subItems.length > 0
+                        ? `${menu.subItems.length * 18}px`
+                        : "0px",
+                  }}
+                >
+                  {menu.subItems.map((sub, subIndex) => (
+                    <div
+                      key={subIndex}
+                      className="cursor-pointer text-[12px] font-normal font-azeretMono "
+                    >
+                      {sub}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const Navbar = () => {
+  return (
     <div className="flex border-b relative border-darkText above-1440:pb-[380px] pb-[150px]">
       <div className="left-side w-full">
         <div className="header above-1440:mb-10 mb-[26px]">
           <img src="/assets/images/logo/muonLogo.svg" alt="" />
         </div>
 
-        <div className="relative navigation flex set-zIndex">
-          <div
-            className="w-[2px] bg-orangePrimary absolute h-5 left-0 z-50 transition-all duration-500"
-            style={{
-              top: `${
-                hoveredMenu
-                  ? hoveredMenu * ((height + 12) / menuItems.length)
-                  : 0
-              }px`,
-              height: `${
-                menuItemHeight +
-                menuItems[hoveredMenu ? hoveredMenu : 0].subItems.length * 25
-              }px`,
-            }}
-          ></div>
-          <div className="above-1440:min-h-[340px] min-h-[270px] relative">
-            <div className="flex flex-col gap-1 above-1440:gap-2 relative pl-1">
-              <div
-                className="bg-white w-[1px] absolute bottom-0 top-0 opacity-50 left-[0px]"
-                ref={elementRef}
-              ></div>
-              {menuItems.map((menu, index) => (
-                <div
-                  key={index}
-                  className="font-azeretMono text-[12px] above-1440:text-base text-darkText pl-[12px] "
-                  onMouseEnter={() => handleMouseEnter(index)}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <div className="" ref={menuItemRef}>
-                    <div className="cursor-pointer tracking-[1px] leading-[13px]">
-                      {menu.title}
-                    </div>
-                    <div
-                      className={`text-whiteTextSecond sub-menu-items h-0 flex flex-col mt-2 overflow-hidden hover:transition-all duration-500 `}
-                      style={{
-                        height:
-                          hoveredMenu === index && menu.subItems.length > 0
-                            ? `${menu.subItems.length * 24}px`
-                            : "0px",
-                      }}
-                    >
-                      {menu.subItems.map((sub, subIndex) => (
-                        <div
-                          key={subIndex}
-                          className="cursor-pointer text-[12px] above-1440:text-[16px] font-normal font-azeretMono "
-                        >
-                          {sub}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <BigMenu />
+
+        <SmallMenu />
 
         <div className=" w-full relative set-zIndex mb-[50px]">
           <div className="text-[#EDEDED] text-2xl sm:text-[44px] above-1440:text-[58px] above-1440:leading-[70px] leading-5 sm:leading-[50px] font-dosis font-normal">

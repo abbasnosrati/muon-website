@@ -3,15 +3,15 @@ import { menuItems } from "../../constants/constants";
 const Footer = () => {
   return (
     <div className="font-azeretMono pb-[30px]">
-      <div className="top-side border-t border-darkText flex flex-col lg:flex-row  justify-between pt-[28px]">
-        <div className="right-side ite pb-2 w-full  text-whiteTextSecond pt-[18px] lg:pr-[38px]  flex flex-col justify-between">
-          <div className="leading-[18px] above-1440:leading-[28px] opacity-70 w-[392px] above-1440:w-[497px] above-1440:text-[20px]">
+      <div className="top-side border-t border-darkText flex flex-col lg:flex-row justify-between pt-[28px]">
+        <div className="right-side ite pb-2 text-whiteTextSecond pt-[18px] lg:pr-[38px] flex flex-col justify-between">
+          <div className="leading-[18px] above-1440:leading-[28px] opacity-70 w-[392px] above-1440:w-[497px] above-1440:text-[20px] custom-1024:text-sm">
             Verify, process & access your critical app-data on a permissionless
             oracle network and enjoy its fast modular security architecture.‍
           </div>
           <div className=" border border-darkText w-full max-w-[300px] h-12 mb-6"></div>
         </div>
-        <div className="left-side text-[12px] lg:text-base lg:pl-[140px] pt-[20px] text-darkText w-full">
+        <div className="left-side text-[12px] above-1024:text-base above-1024:pl-[140px] pt-[20px] text-darkText">
           <div className="flex flex-col gap-1">
             {menuItems.map((item, index) => (
               <div className="flex" key={index}>
@@ -41,8 +41,8 @@ const Footer = () => {
               <div className="social-media">Discord</div>
               <div className="social-media">Medium</div>
             </div>
-            <div className="flex gap-[6px] justify-start w-full">
-              <div className="social-media above-1440:ml-[4px]">Telegram</div>
+            <div className="flex justify-start w-full">
+              <div className="social-media">Telegram</div>
             </div>
           </div>
 
@@ -57,17 +57,13 @@ const Footer = () => {
         </div>
       </div>
       <div className="bottom-side border-t border-darkText mt-10 flex items-end justify-between">
-        <div className="w-full border-r border-darkText opacity-70 pt-[36px]">
-          <img
-            src="./assets/images/logo/footer-logo.svg"
-            className="above-1440:flex hidden"
-            alt=""
-          />
-          <img
+        <div className="w-full border-r border-darkText opacity-70 pt-[36px] px-10">
+          <img src="./assets/images/logo/footer-logo.svg" className="" alt="" />
+          {/* <img
             src="./assets/images/logo/footer-logo-sm.svg"
             className="flex above-1440:hidden"
             alt=""
-          />
+          /> */}
         </div>
         <div className="font-azeretMono text-[12px] above-1440:text-base flex w-full above-1440:max-w-[380px]  max-w-[300px] items-end  justify-center text-darkText leading-[11px] ">
           copy right 2025

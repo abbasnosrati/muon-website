@@ -20,27 +20,27 @@ const Products = () => {
             <p className="!border-b-0">DeRand</p>
           </div>
           <div
-            className={`collapse-content flex items-center  font-azeretMono  text-darkTextOpacity relative px-[68px] ${
+            className={`collapse-content flex items-center font-azeretMono text-darkTextOpacity relative px-[68px] ${
               selectedItem === 0
                 ? "h-[243px] above-1440:h-[320px] opacity-100"
                 : "h-0 opacity-0"
             }`}
           >
-            <div className=" flex w-full h-full items-center gap-[50px] ">
+            <div className=" flex w-full h-full items-center gap-[50px] 1024-1279:gap-[25px]">
               <img
-                className="w-[165px] h-[191px] above-1440:w-[218px] above-1440:h-[25px]"
+                className="w-[165px] h-[191px] above-1440:w-[218px] above-1440:h-[25px] 1024-1279:w-[100px] custom-1280:w-[150px]"
                 src="./assets/images/products/derand-logo.svg"
                 alt=""
               />
               <img
-                className="w-[300px] h-[200px] above-1440:w-[450px] above-1440:h-[154px]"
+                className="w-[300px] h-[200px] above-1440:w-[450px] above-1440:h-[154px] 1024-1279:w-[200px] custom-1280:w-[180px]"
                 src="./assets/images/products/derand-item.svg"
                 alt=""
               />
             </div>
             <div className="flex flex-col sm:flex-row h-full w-full justify-end">
               <div className="right-side w-full flex flex-col gap-5 above-1440:gap-[50px] justify-center p-5 sm:p-0 lg:max-w-[392px] above-1440:max-w-[494px]">
-                <div className="font-azeretMono text-whiteTextSecond leading-[18px] opacity-70 text-[12px] sm:text-[14px] lg:text-base above-1440:text-[20px]">
+                <div className="font-azeretMono text-whiteTextSecond leading-[18px] opacity-70 text-[12px] sm:text-[14px] lg:text-base above-1440:text-[20px] 1024-1279:text-sm">
                   Verify, process & access your critical app-data on
                   a permissionless oracle network and enjoy its fast modular
                   security architecture.‍
