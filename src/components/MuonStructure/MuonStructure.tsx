@@ -80,7 +80,7 @@ const MuonStructure = () => {
           </div>
         </div>
 
-        <div className="flex items-end above-1440:max-w-[599px] max-w-[380px]  above-1280:max-w-[500px] 1024-1279:max-w-[250px]">
+        <div className="flex items-end above-1440:max-w-[620px] max-w-[380px] above-1280:max-w-[500px] 1024-1279:max-w-[250px]">
           {structureItems.map((item, index) => (
             <div
               key={index}

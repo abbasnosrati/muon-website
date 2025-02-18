@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bottom-side border-t border-darkText mt-10 flex items-end justify-between">
-        <div className="w-full border-r border-darkText opacity-70 pt-[36px] px-10">
+        <div className="w-full border-r border-darkText opacity-70 pt-[36px] pr-[55px]">
           <img src="./assets/images/logo/footer-logo.svg" className="" alt="" />
           {/* <img
             src="./assets/images/logo/footer-logo-sm.svg"

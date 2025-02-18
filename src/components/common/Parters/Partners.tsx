@@ -23,7 +23,7 @@ const Partners = () => {
           </div>
         </div>
         <div className="img-container other-images">
-          <div className="img-box min-w-[130px] min-h-[20px]">
+          <div className="img-box min-w-[130px] ml-5 min-h-[20px]">
             <img src="./assets/images/partners/thena.svg" alt="" />
           </div>
         </div>
@@ -39,7 +39,7 @@ const Partners = () => {
           </div>
         </div>
         <div className="img-container other-images">
-          <div className="img-box min-w-[130px] min-h-[20px]">
+          <div className="img-box min-w-[130px] ml-5 min-h-[20px]">
             <img src="./assets/images/partners/thena.svg" alt="" />
           </div>
         </div>
@@ -55,7 +55,7 @@ const Partners = () => {
           </div>
         </div>
         <div className="img-container other-images">
-          <div className="img-box min-w-[130px] min-h-[20px]">
+          <div className="img-box min-w-[130px] ml-5 min-h-[20px]">
             <img src="./assets/images/partners/thena.svg" alt="" />
           </div>
         </div>
@@ -71,7 +71,7 @@ const Partners = () => {
           </div>
         </div>
         <div className="img-container other-images">
-          <div className="img-box min-w-[130px] min-h-[20px]">
+          <div className="img-box min-w-[130px] ml-5 min-h-[20px]">
             <img src="./assets/images/partners/thena.svg" alt="" />
           </div>
         </div>
@@ -87,7 +87,7 @@ const Partners = () => {
           </div>
         </div>
         <div className="img-container other-images">
-          <div className="img-box min-w-[130px] min-h-[20px]">
+          <div className="img-box min-w-[130px] ml-5 min-h-[20px]">
             <img src="./assets/images/partners/thena.svg" alt="" />
           </div>
         </div>
@@ -103,7 +103,7 @@ const Partners = () => {
           </div>
         </div>
         <div className="img-container other-images">
-          <div className="img-box min-w-[130px] min-h-[20px]">
+          <div className="img-box min-w-[130px] ml-5 min-h-[20px]">
             <img src="./assets/images/partners/thena.svg" alt="" />
           </div>
         </div>
