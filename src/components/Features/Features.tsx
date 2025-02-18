@@ -59,7 +59,7 @@ const Features = () => {
           </div>
         </div>
         <div className="border-t border-white w-full max-w-[594px] flex items-center justify-center">
-          <div className="!text-whiteTextSecond max-w-[541px] pt-[10px] above-1280:pt-[26px]   1024-1279:pt-[10px] text-[10px] 1024-1279:text-[12px] custom-1440:text-base above-1440:text-[20px] font-normal leading-[28px]">
+          <div className="!text-whiteTextSecond max-w-[541px] pt-[10px] above-1280:pt-[26px] 1024-1279:pt-[10px] text-[10px] 1024-1279:text-[12px] custom-1440:text-base above-1440:text-[20px] font-normal opacity-[92%] leading-[38px]">
             Muon network enjoys a multi-layered security model made up of a TSS
             network, a Shield Server, and an Eigen Layer node. Based on your
             needs, you can choose one or a combination.
