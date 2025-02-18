@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        azeretMono: ["AzeretMono"],
+        azeretMono: ["AzeretMono", "monospace"],
         dmSans: ["DMSans"],
         dosis: ["Dosis"],
       },

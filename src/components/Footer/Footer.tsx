@@ -3,26 +3,26 @@ import { menuItems } from "../../constants/constants";
 const Footer = () => {
   return (
     <div className="font-azeretMono pb-[30px]">
-      <div className="top-side border-t border-darkText flex flex-col lg:flex-row justify-between pt-[28px]">
+      <div className="top-side border-t border-darkText flex flex-col lg:flex-row justify-between pt-[8px]">
         <div className="right-side ite pb-2 text-whiteTextSecond pt-[18px] lg:pr-[38px] flex flex-col justify-between">
-          <div className="leading-[18px] above-1440:leading-[28px] opacity-70 w-[392px] above-1440:w-[497px] above-1440:text-[20px] custom-1024:text-sm">
+          <div className="leading-[18px] above-1440:leading-[28px] w-[392px] above-1440:w-[497px] above-1440:text-[20px] custom-1024:text-sm">
             Verify, process & access your critical app-data on a permissionless
             oracle network and enjoy its fast modular security architecture.‍
           </div>
-          <div className=" border border-darkText w-full max-w-[300px] h-12 mb-6"></div>
+          <div className=" border border-darkText w-full max-w-[300px] above-1440:max-w-[400px] above-1440:h-[59px] h-12 mb-7"></div>
         </div>
-        <div className="left-side text-[12px] above-1024:text-base above-1024:pl-[140px] pt-[20px] text-darkText">
-          <div className="flex flex-col gap-1">
+        <div className="left-side text-[12px] above-1024:text-base above-1440:text-[20px] font-light !leading-[18px] above-1024:pl-[140px] pt-[20px] text-darkText">
+          <div className="flex flex-col gap-[12px]">
             {menuItems.map((item, index) => (
               <div className="flex" key={index}>
                 {item.title !== "Socials" && (
-                  <div className="flex">
+                  <div className="flex items-center">
                     <div className="cursor-pointer">{item.title}</div>
                     <div className="flex gap-5 ml-[44px]">
                       {item.subItems.length > 0 &&
                         item.title != "Socials" &&
                         item.subItems.map((sub, index) => (
-                          <div className="cursor-pointer" key={index}>
+                          <div className="cursor-pointer text-base" key={index}>
                             {sub}
                           </div>
                         ))}
@@ -56,7 +56,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bottom-side border-t border-darkText mt-10 flex items-end justify-between">
+      <div className="bottom-side border-t border-darkText mt-7 flex items-end justify-between">
         <div className="w-full border-r border-darkText opacity-70 pt-[36px] pr-[55px]">
           <img
             src="./assets/images/logo/footer-logo.svg"

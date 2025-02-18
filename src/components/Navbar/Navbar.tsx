@@ -50,12 +50,12 @@ const BigMenu = () => {
           {menuItems.map((menu, index) => (
             <div
               key={index}
-              className="font-azeretMono text-[12px] above-1440:text-base text-darkText pl-[12px] "
+              className="font-azeretMono font-light text-[12px] above-1440:text-base text-darkText pl-[12px] "
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
             >
               <div className="" ref={menuItemRef}>
-                <div className="cursor-pointer tracking-[1px] leading-[13px]">
+                <div className="cursor-pointer tracking-[0.5px] leading-[12.8px]">
                   {menu.title}
                 </div>
                 <div
@@ -154,7 +154,7 @@ const SmallMenu = () => {
                   {menu.subItems.map((sub, subIndex) => (
                     <div
                       key={subIndex}
-                      className="cursor-pointer text-[12px] font-normal font-azeretMono "
+                      className="cursor-pointer text-[12px] font-light font-azeretMono "
                     >
                       {sub}
                     </div>
@@ -171,7 +171,7 @@ const SmallMenu = () => {
 
 const Navbar = () => {
   return (
-    <div className="flex border-b relative border-darkText above-1440:pb-[380px] pb-[150px]">
+    <div className="flex border-b  border-darkText  above-1440:pb-[355px] pb-[150px]">
       <div className="left-side w-full">
         <div className="header above-1440:mb-10 mb-[26px]">
           <img src="/assets/images/logo/muonLogo.svg" alt="" />
@@ -181,11 +181,11 @@ const Navbar = () => {
 
         <SmallMenu />
 
-        <div className=" w-full relative set-zIndex mb-[50px]">
+        <div className=" w-full relative set-zIndex mb-[54px]">
           <div className="text-[#EDEDED] text-2xl sm:text-[44px] above-1440:text-[58px] above-1440:leading-[70px] leading-5 sm:leading-[50px] font-dosis font-normal">
             General-Purpose, <br /> Request-Based Validation Layer
           </div>
-          <div className="text-[24px] above-1440:text-[32px] above-1440:leading-[42px] text-white leading-5 mt-5 font-dmSans  opacity-60">
+          <div className="text-[24px] above-1440:text-[32px] above-1440:leading-[42px] text-white leading-5 mt-[22px] font-dmSans  opacity-60">
             Powering the Intent-Centric Economy of the Future
           </div>
         </div>
@@ -208,7 +208,7 @@ const Navbar = () => {
       </div>
       <img
         src="./assets/animation/muonGif.webp"
-        className="w-full absolute muon-gif top-[30px] -right-24 sm:-top-[40px] sm:-right-36 custom-1024:-top-20 custom-1024:-right-[300px] z-0 above-1024:-right-[400px]  above-1024:-top-9"
+        className="w-full absolute muon-gif top-[30px] -right-24 sm:-top-[40px] sm:-right-36 custom-1024:-top-20 custom-1024:-right-[300px] z-0 above-1024:-right-[400px]  above-1024:-top-16"
         alt=""
       />
     </div>

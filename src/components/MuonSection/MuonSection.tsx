@@ -9,12 +9,12 @@ const MuonSection = () => {
         {/* <div className="section-title-text">Lorem ipsum Lorem</div> */}
       </div>
 
-      <div className="video-container w-full flex items-center justify-center mt-[105px]">
+      <div className="video-container w-full flex items-center justify-center mt-[127px]">
         <div className="video-box border border-darkText h-[477px] w-full max-w-[940px] above-1440:max-w-[1256px] above-1440:h-[633px] relative">
           <div className="absolute bottom-[13px] right-[13px] w-full">
             <img
-              src="./assets/images/button/pluse.svg"
-              className="absolute right-2 bottom-2"
+              src="./assets/images/button/pluse-1.svg"
+              className="absolute right-[25px] bottom-[29px]"
             />
           </div>
         </div>

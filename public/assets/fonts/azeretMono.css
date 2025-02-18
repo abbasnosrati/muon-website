@@ -9,6 +9,14 @@
 @font-face {
   font-family: "AzeretMono";
   font-style: normal;
+  font-weight: 300;
+  src: url("AzeretMono/AzeretMono-Light.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AzeretMono";
+  font-style: normal;
   font-weight: 500;
   src: url("AzeretMono/AzeretMono-Medium.ttf") format("truetype");
   font-display: swap;

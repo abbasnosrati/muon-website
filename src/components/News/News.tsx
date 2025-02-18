@@ -25,7 +25,7 @@ const News = () => {
     },
   ];
   return (
-    <div className="pb-[100px] border-b border-b-darkText font-azeretMono">
+    <div className="pb-[65px] border-b border-b-darkText font-azeretMono">
       <BlackButton btnText="05 // News" />
       <div className="flex flex-col lg:flex-row news-container w-full justify-between custom-1024:gap-10 above-1024:gap-[158px] above-1024::pr-[80px]">
         <div className="left-side left-scroll w-full sm:min-w-[364px] sm:max-w-[364px] above-1440:max-w-[484px] mt-3 flex flex-col gap-6 above-1440:gap-[45px] max-h-[385px] above-1440:max-h-[520px]  overflow-y-auto overflow-hidden [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-orangePrimary [&::-webkit-scrollbar-track]:bg-gray-300">
@@ -33,7 +33,7 @@ const News = () => {
             <div
               onClick={() => setSelectedNews(index)}
               key={index}
-              className={`border ml-2 cursor-pointer  news-box border-darkText min-h-[112px] above-1440:min-h-[143px] p-[10px] text-darkTextOpacity ${
+              className={`border ml-2 cursor-pointer news-box border-darkText min-h-[112px] above-1440:min-h-[143px] p-[10px] text-darkTextOpacity ${
                 selectedNews == index && "text-whiteTextSecond"
               } text-sm above-1440:text-[18px] leading-4 flex flex-col gap-5`}
             >
@@ -71,7 +71,7 @@ const News = () => {
               </div>
             </div>
           ))}
-          <div className="flex items-end w-full font-azeretMono justify-end text-sm text-darkTextOpacity above-1440:text-whiteTextSecond above-1440:underline opacity-70  h-full above-1024:mr-24 above-1440:mr-48 ">
+          <div className="flex items-end w-full font-azeretMono justify-end text-sm text-darkTextOpacity above-1440:text-whiteTextSecond above-1440:underline opacity-70 above-1440:text-[18px] h-full above-1024:mr-24 above-1440:mr-48 ">
             <div className="flex items-center gap-2 cursor-pointer">
               View More
               <svg

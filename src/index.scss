@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .btn {
-  @apply border border-white font-azeretMono text-sm above-1440:text-base above-1440:leading-5 leading-4 text-white max-w-[224px] above-1440:max-w-[300px] w-full flex h-[39px] above-1440:h-[47px] items-center justify-around above-1440:justify-between above-1440:px-4 mt-6 cursor-pointer;
+  @apply border border-white font-azeretMono text-sm above-1440:text-base above-1440:leading-5 leading-4 text-white max-w-[224px] above-1440:max-w-[300px] w-full flex h-[39px] above-1440:h-[47px] items-center justify-around above-1440:justify-between above-1440:px-[21px] mt-6 cursor-pointer;
 }
 
 body {
@@ -56,7 +56,7 @@ body {
 }
 
 .section-title-text {
-  @apply text-sm above-1440:text-[20px] font-normal leading-[18px] above-1440:leading-[28px] text-whiteText max-w-[380px] above-1440:max-w-[504px] mt-7 font-azeretMono;
+  @apply text-sm above-1440:text-[20px] font-light leading-[18px] above-1440:leading-[28px] text-whiteText max-w-[380px] above-1440:max-w-[504px] mt-7 font-azeretMono;
 }
 
 .collapse-title {
@@ -64,7 +64,7 @@ body {
 }
 
 .collapse-title p {
-  @apply border border-darkTextOpacity h-full flex items-center px-7 opacity-70;
+  @apply border border-darkTextOpacity h-full flex items-center px-[24px] opacity-70;
 }
 
 .collapse-title-3 {
@@ -103,4 +103,12 @@ body {
 
 .feature-items-description {
   @apply pt-[10px] lg:pt-[40px] text-sm lg:text-base above-1440:text-[20px] font-normal w-full max-w-[541px] opacity-75 text-whiteTextSecond;
+}
+
+.other-images {
+  @apply relative h-[37px] above-1440:h-[45px];
+}
+
+.zelullar_img {
+  @apply relative h-[25px] above-1440:h-[30px];
 }
