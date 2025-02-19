@@ -3,7 +3,7 @@ import MoreButton from "../common/Buttons/MoreButton";
 
 const MuonSection = () => {
   return (
-    <div className="font-azeretMono border-b border-darkText pb-[150px]">
+    <div className="font-azeretMono border-b border-darkText pb-[150px] below-1024:hidden">
       <div>
         <BlackButton btnText={"03 // Muon"} />
         {/* <div className="section-title-text">Lorem ipsum Lorem</div> */}

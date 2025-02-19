@@ -45,7 +45,9 @@ const MuonStructure = () => {
   return (
     <div
       className={`select-none border-b border-b-darkText text-whiteTextSecond ${
-        selectedItem !== 0 ? "padding-between-section" : "pb-[100px]"
+        selectedItem !== 0
+          ? "padding-between-section"
+          : "pb-[100px] below-1024:pb-[50px]"
       }`}
     >
       <div>
@@ -53,8 +55,8 @@ const MuonStructure = () => {
         <div className="section-title-text"></div>
       </div>
 
-      <div className="flex justify-between">
-        <div className="right-side flex above-1440:gap-3 w-full max-w-[400px] above-1440:max-w-[500px]">
+      <div className="flex below-1024:flex-col justify-between">
+        <div className="right-side flex  above-1440:gap-3 w-full below-1024:w-full max-w-[400px] above-1440:max-w-[500px]">
           <div>
             {structureItems.map((item, index) => (
               <div
@@ -63,18 +65,18 @@ const MuonStructure = () => {
               >
                 <img
                   src={item.titleImgSrc}
-                  className="w-[80%] above-1440:w-full"
+                  className="w-[80%] below-1024:w-[60%] above-1440:w-full"
                 />
               </div>
             ))}
           </div>
-          <div className="structure-titles -ml-8 above-1440:ml-0 font-azeretMono text-sm above-1440:text-[18px] 1024-1279:text-[12px] font-light leading-[10px] flex flex-col gap-[14px] above-1440:gap-6 mt-[3px]">
+          <div className="structure-titles below-1024:text-[12px] below-1024:-ml-12 -ml-8 above-1440:ml-0 font-azeretMono text-sm above-1440:text-[18px] 1024-1279:text-[12px] font-light leading-[10px] flex flex-col gap-[14px] above-1440:gap-6 mt-[3px]">
             {structureItems.map((item, index) => (
               <div
                 key={index}
                 className={`${
                   index === selectedItem ? "underline" : "text-darkText"
-                } cursor-pointer`}
+                } cursor-pointer text-nowrap`}
                 onClick={() => setSelectedItem(index)}
               >
                 {item.title}
@@ -83,13 +85,13 @@ const MuonStructure = () => {
           </div>
         </div>
 
-        <div className="flex items-end above-1440:max-w-[620px] max-w-[380px] above-1280:max-w-[500px] 1024-1279:max-w-[250px]">
+        <div className="flex items-end above-1440:max-w-[620px] below-1024:w-full above-1280:max-w-[500px] 1024-1279:max-w-[250px] below-1024:my-5 ">
           {structureItems.map((item, index) => (
             <div
               key={index}
               className={`${
                 selectedItem === index
-                  ? "flex text-[12px] 1024-1279:text-[10px] above-1280:text-base !font-light !leading-[28px] above-1440:text-[20px] font-azeretMono mr-5"
+                  ? "flex text-[12px] 1024-1279:text-[10px] above-1280:text-base !font-light below-1024:!leading-5 !leading-[28px] above-1440:text-[20px] font-azeretMono mr-5"
                   : "hidden"
               }  ${item.description.length == 0 && "hidden"}`}
             >
@@ -107,7 +109,7 @@ const MuonStructure = () => {
               <img
                 src={item.descriptionImgSrc}
                 alt=""
-                className="max-w-[100%] above-1440:w-full"
+                className="max-w-[100%] above-1440:w-full below-1024:max-w-[60%]"
               />
             </div>
           ))}

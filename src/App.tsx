@@ -19,7 +19,7 @@ function App() {
           <MuonSection />
           <Products />
           <News />
-          <div className="mt-[120px] above-1440:mt-[170px]">
+          <div className="mt-[120px] above-1440:mt-[170px] below-1024:mt-10">
             <MoveTopButton />
           </div>
           <Footer />
