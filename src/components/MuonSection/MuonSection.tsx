@@ -11,7 +11,7 @@ const MuonSection = () => {
 
       <div className="video-container w-full flex items-center justify-center mt-[127px]">
         <div className="video-box border border-darkText h-[477px] w-full max-w-[940px] above-1440:max-w-[1256px] above-1440:h-[633px] relative">
-          <div className="absolute bottom-[13px] right-[13px] w-full">
+          <div className="absolute bottom-[0px] right-[4px] above-1440:bottom-[13px] above-1440:right-[13px] w-full">
             <img
               src="./assets/images/button/pluse-1.svg"
               className="absolute right-[25px] bottom-[29px]"
@@ -21,7 +21,7 @@ const MuonSection = () => {
       </div>
 
       <div className=" w-full flex justify-center items-center mt-4 above-1440:mt-[23px]">
-        <div className="w-full max-w-[940px] above-1440:max-w-[1256px] flex items-end justify-end mr-5 above-1440:mr-[20px]">
+        <div className="w-full max-w-[940px] above-1440:max-w-[1256px] flex items-end justify-end mr-5 1024-1279:mr-3 above-1440:mr-[20px]">
           <div>
             <MoreButton btnText="More about Muon" />
             <div className="mt-2 above-1440:mt-[23px]">

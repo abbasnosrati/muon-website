@@ -67,23 +67,23 @@ const Features = () => {
         </div>
       </div>
 
-      <div className="flex w-full justify-between gap-[300px] 1024-1279:gap-[130px] mt-[75px] custom-1440:mt-[150px] above-1440:mt-[75px] custom-1280:mt-[150px] relative">
+      <div className="flex  flex-col lg:flex-row w-full justify-between custom-1920:gap-[200px] custom-1440:gap-[152px] 1024-1439:gap-[110px] 1024-1439:mt-[100px]  mt-[75px] custom-1440:mt-[75px] relative">
         <div className="border-t border-white w-full relative expand-animation-medium">
-          <div className="custom-1280:min-h-[120px] custom-1280:min-w-[120px] min-h-[60px] min-w-[60px] absolute  1024-1279:-top-[30px]  1024-1279:-right-[100px] -top-[60px] -right-[210px] bg-circle-gradient  rounded-full flex items-center justify-center mix-blend-overlay circle-animation">
+          <div className="right-0 -top-[38px] custom-1920:min-h-[120px] custom-1920:min-w-[119px] custom-1440:min-h-[91px] custom-1440:min-w-[91px] absolute custom-1440:-top-[50px] custom-1440:-right-[120px] custom-1920:-top-[60px] custom-1920:-right-[160px] bg-circle-gradient  rounded-full flex items-center justify-center mix-blend-overlay circle-animation">
             <div className="h-[10px] w-[10px] bg-orangePrimary z-100 rounded-full "></div>
             <img
               src="./assets/images/features/mediumShadow.svg"
               alt=""
-              className="z-1000 opacity-20 absolute custom-1280:-left-[40px] min-w-[100px] custom-1280:min-w-[200px] h-[200px]"
+              className="z-1000 opacity-20 absolute custom-1440:-left-[30px] min-w-[100px] custom-1920:min-w-[196px] custom-1440:min-w-[153px] h-[200px]"
             />
           </div>
-          <div className="text-whiteTextSecond above-1440:pt-[30px] opacity-70 above-1440:opacity-100 pt-[10px] above-1280:pt-[20px] text-[10px]  1024-1279:text-[12px] custom-1440:text-base above-1440:text-[20px] leading-[18px] font-azeretMono font-light">
+          <div className="text-whiteTextSecond custom-1920:pt-[30px] opacity-70 custom-1920:opacity-100 pt-[10px] above-1280:pt-[20px] text-[14px]  1024-1439:text-[12px] custom-1440:text-base custom-1920:text-[20px] leading-[18px] font-azeretMono font-light">
             <div className="above-1280:mb-2 leading-[18px]">02</div>
             <div className="leading-[18px]">Lorem Ipsum</div>
           </div>
         </div>
-        <div className="border-t border-white w-full min-w-[622px] above-1440:min-w-[853px] 1024-1279:min-w-[400px]">
-          <div className="max-w-[541px] text-[10px]  1024-1279:text-[12px] custom-1440:text-base above-1440:text-[20px] font-light mt-[10px] above-1280:mt-[26px] 1024-1279:mt-[10px] text-whiteTextSecond !leading-[28px] ml-14  1024-1279:ml-2">
+        <div className="lg:border-t lg:border-whiteTextSecond w-full min-w-[622px] custom-1440:min-w-[600px] 1024-1279:min-w-[400px] custom-1920:min-w-[880px]">
+          <div className="lg:max-w-[541px] text-[12px] 1024-1439:text-[12px] custom-1440:text-base custom-1920:text-[20px] !leading-[28px] font-light mt-[10px] above-1280:mt-[26px] 1024-1439:mt-[10px] text-whiteTextSecond 1024-1439:ml-14 custom-1440:ml-14 custom-1920:ml-14">
             Muon network enjoys a multi-layered security model made up of a TSS
             network, a Shield Server, and an Eigen Layer node. Based on your
             needs, you can choose one or a combination.
@@ -91,24 +91,24 @@ const Features = () => {
         </div>
       </div>
 
-      <div className="flex w-full justify-between gap-[310px] 1024-1279:gap-[135px] 1024-1279:mt-[100px] mt-[150px] relative">
-        <div className="border-t border-white w-full relative expand-animation">
-          <div className="min-h-[75px] min-w-[75px] custom-1280:min-h-[150px] custom-1280:min-w-[150px] bg-circle-gradient absolute  1024-1279:-top-[38px]  1024-1279:-right-[100px] -top-[75px] -right-[250px] rounded-full flex items-center justify-center mix-blend-overlay  circle-animation">
-            <div className="h-[10px] w-[10px] bg-orangePrimary z-100 rounded-full "></div>
+      <div className="flex flex-col lg:flex-row w-full justify-between custom-1440:gap-[222px] custom-1920:gap-[295px] 1024-1439:gap-[110px] 1024-1439:mt-[100px] mt-[150px] relative">
+        <div className="border-t border-whiteTextSecond w-full relative expand-animation">
+          <div className="right-0 -top-[38px] min-h-[75px] min-w-[75px] custom-1920:min-h-[156px] custom-1920:min-w-[158px] custom-1440:min-h-[117px] custom-1440:min-w-[118px] bg-circle-gradient absolute 1024-1439:-top-[38px] 1024-1439:-right-[94px] custom-1920:-top-[75px] custom-1920:-right-[228px] custom-1440:-top-[58px] custom-1440:-right-[172px] rounded-full flex items-center justify-center mix-blend-overlay circle-animation">
+            <div className="h-[10px] w-[10px] bg-orangePrimary z-100 rounded-full"></div>
             <img
               src="./assets/images/features/largeShadow.svg"
               alt=""
-              className="z-1000 opacity-20 absolute custom-1280:-left-[50px] custom-1280:-top-5 -top-20 -left-6  min-w-[75px] above:min-w-[170px] h-[280px]"
+              className="z-1000 opacity-20 absolute custom-1920:-left-[64px] custom-1920:-top-[72px] 1024-1439:-left-[14px] 1024-1439:-top-[110px] custom-1440:-left-[50px] custom-1440:-top-[89px] -top-26 -left-4  min-w-[105px] custom-1920:min-w-[290px] h-[296px] custom-1440:min-h-[219px] custom-1440:min-w-[219px]"
             />
           </div>
-          <div className="text-whiteTextSecond above-1440:pt-[30px] opacity-70 above-1440:opacity-100 pt-[10px] above-1280:pt-[20px] text-[10px]  1024-1279:text-[12px] custom-1440:text-base above-1440:text-[20px] leading-[18px] font-azeretMono font-normal">
+          <div className="text-whiteTextSecond custom-1920:pt-[30px] opacity-70 custom-1920:opacity-100 pt-[10px] above-1280:pt-[20px] text-[14px]  1024-1439:text-[12px] custom-1440:text-base custom-1920:text-[20px] leading-[18px] font-azeretMono font-light">
             <div className="above-1280:mb-2 leading-[18px]">03</div>
             <div className="leading-[18px]">Lorem Ipsum</div>
           </div>
         </div>
 
-        <div className="border-t border-white w-full above-1440:min-w-[1007px] min-w-[600px] 1024-1279:min-w-[580px]">
-          <div className="max-w-[541px] text-[10px] 1024-1279:text-[12px] custom-1440:text-base above-1440:text-[20px] !leading-[28px] font-light mt-[10px] above-1280:mt-[26px] 1024-1279:mt-[10px] text-whiteTextSecond  ml-14  1024-1279:ml-2">
+        <div className="lg:border-t lg:border-whiteTextSecond w-full custom-1920:min-w-[1007px] lg:min-w-[600px] 1024-1439:min-w-[685px] custom-1440:min-w-[720px]">
+          <div className="lg:max-w-[541px] text-[12px] 1024-1439:text-[12px] custom-1440:text-base custom-1920:text-[20px] !leading-[28px] font-light mt-[10px] above-1280:mt-[26px] 1024-1439:mt-[10px] text-whiteTextSecond 1024-1439:ml-14 custom-1440:ml-14 custom-1920:ml-14">
             Muon network enjoys a multi-layered security model made up of a TSS
             network, a Shield Server, and an Eigen Layer node. Based on your
             needs, you can choose one or a combination.
