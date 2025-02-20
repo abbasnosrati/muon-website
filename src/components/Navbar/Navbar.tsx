@@ -191,7 +191,7 @@ const Navbar = () => {
         </div>
 
         <div className="group-hover set-zIndex btn relative hover:text-darkText transition-all duration-300 hover-div ease-in-out">
-          <span className="z-50 opacity-90 transition-all duration-300 ease-in-out hover:text-white group-hover:delay-500">
+          <span className="z-50 opacity-90 transition-all duration-300 ease-in-out  group-hover:delay-500">
             Build on Muon
           </span>
           <svg
