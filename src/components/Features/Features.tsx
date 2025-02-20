@@ -92,7 +92,7 @@ const Features = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row w-full justify-between custom-1440:gap-[222px] custom-1920:gap-[295px] 1024-1439:gap-[110px] 1024-1439:mt-[60px] custom-1920:mt-[150px] relative mt-[80px]">
-        <div className="border-t border-whiteTextSecond w-full relative expand-animation">
+        <div className="border-t border-whiteTextSecond w-full relative expand-animation-medium">
           <div className="right-0 -top-[38px] min-h-[75px] min-w-[75px] custom-1920:min-h-[156px] custom-1920:min-w-[158px] custom-1440:min-h-[117px] custom-1440:min-w-[118px] bg-circle-gradient absolute 1024-1439:-top-[38px] 1024-1439:-right-[94px] custom-1920:-top-[75px] custom-1920:-right-[228px] custom-1440:-top-[58px] custom-1440:-right-[172px] rounded-full flex items-center justify-center mix-blend-overlay circle-animation">
             <div className="h-[10px] w-[10px] bg-orangePrimary z-100 rounded-full"></div>
             <img

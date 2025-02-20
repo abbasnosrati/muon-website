@@ -40,6 +40,7 @@ export default {
         "1024-1279": { min: "1024px", max: "1279px" },
         "1024-1439": { min: "1024px", max: "1439px" },
         "below-1024": { max: "1023px" },
+        "below-430": { max: "430px" },
       },
     },
   },

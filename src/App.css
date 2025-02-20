@@ -1,7 +1,5 @@
 body {
   background-image: url("./public/assets/images/bg/1.png");
-  /* background-size: cover; */
-  /* background-position: center; */
   position: relative;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -9,15 +7,6 @@ body {
   font-weight: 350;
   background-color: #8e8888;
 }
-
-/* .content {
-  background-image: url("./assets/images/bg/11.svg");
-  background-repeat: repeat;
-  background-position: left top;
-
-  background-color: #8e8888;
-
-} */
 
 .zelullar_img .img-box {
   margin-top: -12px;
@@ -80,6 +69,32 @@ body {
 
 .scroller[data-animated="true"] .scroller__inner:hover {
   animation-play-state: paused;
+}
+
+@media (max-width: 1024px) {
+  .scroller[data-animated="true"] .scroller__inner {
+    animation-duration: 20s;
+  }
+}
+
+@media (max-width: 768px) {
+  .scroller[data-animated="true"] .scroller__inner {
+    animation-duration: 10s;
+  }
+
+  .img-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-bottom: 2px solid #24212413;
+    border-right: 2px solid #2421241c;
+    padding-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .img-box {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @keyframes scroll {

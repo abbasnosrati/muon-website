@@ -17,30 +17,114 @@ const Partners = () => {
   return (
     <div className="scroller absolute left-0">
       <div className="tag_list scroller__inner">
-        <div className="img-container zelullar_img ">
+        <div className="img-container zelullar_img below-430:hidden">
           <div className="img-box min-w-[130px] h-[20px] ">
             <img
               src="./assets/images/partners/zellular logo.svg"
-              className="w-[110px] above-1440:w-[270px]"
+              className="w-[110px] below-430:w-[100px] above-1440:w-[270px] "
               alt=""
+            />
+          </div>
+        </div>
+        <div className="img-container other-images below-430:hidden">
+          <div className="img-box min-w-[130px] ml-5 min-h-[20px]">
+            <img
+              src="./assets/images/partners/thena.svg"
+              alt=""
+              className="w-[110px] below-430:w-[100px] above-1440:w-[270px] "
+            />
+          </div>
+        </div>
+        <div className="img-container other-images below-430:hidden">
+          <div className="img-box min-w-[130px] min-h-[20px]">
+            <img
+              src="./assets/images/partners/symmio.svg"
+              className="w-[110px] below-430:w-[100px] above-1440:w-[270px] "
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="img-container zelullar_img below-430:hidden">
+          <div className="img-box min-w-[130px] min-h-[20px]">
+            <img
+              src="./assets/images/partners/zellular logo.svg"
+              alt=""
+              className="w-[110px] below-430:w-[100px] above-1440:w-[270px] "
+            />
+          </div>
+        </div>
+        <div className="img-container other-images below-430:hidden">
+          <div className="img-box min-w-[130px] ml-5 min-h-[20px]">
+            <img
+              src="./assets/images/partners/thena.svg"
+              alt=""
+              className="w-[110px] below-430:w-[100px] above-1440:w-[270px] "
+            />
+          </div>
+        </div>
+        <div className="img-container other-images below-430:hidden">
+          <div className="img-box min-w-[130px] min-h-[20px]">
+            <img
+              src="./assets/images/partners/symmio.svg"
+              alt=""
+              className="w-[110px] below-430:w-[100px] above-1440:w-[270px] "
+            />
+          </div>
+        </div>
+
+        <div className="img-container zelullar_img below-430:hidden">
+          <div className="img-box min-w-[130px] min-h-[20px]">
+            <img
+              src="./assets/images/partners/zellular logo.svg"
+              alt=""
+              className="w-[110px] below-430:w-[100px] above-1440:w-[270px] "
+            />
+          </div>
+        </div>
+        <div className="img-container other-images below-430:hidden">
+          <div className="img-box min-w-[130px] ml-5 min-h-[20px]">
+            <img
+              src="./assets/images/partners/thena.svg"
+              alt=""
+              className="w-[110px] below-430:w-[100px] above-1440:w-[270px] "
+            />
+          </div>
+        </div>
+        <div className="img-container other-images below-430:hidden">
+          <div className="img-box min-w-[130px] min-h-[20px]">
+            <img
+              src="./assets/images/partners/symmio.svg"
+              alt=""
+              className="w-[110px] below-430:w-[100px] above-1440:w-[270px] "
+            />
+          </div>
+        </div>
+
+        <div className="img-container zelullar_img below-430:hidden">
+          <div className="img-box min-w-[130px] min-h-[20px]">
+            <img
+              src="./assets/images/partners/zellular logo.svg"
+              alt=""
+              className="w-[110px] below-430:w-[100px] above-1440:w-[270px] "
+            />
+          </div>
+        </div>
+        <div className="img-container other-images below-430:hidden">
+          <div className="img-box min-w-[130px] ml-5 min-h-[20px]">
+            <img
+              src="./assets/images/partners/thena.svg"
+              alt=""
+              className="w-[110px] below-430:w-[100px] above-1440:w-[270px] "
             />
           </div>
         </div>
         <div className="img-container other-images ">
-          <div className="img-box min-w-[130px] ml-5 min-h-[20px]">
-            <img
-              src="./assets/images/partners/thena.svg"
-              alt=""
-              className="w-[110px] above-1440:w-[270px]"
-            />
-          </div>
-        </div>
-        <div className="img-container other-images">
           <div className="img-box min-w-[130px] min-h-[20px]">
             <img
               src="./assets/images/partners/symmio.svg"
-              className="w-[110px] above-1440:w-[270px]"
               alt=""
+              className="w-[110px] below-430:w-[100px] above-1440:w-[270px] "
             />
           </div>
         </div>
@@ -50,7 +134,7 @@ const Partners = () => {
             <img
               src="./assets/images/partners/zellular logo.svg"
               alt=""
-              className="w-[110px] above-1440:w-[270px]"
+              className="w-[110px] below-430:w-[100px] above-1440:w-[270px] "
             />
           </div>
         </div>
@@ -59,26 +143,26 @@ const Partners = () => {
             <img
               src="./assets/images/partners/thena.svg"
               alt=""
-              className="w-[110px] above-1440:w-[270px]"
+              className="w-[110px] below-430:w-[100px] above-1440:w-[270px] "
             />
           </div>
         </div>
-        <div className="img-container other-images">
+        <div className="img-container other-images ">
           <div className="img-box min-w-[130px] min-h-[20px]">
             <img
               src="./assets/images/partners/symmio.svg"
               alt=""
-              className="w-[110px] above-1440:w-[270px]"
+              className="w-[110px] below-430:w-[100px] above-1440:w-[270px] "
             />
           </div>
         </div>
 
-        <div className="img-container zelullar_img ">
+        <div className="img-container zelullar_img">
           <div className="img-box min-w-[130px] min-h-[20px]">
             <img
               src="./assets/images/partners/zellular logo.svg"
               alt=""
-              className="w-[110px] above-1440:w-[270px]"
+              className="w-[110px] below-430:w-[100px] above-1440:w-[270px] "
             />
           </div>
         </div>
@@ -87,7 +171,7 @@ const Partners = () => {
             <img
               src="./assets/images/partners/thena.svg"
               alt=""
-              className="w-[110px] above-1440:w-[270px]"
+              className="w-[110px] below-430:w-[100px] above-1440:w-[270px] "
             />
           </div>
         </div>
@@ -96,101 +180,17 @@ const Partners = () => {
             <img
               src="./assets/images/partners/symmio.svg"
               alt=""
-              className="w-[110px] above-1440:w-[270px]"
+              className="w-[110px] below-430:w-[100px] above-1440:w-[270px] "
             />
           </div>
         </div>
 
-        <div className="img-container zelullar_img ">
+        <div className="img-container zelullar_img">
           <div className="img-box min-w-[130px] min-h-[20px]">
             <img
               src="./assets/images/partners/zellular logo.svg"
               alt=""
-              className="w-[110px] above-1440:w-[270px]"
-            />
-          </div>
-        </div>
-        <div className="img-container other-images">
-          <div className="img-box min-w-[130px] ml-5 min-h-[20px]">
-            <img
-              src="./assets/images/partners/thena.svg"
-              alt=""
-              className="w-[110px] above-1440:w-[270px]"
-            />
-          </div>
-        </div>
-        <div className="img-container other-images">
-          <div className="img-box min-w-[130px] min-h-[20px]">
-            <img
-              src="./assets/images/partners/symmio.svg"
-              alt=""
-              className="w-[110px] above-1440:w-[270px]"
-            />
-          </div>
-        </div>
-
-        <div className="img-container zelullar_img ">
-          <div className="img-box min-w-[130px] min-h-[20px]">
-            <img
-              src="./assets/images/partners/zellular logo.svg"
-              alt=""
-              className="w-[110px] above-1440:w-[270px]"
-            />
-          </div>
-        </div>
-        <div className="img-container other-images">
-          <div className="img-box min-w-[130px] ml-5 min-h-[20px]">
-            <img
-              src="./assets/images/partners/thena.svg"
-              alt=""
-              className="w-[110px] above-1440:w-[270px]"
-            />
-          </div>
-        </div>
-        <div className="img-container other-images">
-          <div className="img-box min-w-[130px] min-h-[20px]">
-            <img
-              src="./assets/images/partners/symmio.svg"
-              alt=""
-              className="w-[110px] above-1440:w-[270px]"
-            />
-          </div>
-        </div>
-
-        <div className="img-container zelullar_img ">
-          <div className="img-box min-w-[130px] min-h-[20px]">
-            <img
-              src="./assets/images/partners/zellular logo.svg"
-              alt=""
-              className="w-[110px] above-1440:w-[270px]"
-            />
-          </div>
-        </div>
-        <div className="img-container other-images">
-          <div className="img-box min-w-[130px] ml-5 min-h-[20px]">
-            <img
-              src="./assets/images/partners/thena.svg"
-              alt=""
-              className="w-[110px] above-1440:w-[270px]"
-            />
-          </div>
-        </div>
-        <div className="img-container other-images">
-          <div className="img-box min-w-[130px] min-h-[20px]">
-            <img
-              src="./assets/images/partners/symmio.svg"
-              alt=""
-              className="w-[110px] above-1440:w-[270px]"
-            />
-          </div>
-        </div>
-
-        <div className="img-container zelullar_img ">
-          <div className="img-box min-w-[130px] min-h-[20px]">
-            <img
-              src="./assets/images/partners/zellular logo.svg"
-              alt=""
-              className="w-[110px] above-1440:w-[270px]"
+              className="w-[110px] below-430:w-[100px] above-1440:w-[270px] "
             />
           </div>
         </div>
