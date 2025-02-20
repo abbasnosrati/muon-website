@@ -109,7 +109,9 @@ const MuonStructure = () => {
               <img
                 src={item.descriptionImgSrc}
                 alt=""
-                className="max-w-[100%] above-1440:w-full below-1024:max-w-[60%]"
+                className={`max-w-[100%] above-1440:w-full below-1024:max-w-[60%] ${
+                  selectedItem == 3 && "below-1024:max-w-[100%]"
+                }`}
               />
             </div>
           ))}
