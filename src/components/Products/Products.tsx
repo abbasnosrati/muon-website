@@ -22,7 +22,7 @@ const Products = () => {
           <div
             className={`collapse-content flex below-1024:flex-col items-center font-azeretMono text-darkTextOpacity relative px-[68px] below-1024:px-5 ${
               selectedItem === 0
-                ? "h-[243px] above-1440:h-[320px] below-1024:h-auto opacity-100"
+                ? "h-[243px] above-1440:h-[320px] below-1024:h-[510px] opacity-100"
                 : "h-0 opacity-0"
             }`}
           >
@@ -64,6 +64,7 @@ const Products = () => {
             </div>
           </div>
         </div>
+
         <div className="collapse-box-2">
           <div className="collapse-title" onClick={() => setSelectedItem(1)}>
             <p className={`${selectedItem == 1 ? "!border-b-0" : "!border-b"}`}>
@@ -78,6 +79,7 @@ const Products = () => {
             }`}
           ></div>
         </div>
+
         <div className="collapse-box-3">
           <div className="collapse-title" onClick={() => setSelectedItem(2)}>
             <p className="!border-t-0 !border-b-0">Metabridge</p>
@@ -90,6 +92,7 @@ const Products = () => {
             }`}
           ></div>
         </div>
+
         <div className="collapse-box-4">
           <div className="collapse-title" onClick={() => setSelectedItem(3)}>
             <p className="">LayerZero DVN</p>
@@ -102,6 +105,7 @@ const Products = () => {
             }`}
           ></div>
         </div>
+
         <div className="collapse-box-5 ">
           <div className=" collapse-title" onClick={() => setSelectedItem(4)}>
             <p className="!border-t-0">Price feed</p>
@@ -114,6 +118,7 @@ const Products = () => {
             }`}
           ></div>
         </div>
+
         <div className="collapse-box-6">
           <div
             className="collapse-title collapse-title-3 !border-t-0"
