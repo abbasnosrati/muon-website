@@ -44,13 +44,13 @@ const BigMenu = () => {
       <div className="above-1440:min-h-[340px] min-h-[270px] relative">
         <div className="flex flex-col gap-1 above-1440:gap-2 relative pl-1">
           <div
-            className="bg-white w-[1px] absolute bottom-0 top-0 opacity-50 left-[0px]"
+            className="bg-whiteTextSecond w-[1px] absolute bottom-0 top-0 opacity-50 left-[0px]"
             ref={elementRef}
           ></div>
           {menuItems.map((menu, index) => (
             <div
               key={index}
-              className="font-azeretMono font-light text-[12px] above-1440:text-base text-darkText pl-[12px] "
+              className="font-azeretMono font-light text-[12px] above-1440:text-base text-darkText pl-[12px]"
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
             >
@@ -59,7 +59,7 @@ const BigMenu = () => {
                   {menu.title}
                 </div>
                 <div
-                  className={`text-whiteTextSecond sub-menu-items h-0 flex flex-col mt-2 overflow-hidden hover:transition-all duration-500 `}
+                  className={`text-whiteTextSecond sub-menu-items h-0 flex flex-col mt-2 overflow-hidden hover:transition-all duration-500`}
                   style={{
                     height:
                       hoveredMenu === index && menu.subItems.length > 0
@@ -70,7 +70,7 @@ const BigMenu = () => {
                   {menu.subItems.map((sub, subIndex) => (
                     <div
                       key={subIndex}
-                      className="cursor-pointer text-[12px] above-1440:text-[16px] font-normal font-azeretMono "
+                      className="cursor-pointer text-[12px] above-1440:text-[16px] font-normal font-azeretMono"
                     >
                       {sub}
                     </div>
@@ -125,16 +125,16 @@ const SmallMenu = () => {
           }px`,
         }}
       ></div>
-      <div className="min-h-[240px] relative">
-        <div className="flex flex-col gap-1 relative pl-1">
+      <div className="min-h-[240px] below-430:min-h-[270px] relative">
+        <div className="flex flex-col gap-1 below-430:gap-3 relative pl-1">
           <div
-            className="bg-white w-[1px] absolute bottom-0 top-0 opacity-50 left-[0px]"
+            className="bg-whiteTextSecond w-[1px] absolute bottom-0 top-0 opacity-50 left-[0px]"
             ref={elementRef}
           ></div>
           {menuItems.map((menu, index) => (
             <div
               key={index}
-              className="font-azeretMono text-[12px]  text-darkText pl-[12px] "
+              className="font-azeretMono text-[12px] text-darkText pl-[12px] "
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
             >
@@ -178,14 +178,13 @@ const Navbar = () => {
         </div>
 
         <BigMenu />
-
         <SmallMenu />
 
         <div className=" w-full relative set-zIndex mb-[54px] below-1024:mb-[30px]">
-          <div className="text-[#EDEDED] below-1024:text-base text-2xl sm:text-[44px] above-1440:text-[58px] above-1440:leading-[70px] leading-5 sm:leading-[50px] font-dosis font-normal">
+          <div className="text-whiteTextSecond below-1024:text-base text-2xl sm:text-[44px] above-1440:text-[58px] above-1440:leading-[70px] leading-5 sm:leading-[50px] font-dosis font-normal">
             General-Purpose, <br /> Request-Based Validation Layer
           </div>
-          <div className="text-[24px] below-1024:text-sm above-1440:text-[32px] above-1440:leading-[42px] text-white leading-5 mt-[22px] font-dmSans  opacity-60">
+          <div className="text-[24px] below-1024:text-sm above-1440:text-[32px] above-1440:leading-[42px] text-whiteTextSecond leading-5 mt-[22px] font-dmSans  opacity-60">
             Powering the Intent-Centric Economy of the Future
           </div>
         </div>
@@ -208,7 +207,7 @@ const Navbar = () => {
       </div>
       <img
         src="./assets/animation/muonGif.webp"
-        className="w-full absolute muon-gif top-[30px] -right-24 sm:-top-[40px] sm:-right-36 custom-1024:-top-20 custom-1024:-right-[300px] z-0 above-1024:-right-[400px]  above-1024:-top-16"
+        className="w-full absolute muon-gif below-430:top-[48px] top-[30px] -right-24 sm:-top-[40px] sm:-right-36 custom-1024:-top-20 custom-1024:-right-[300px] z-0 above-1024:-right-[400px]  above-1024:-top-16"
         alt=""
       />
     </div>
