@@ -1,0 +1,19 @@
+<svg width="450" height="120" viewBox="0 0 450 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="221.57" cy="30.4969" r="28.9969" stroke="#EDEDED"/>
+<circle cx="221.57" cy="89.4911" r="28.9969" stroke="#EDEDED"/>
+<circle cx="251.067" cy="59.9944" r="29.6829" stroke="#EDEDED"/>
+<circle cx="192.759" cy="59.3085" r="28.9969" stroke="#EDEDED"/>
+<path d="M281.25 5.11523V118.987H166.006" stroke="#EDEDED"/>
+<path d="M163.262 114.872V1.00012H277.134" stroke="#EDEDED"/>
+<circle cx="221.57" cy="59.3078" r="3.42988" fill="#FE3402"/>
+<line x1="220.884" y1="59.4941" x2="330.64" y2="59.4941" stroke="#FE3402"/>
+<line y1="-0.5" x2="109.756" y2="-0.5" transform="matrix(-1 0 0 1 229.116 59.9941)" stroke="#FE3402"/>
+<line x1="220.884" y1="59.4941" x2="330.64" y2="59.4941" stroke="#FE3402"/>
+<line y1="-0.5" x2="109.756" y2="-0.5" transform="matrix(-1 0 0 1 229.116 59.9941)" stroke="#FE3402"/>
+<line x1="382.774" y1="59.4941" x2="397.866" y2="59.4941" stroke="#FE3402"/>
+<line y1="-0.5" x2="15.0915" y2="-0.5" transform="matrix(-1 8.74227e-08 8.74227e-08 1 67.2256 59.9941)" stroke="#FE3402"/>
+<rect x="331.14" y="34.4268" width="51.1341" height="49.7622" stroke="#EDEDED"/>
+<rect x="-0.5" y="0.5" width="51.1341" height="49.7622" transform="matrix(-1 0 0 1 118.36 33.9268)" stroke="#EDEDED"/>
+<rect x="398.366" y="34.4268" width="51.1341" height="49.7622" stroke="#EDEDED"/>
+<rect x="-0.5" y="0.5" width="51.1341" height="49.7622" transform="matrix(-1 0 0 1 51.1343 33.9268)" stroke="#EDEDED"/>
+</svg>

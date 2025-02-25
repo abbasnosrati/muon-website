@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { menuItems } from "../../constants/constants";
+import { menuItems, scrollToSection } from "../../constants/constants";
 
 const BigMenu = () => {
   const [hoveredMenu, setHoveredMenu] = useState(null);
@@ -55,7 +55,14 @@ const BigMenu = () => {
               onMouseLeave={handleMouseLeave}
             >
               <div className="" ref={menuItemRef}>
-                <div className="cursor-pointer tracking-[0.5px] leading-[12.8px]">
+                <div
+                  className="cursor-pointer tracking-[0.5px] leading-[12.8px] "
+                  onClick={
+                    menu.src.length < 2
+                      ? () => scrollToSection(menu.src)
+                      : () => window.open(menu.src, "_blank")
+                  }
+                >
                   {menu.title}
                 </div>
                 <div
@@ -71,8 +78,9 @@ const BigMenu = () => {
                     <div
                       key={subIndex}
                       className="cursor-pointer text-[12px] above-1440:text-[16px] font-normal font-azeretMono"
+                      onClick={() => window.open(sub.src, "_blank")}
                     >
-                      {sub}
+                      {sub.title}
                     </div>
                   ))}
                 </div>
@@ -156,7 +164,7 @@ const SmallMenu = () => {
                       key={subIndex}
                       className="cursor-pointer text-[12px] font-light font-azeretMono "
                     >
-                      {sub}
+                      {sub.title}
                     </div>
                   ))}
                 </div>
@@ -189,7 +197,15 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="group-hover set-zIndex btn relative hover:text-darkText transition-all duration-300 hover-div ease-in-out">
+        <div
+          onClick={() =>
+            window.open(
+              "https://github.com/muon-protocol/muon-node-js/blob/testnet/src/built-in-apps/app-deployment.js",
+              "_blank"
+            )
+          }
+          className="group-hover set-zIndex btn relative hover:text-darkText transition-all duration-300 hover-div ease-in-out"
+        >
           <span className="z-50 opacity-90 transition-all duration-300 ease-in-out  group-hover:delay-500">
             Build on Muon
           </span>

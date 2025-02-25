@@ -44,6 +44,7 @@ const MuonStructure = () => {
   const [selectedItem, setSelectedItem] = useState<number>(0);
   return (
     <div
+      id="2"
       className={`select-none border-b border-b-darkText text-whiteTextSecond ${
         selectedItem !== 3
           ? "padding-between-section"

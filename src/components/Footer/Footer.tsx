@@ -1,4 +1,4 @@
-import { menuItems } from "../../constants/constants";
+import { menuItems, scrollToSection } from "../../constants/constants";
 
 const Footer = () => {
   return (
@@ -17,7 +17,16 @@ const Footer = () => {
               <div className="flex" key={index}>
                 {item.title !== "Socials" && (
                   <div className="flex items-center">
-                    <div className="cursor-pointer">{item.title}</div>
+                    <div
+                      className="cursor-pointer"
+                      onClick={
+                        item.src.length < 2
+                          ? () => scrollToSection(item.src)
+                          : () => window.open(item.src, "_blank")
+                      }
+                    >
+                      {item.title}
+                    </div>
                     <div className="flex gap-5 below-1024:gap-3 ml-[44px] below-1024:ml-[25px]">
                       {item.subItems.length > 0 &&
                         item.title != "Socials" &&
@@ -25,8 +34,9 @@ const Footer = () => {
                           <div
                             className="cursor-pointer text-base below-1024:text-[12px]"
                             key={index}
+                            onClick={() => window.open(sub.src, "_blank")}
                           >
-                            {sub}
+                            {sub.title}
                           </div>
                         ))}
                     </div>
@@ -37,25 +47,85 @@ const Footer = () => {
           </div>
           <div className="hidden lg:flex flex-col items-end ">
             <div className="flex w-full justify-end">
-              <div className="social-media">X</div>
+              <div
+                onClick={() => window.open("https://x.com/muon_net", "_blank")}
+                className="social-media"
+              >
+                X
+              </div>
             </div>
             <div className="flex gap-[6px] above-1440:gap-[8px] my-[6px] above-1440:my-[13px] justify-end">
-              <div className="social-media">Github</div>
-              <div className="social-media">Discord</div>
-              <div className="social-media">Medium</div>
+              <div
+                onClick={() =>
+                  window.open("https://Github.com/muon-protocol", "_blank")
+                }
+                className="social-media"
+              >
+                Github
+              </div>
+              <div
+                onClick={() =>
+                  window.open("https://discord.gg/muonnetwork", "_blank")
+                }
+                className="social-media"
+              >
+                Discord
+              </div>
+              <div
+                onClick={() =>
+                  window.open("https://docs.muon.net/muon-network", "_blank")
+                }
+                className="social-media"
+              >
+                Medium
+              </div>
             </div>
-            <div className="flex justify-start w-full">
+            <div
+              onClick={() => window.open("https://t.me/muon_net", "_blank")}
+              className="flex justify-start w-full"
+            >
               <div className="social-media">Telegram</div>
             </div>
           </div>
 
           <div className="flex lg:hidden gap-2 mt-5 flex-wrap">
-            <div className="social-media">X</div>
-            <div className="social-media">Github</div>
-            <div className="social-media">Discord</div>
-            <div className="social-media">Medium</div>
+            <div
+              onClick={() => window.open("https://x.com/muon_net", "_blank")}
+              className="social-media"
+            >
+              X
+            </div>
+            <div
+              onClick={() =>
+                window.open("https://Github.com/muon-protocol", "_blank")
+              }
+              className="social-media"
+            >
+              Github
+            </div>
+            <div
+              onClick={() =>
+                window.open("https://discord.gg/muonnetwork", "_blank")
+              }
+              className="social-media"
+            >
+              Discord
+            </div>
+            <div
+              onClick={() =>
+                window.open("https://docs.muon.net/muon-network", "_blank")
+              }
+              className="social-media"
+            >
+              Medium
+            </div>
 
-            <div className="social-media ">Telegram</div>
+            <div
+              onClick={() => window.open("https://t.me/muon_net", "_blank")}
+              className="social-media "
+            >
+              Telegram
+            </div>
           </div>
         </div>
       </div>

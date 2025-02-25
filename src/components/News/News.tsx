@@ -26,7 +26,7 @@ const News = () => {
   ];
   return (
     <div className="pb-[65px] border-b border-b-darkText font-azeretMono">
-      <BlackButton btnText="05 // News" />
+      <BlackButton btnText="04 // News" />
       <div className="flex flex-col lg:flex-row news-container w-full justify-between custom-1024:gap-10 above-1024:gap-[158px] above-1024::pr-[80px]">
         <div className="left-side left-scroll w-full sm:min-w-[364px] sm:max-w-[364px] above-1440:max-w-[484px] mt-3 flex flex-col gap-6 above-1440:gap-[45px] max-h-[385px] above-1440:max-h-[520px]  overflow-y-auto overflow-hidden [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-orangePrimary [&::-webkit-scrollbar-track]:bg-gray-300">
           {news.map((item, index) => (
