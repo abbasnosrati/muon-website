@@ -210,7 +210,15 @@ const EcosystemCard = ({
       </div>
       <div className="w-full max-w-[530px]">
         <div className="flex flex-col sm:flex-row h-full w-full justify-end">
-          <div className="right-side w-full flex flex-col gap-5 above-1440:gap-[50px] justify-center p-5 sm:p-0 below-1024:!w-full lg:max-w-[392px] above-1440:max-w-[515px]">
+          <div
+            className={`right-side w-full flex flex-col gap-5 above-1440:gap-[50px] justify-center p-5 sm:p-0 below-1024:!w-full lg:max-w-[392px] ${
+              title === "MetaBridge"
+                ? "above-1440:max-w-[525px]"
+                : title === "LayerZero DVN"
+                ? "above-1440:max-w-[500px]"
+                : "above-1440:max-w-[515px]"
+            } `}
+          >
             <div className="font-azeretMono text-whiteTextSecond !leading-[28px] below-1024:!leading-5 opacity-70 text-[12px] sm:text-[14px] lg:text-base above-1440:text-[20px] 1024-1279:text-sm">
               {content}
             </div>
