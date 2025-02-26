@@ -137,8 +137,13 @@ const Footer = () => {
             alt=""
           />
         </div>
-        <div className="font-azeretMono text-[12px] below-1024:text-[10px] above-1440:text-base flex w-full above-1440:max-w-[380px]  max-w-[300px] items-end  justify-center text-darkText leading-[11px] ">
-          copy right 2025
+        <div className="font-azeretMono text-[12px] below-1024:hidden below-1024:text-[10px] above-1440:text-base flex w-full above-1440:max-w-[380px]  max-w-[300px] items-end  justify-center text-darkText leading-[11px] ">
+          © 2025 Muon, ALL RIGHTS RESERVED.
+        </div>
+
+        <div className="font-azeretMono pl-4 text-[12px] lg:hidden below-1024:text-[10px] above-1440:text-base  w-full above-1440:max-w-[380px]  max-w-[300px] items-end  justify-center text-darkText leading-[11px] ">
+          <p>© 2025 Muon</p>
+          <p className="mt-1">ALL RIGHTS RESERVED.</p>
         </div>
       </div>
     </div>
