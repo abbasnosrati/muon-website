@@ -46,7 +46,12 @@ const Products = () => {
                   tools.
                 </div>
                 <div className="border cursor-pointer border-darkText font-dmSans leading-4 flex items-center w-full max-w-[364px] above-1440:max-w-[487px] h-[47px] above-1440:h-[58px] justify-between pl-3 pr-8">
-                  <div className="above-1440:text-[20px]">Discover More</div>
+                  <div
+                    onClick={() => window.open("https://derand.dev/", "_blank")}
+                    className="above-1440:text-[20px]"
+                  >
+                    Discover More
+                  </div>
                   <svg
                     width="66"
                     height="8"
@@ -86,7 +91,8 @@ const Products = () => {
                 content={
                   "The first secure wallet for agents. With access to trustless data, agents can interact with blockchain ecosystems and transact in a verifiably autonomous way. "
                 }
-                buttonSrc={""}
+                buttonSrc={"https://x.com/Auri_agent "}
+                title="AI Safe"
               />
             </div>
           </div>
@@ -109,7 +115,8 @@ const Products = () => {
                 content={
                   "Employing Muon as a chain-agnostic validation layer, this chain-independant bridge uses a novel approach for securing multi-chain transactions."
                 }
-                buttonSrc={""}
+                buttonSrc={"https://metabridge.space/"}
+                title="MetaBridge"
               />
             </div>
           </div>
@@ -132,7 +139,10 @@ const Products = () => {
                 content={
                   "A permissionless and chain-agnostic DVN (Decentralized Verifier Network) that leverages Muon Validation Layer to verify LayerZero transactions."
                 }
-                buttonSrc={""}
+                buttonSrc={
+                  "https://github.com/meta-bridge-protocol/muon-layer0-dvn"
+                }
+                title="LayerZero DVN"
               />
             </div>
           </div>
@@ -158,7 +168,10 @@ const Products = () => {
                 content={
                   "Leveraging Muon’s infrastructure, this framework allows projects to build custom prediction markets."
                 }
-                buttonSrc={""}
+                buttonSrc={
+                  "https://github.com/muon-protocol/muon-apps/blob/2058a427bb53aca0a9b00967ba5a569bd59b91d6/general/factGPT.js#L4"
+                }
+                title="FactGPT"
               />
             </div>
           </div>
@@ -175,21 +188,29 @@ type EcosystemCardProp = {
   imageSrc: string;
   content: string;
   buttonSrc: string;
+  title: string;
 };
 
-const EcosystemCard = ({ imageSrc, content, buttonSrc }: EcosystemCardProp) => {
+const EcosystemCard = ({
+  title,
+  imageSrc,
+  content,
+  buttonSrc,
+}: EcosystemCardProp) => {
   return (
     <div className="flex below-1024:flex-col w-full items-center justify-between">
       <div className="w-full flex justify-center">
         <img
-          className="w-[300px] h-[200px] above-1440:w-[450px] below-1024:-mt-24 above-1440:h-[154px] 1024-1279:w-[200px] custom-1280:w-[200px] above-1280:w-[310px]"
+          className={`w-[300px] h-[200px] above-1440:w-[450px] below-1024:-mt-24 ${
+            title == "MetaBridge" ? "" : "above-1440:h-[154px]"
+          }  1024-1279:w-[200px] custom-1280:w-[200px] above-1280:w-[310px]`}
           src={imageSrc}
           alt=""
         />
       </div>
-      <div className="w-full">
+      <div className="w-full max-w-[530px]">
         <div className="flex flex-col sm:flex-row h-full w-full justify-end">
-          <div className="right-side w-full flex flex-col gap-5 above-1440:gap-[50px] justify-center p-5 sm:p-0 below-1024:!w-full lg:max-w-[392px] above-1440:max-w-[494px]">
+          <div className="right-side w-full flex flex-col gap-5 above-1440:gap-[50px] justify-center p-5 sm:p-0 below-1024:!w-full lg:max-w-[392px] above-1440:max-w-[515px]">
             <div className="font-azeretMono text-whiteTextSecond !leading-[28px] below-1024:!leading-5 opacity-70 text-[12px] sm:text-[14px] lg:text-base above-1440:text-[20px] 1024-1279:text-sm">
               {content}
             </div>
@@ -199,7 +220,12 @@ const EcosystemCard = ({ imageSrc, content, buttonSrc }: EcosystemCardProp) => {
               }}
               className="border cursor-pointer border-darkText font-dmSans leading-4 flex items-center w-full max-w-[364px] above-1440:max-w-[487px] h-[47px] above-1440:h-[58px] justify-between pl-3 pr-8"
             >
-              <div className="above-1440:text-[20px]">Discover More</div>
+              <div
+                onClick={() => window.open(buttonSrc, "_blank")}
+                className="above-1440:text-[20px]"
+              >
+                Discover More
+              </div>
               <svg
                 width="66"
                 height="8"
