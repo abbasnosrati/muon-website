@@ -62,7 +62,7 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="6 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[16%]">
+        <div className="6 img-container min-w-[21%] md:min-w-[16%] above-1280:min-w-[12%]">
           <div className="img-box">
             <img
               src="./assets/images/partners/XDC.svg"
@@ -89,7 +89,7 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="9 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[16%]">
+        <div className="9 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[12%]">
           <div className="img-box">
             <img
               src="./assets/images/partners/eigen.svg"
@@ -147,7 +147,7 @@ const Partners = () => {
           </div>
         </div>
 
-        <div className="6 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[16%]">
+        <div className="6 img-container min-w-[21%] md:min-w-[16%] above-1280:min-w-[12%]">
           <div className="img-box">
             <img
               src="./assets/images/partners/XDC.svg"
@@ -176,7 +176,7 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="9 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[16%]">
+        <div className="9 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[12%]">
           <div className="img-box">
             <img
               src="./assets/images/partners/eigen.svg"

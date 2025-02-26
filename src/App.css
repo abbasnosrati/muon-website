@@ -50,7 +50,7 @@ body {
 
 .scroller[data-animated="true"] .scroller__inner {
   flex-wrap: nowrap;
-  animation: scroll 50s linear infinite;
+  animation: scroll 10s linear infinite;
 }
 
 .scroller__inner {
@@ -94,13 +94,13 @@ body {
 
 @keyframes scroll {
   to {
-    transform: translate(-144%);
+    transform: translate(-136%);
   }
 }
 
 @keyframes scroll-small {
   to {
-    transform: translate(-225%);
+    transform: translate(-220.4%);
   }
 }
 
