@@ -9,17 +9,18 @@ const structureItems = [
     description:
       "A decentralized network of nodes that deploy and run MuonApps. Each app runs on a dynamic subnet where nodes collaborate to operate and provide TSS signatures as proof, verifiable on-chain and off-chain.",
     descriptionImgSrc: " ./assets/images/structure/muon-ill-network.svg",
+    readeMoreSrc: "",
   },
   {
     id: 1,
     title: "02.2 MuonApp",
     titleImgSrc: "./assets/images/structure/muon-app.svg",
-
     description: `MuonApps are applications that projects can develop and deploy on the network to run their micro-
     validators. Unlike smart contracts, which operate on the blockchain and are isolated from real-world
     data, MuonApps have access to real-world data and function similarly to services running on a computer
     or cloud platform.`,
     descriptionImgSrc: "./assets/images/structure/muon-apps.svg",
+    readeMoreSrc: "",
   },
   {
     id: 2,
@@ -29,6 +30,7 @@ const structureItems = [
     description:
       "Muon provides an SDK containing smart contract libraries that allow dApps to verify proofs on-chain. This verification is chain-agnostic, meaning it can be performed on any blockchain.",
     descriptionImgSrc: " ./assets/images/structure/muon-sdk-content.svg",
+    readeMoreSrc: "",
   },
   {
     id: 3,
@@ -37,6 +39,7 @@ const structureItems = [
 
     description: "",
     descriptionImgSrc: "./assets/images/structure/muon-security-stack.svg",
+    readeMoreSrc: "",
   },
 ];
 
@@ -96,7 +99,13 @@ const MuonStructure = () => {
                   : "hidden"
               }  ${item.description.length == 0 && "hidden"}`}
             >
-              <p>{item.description}</p>
+              <div>
+                <p>{item.description}</p>
+
+                <p className="mt-[45px] border-b cursor-pointer border-whiteText w-fit pb-[4px] relative after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg]">
+                  Read More
+                </p>
+              </div>
             </div>
           ))}
         </div>
@@ -109,13 +118,22 @@ const MuonStructure = () => {
                 selectedItem === index ? "flex flex-col w-full" : "hidden"
               } items-center justify-center`}
             >
-              <img
-                src={item.descriptionImgSrc}
-                alt=""
-                className={`max-w-[100%] above-1440:w-full below-1024:max-w-[60%] ${
-                  selectedItem == 3 && "below-1024:hidden"
-                }`}
-              />
+              <div className="relative">
+                <img
+                  src={item.descriptionImgSrc}
+                  alt=""
+                  className={`max-w-[100%] above-1440:w-full below-1024:max-w-[60%] ${
+                    selectedItem == 3 && "below-1024:hidden"
+                  }`}
+                />
+                {selectedItem == 3 ? (
+                  <p className="mt-[45px] flex below-1024:hidden absolute border-b cursor-pointer border-whiteText w-fit pb-[4px] left-0 bottom-[12%] after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg] text-[12px] 1024-1279:text-[10px] above-1280:text-base !font-light below-1024:!leading-5 !leading-[28px] above-1440:text-[20px] font-azeretMono ">
+                    Read More
+                  </p>
+                ) : (
+                  ""
+                )}
+              </div>
 
               <img
                 src={"./assets/images/structure/item-3.svg"}
@@ -160,6 +178,10 @@ const MuonStructure = () => {
                       parties.
                     </div>
                   </div>
+
+                  <p className="mt-[45px] border-b cursor-pointer border-whiteText w-fit pb-1 relative after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg]">
+                    Read More
+                  </p>
                 </div>
               ) : (
                 ""
