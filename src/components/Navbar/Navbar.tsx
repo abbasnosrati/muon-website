@@ -147,7 +147,14 @@ const SmallMenu = () => {
               onMouseLeave={handleMouseLeave}
             >
               <div className="" ref={menuItemRef}>
-                <div className="cursor-pointer tracking-[1px] leading-[13px]">
+                <div
+                  onClick={
+                    menu.src.length < 2
+                      ? () => scrollToSection(menu.src)
+                      : () => window.open(menu.src, "_blank")
+                  }
+                  className="cursor-pointer tracking-[1px] leading-[13px]"
+                >
                   {menu.title}
                 </div>
                 <div
