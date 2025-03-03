@@ -100,7 +100,7 @@ body {
 
 @keyframes scroll-small {
   to {
-    transform: translate(-220.4%);
+    transform: translate(-300.4%);
   }
 }
 

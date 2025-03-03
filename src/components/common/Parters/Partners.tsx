@@ -17,7 +17,7 @@ const Partners = () => {
   return (
     <div className="scroller absolute left-0 w-full">
       <div className="tag_list scroller__inner w-full">
-        <div className="1 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[16%]">
+        <div className="1 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
           <div className="img-box">
             <img
               src="./assets/images/partners/zellular logo.svg"
@@ -26,7 +26,7 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="2 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[16%]">
+        <div className="2 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
           <div className="img-box">
             <img
               src="./assets/images/partners/thena.svg"
@@ -35,7 +35,7 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="3 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[16%]">
+        <div className="3 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
           <div className="img-box">
             <img
               src="./assets/images/partners/symmio.svg"
@@ -44,7 +44,7 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="4 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[16%]">
+        <div className="4 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
           <div className="img-box">
             <img
               src="./assets/images/partners/arbitrum.svg"
@@ -53,7 +53,7 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="5 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[16%]">
+        <div className="5 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
           <div className="img-box">
             <img
               src="./assets/images/partners/layerzero.svg"
@@ -71,7 +71,7 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="7 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[16%]">
+        <div className="7 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
           <div className="img-box">
             <img
               src="./assets/images/partners/linea.svg"
@@ -80,7 +80,7 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="8 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[16%]">
+        <div className="8 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
           <div className="img-box min-w-full">
             <img
               src="./assets/images/partners/avalanche.svg"
@@ -89,7 +89,7 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="9 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[12%]">
+        <div className="9 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[12%]">
           <div className="img-box">
             <img
               src="./assets/images/partners/eigen.svg"
@@ -99,7 +99,7 @@ const Partners = () => {
           </div>
         </div>
 
-        <div className="1 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[16%]">
+        <div className="1 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
           <div className="img-box">
             <img
               src="./assets/images/partners/zellular logo.svg"
@@ -108,7 +108,7 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="2 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[16%]">
+        <div className="2 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
           <div className="img-box">
             <img
               src="./assets/images/partners/thena.svg"
@@ -117,7 +117,7 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="3 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[16%]">
+        <div className="3 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
           <div className="img-box">
             <img
               src="./assets/images/partners/symmio.svg"
@@ -127,7 +127,7 @@ const Partners = () => {
           </div>
         </div>
 
-        <div className="4 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[16%]">
+        <div className="4 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
           <div className="img-box">
             <img
               src="./assets/images/partners/arbitrum.svg"
@@ -137,7 +137,7 @@ const Partners = () => {
           </div>
         </div>
 
-        <div className="5 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[16%]">
+        <div className="5 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
           <div className="img-box">
             <img
               src="./assets/images/partners/layerzero.svg"
@@ -157,7 +157,7 @@ const Partners = () => {
           </div>
         </div>
 
-        <div className="7 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[16%]">
+        <div className="7 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
           <div className="img-box">
             <img
               src="./assets/images/partners/linea.svg"
@@ -167,7 +167,7 @@ const Partners = () => {
           </div>
         </div>
 
-        <div className="8 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[16%]">
+        <div className="8 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
           <div className="img-box min-w-full">
             <img
               src="./assets/images/partners/avalanche.svg"
@@ -176,7 +176,7 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="9 img-container min-w-[25%] md:min-w-[20%] above-1280:min-w-[12%]">
+        <div className="9 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[12%]">
           <div className="img-box">
             <img
               src="./assets/images/partners/eigen.svg"
