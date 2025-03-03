@@ -169,7 +169,8 @@ const SmallMenu = () => {
                   {menu.subItems.map((sub, subIndex) => (
                     <div
                       key={subIndex}
-                      className="cursor-pointer text-[12px] font-light font-azeretMono "
+                      className="cursor-pointer text-[12px] font-light font-azeretMono"
+                      onClick={() => window.open(sub.src, "_blank")}
                     >
                       {sub.title}
                     </div>
