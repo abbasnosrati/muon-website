@@ -22,7 +22,7 @@ const Products = () => {
           <div
             className={`collapse-content flex below-1024:flex-col items-center font-azeretMono text-darkTextOpacity relative px-[68px] below-1024:px-5 ${
               selectedItem === 0
-                ? "h-[243px] above-1440:h-[320px] below-1024:h-[510px] opacity-100"
+                ? "h-[243px] above-1440:h-[320px] below-1024:h-[550px] opacity-100"
                 : "h-0 opacity-0"
             }`}
           >
@@ -38,7 +38,7 @@ const Products = () => {
                 alt=""
               />
             </div>
-            <div className="flex flex-col sm:flex-row h-full w-full justify-end">
+            <div className="flex flex-col sm:flex-row h-full w-full justify-end below-1024:pb-20">
               <div className="right-side w-full flex flex-col gap-5 above-1440:gap-[50px] justify-center p-5 sm:p-0 below-1024:!w-full lg:max-w-[392px] above-1440:max-w-[494px]">
                 <div className="font-azeretMono text-whiteTextSecond !leading-[28px] below-1024:!leading-5 opacity-70 text-[12px] sm:text-[14px] lg:text-base above-1440:text-[20px] 1024-1279:text-sm">
                   A modular, chain-agnostic and cost-efficient verifiable random

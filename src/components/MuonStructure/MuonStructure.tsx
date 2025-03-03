@@ -86,7 +86,7 @@ const MuonStructure = () => {
           </div>
         </div>
 
-        <div className="flex items-end above-1440:max-w-[620px] below-1024:w-full above-1280:max-w-[500px] 1024-1279:max-w-[250px] below-1024:my-5 ">
+        <div className="flex items-end above-1440:max-w-[620px]  below-1024:w-full above-1280:max-w-[500px] 1024-1279:max-w-[250px] below-1024:my-5 ">
           {structureItems.map((item, index) => (
             <div
               key={index}
@@ -101,19 +101,69 @@ const MuonStructure = () => {
           ))}
         </div>
 
-        <div className="flex ">
+        <div className="flex">
           {structureItems.map((item, index) => (
             <div
               key={index}
-              className={`${selectedItem === index ? "flex w-full" : "hidden"}`}
+              className={`${
+                selectedItem === index ? "flex flex-col w-full" : "hidden"
+              } items-center justify-center`}
             >
               <img
                 src={item.descriptionImgSrc}
                 alt=""
                 className={`max-w-[100%] above-1440:w-full below-1024:max-w-[60%] ${
-                  selectedItem == 3 && "below-1024:max-w-[100%]"
+                  selectedItem == 3 && "below-1024:hidden"
                 }`}
               />
+
+              <img
+                src={"./assets/images/structure/item-3.svg"}
+                alt=""
+                className={`${
+                  selectedItem != 3
+                    ? "hidden"
+                    : "max-w-[100%] below-1024:flex hidden"
+                }  `}
+              />
+
+              {selectedItem === 3 ? (
+                <div
+                  className={`mt-20 font-azeretMono text-whiteTextSecond below-1024:flex flex-col gap-3 hidden`}
+                >
+                  <div className="border-b border-whiteTextSecond pb-5">
+                    <div className="text-base font-semibold pb-5">
+                      1.Threshold Signature Scheme
+                    </div>
+                    <div className="text-sm font-normal">
+                      Randomly selected nodes form a subnet to produce a single
+                      signature, reducing costs while maintaining security.
+                      Muon’s TSS network.
+                    </div>
+                  </div>
+                  <div className="border-b border-whiteTextSecond pb-5">
+                    <div className="text-base font-semibold pb-5">
+                      2.Muon AVS on EigenLayer
+                    </div>
+                    <div className="text-sm font-normal">
+                      Muon utilizes EigenLayer for additional security. Execute
+                      MuonApps, process requests, and provide proofs. Muon AVS
+                      on EigenLayer.
+                    </div>
+                  </div>
+                  <div className="border-b border-whiteTextSecond pb-5">
+                    <div className="text-base font-semibold pb-5">
+                      3.Shield Nodes
+                    </div>
+                    <div className="text-sm font-normal">
+                      Additional security layers run by dApps or trusted third
+                      parties.
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                ""
+              )}
             </div>
           ))}
         </div>

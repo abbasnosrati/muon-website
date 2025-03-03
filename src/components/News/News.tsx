@@ -10,7 +10,7 @@ const News = () => {
       shortText:
         "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
       text: "Verify, process & access your critical app-data on a permissionless oracle network and enjoy its fast modular security architecture.‍Verify, process & access your critical app-data on a permissionless oracle network and enjoy its fast modular security architecture.‍Verify, process & access your critical app-data on a permissionless oracle network and enjoy its fast modular security architecture.‍",
-      imgSrc: "",
+      imgSrc: "./assets/images/products/AIsafe.svg",
     },
     { id: 1, date: "2024/5/7", title: "", shortText: "", imgSrc: "", text: "" },
     { id: 2, date: "2024/5/8", title: "", shortText: "", imgSrc: "", text: "" },
@@ -33,12 +33,31 @@ const News = () => {
             <div
               onClick={() => setSelectedNews(index)}
               key={index}
-              className={`border ml-2 cursor-pointer news-box border-darkText min-h-[112px] above-1440:min-h-[143px] p-[10px] text-darkTextOpacity ${
+              className={`border relative ml-2 cursor-pointer news-box border-darkText min-h-[112px] above-1440:min-h-[143px] p-[10px] text-darkTextOpacity ${
                 selectedNews == index && "text-whiteTextSecond"
               } text-sm above-1440:text-[18px] below-1024:text-[12px] leading-4 flex flex-col gap-5`}
             >
-              <div className="opacity-70">{item.date}</div>
-              <div className="leading-[22px] opacity-70">{item.shortText}</div>
+              <div
+                className={`opacity-70 ${
+                  selectedNews == index ? "hidden" : "flex"
+                }`}
+              >
+                {item.date}
+              </div>
+              <div
+                className={`leading-[22px] opacity-70  ${
+                  selectedNews == index ? "hidden" : "flex"
+                }`}
+              >
+                {item.shortText}
+              </div>
+              <div
+                className={`absolute  left-0 right-0 top-0 bottom-0 ${
+                  selectedNews == index ? "flex" : "hidden"
+                }`}
+              >
+                <img src={item.imgSrc} className="w-full h-full" />
+              </div>
             </div>
           ))}
         </div>
