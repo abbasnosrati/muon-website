@@ -24,7 +24,7 @@ export const menuItems = [
     subItems: [
       { title: "X", src: "https://x.com/muon_net" },
       { title: "Discord", src: "https://discord.gg/muonnetwork" },
-      { title: "Medium", src: "https://docs.muon.net/muon-network" },
+      { title: "Medium", src: "https://medium.com/muon" },
       { title: "Github", src: "https://Github.com/muon-protocol" },
       { title: "Telegram", src: "https://t.me/muon_net" },
     ],
