@@ -9,7 +9,7 @@ const Footer = () => {
             Verify, process & access your critical app-data on a permissionless
             oracle network and enjoy its fast modular security architecture.‍
           </div>
-          <div className=" below-1024:hidden border border-darkText w-full max-w-[300px] above-1440:max-w-[400px] above-1440:h-[59px] h-12 mb-7"></div>
+          {/* <div className=" below-1024:hidden border border-darkText w-full max-w-[300px] above-1440:max-w-[400px] above-1440:h-[59px] h-12 mb-7"></div> */}
         </div>
         <div className="left-side text-[12px] above-1024:text-base above-1440:text-[20px] font-light !leading-[18px] above-1024:pl-[140px] pt-[20px] text-darkText">
           <div className="flex flex-col gap-[12px] below-1024:gap-[5px]">

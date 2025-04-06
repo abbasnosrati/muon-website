@@ -33,7 +33,7 @@ const News = () => {
   ];
   return (
     <div className="pb-[65px] border-b border-b-darkText font-azeretMono">
-      <BlackButton btnNum={"05"} btnText="News" />
+      <BlackButton btnNum={"04"} btnText="News" />
       <div className="flex flex-col lg:flex-row news-container w-full  custom-1024:gap-10  mt-[30px]">
         <div className="left-side left-scroll w-full sm:min-w-[364px] sm:max-w-[567px] above-1440:max-w-[758px] flex flex-col gap-6 above-1440:gap-[45px] max-h-[485px] above-1440:max-h-[820px]  overflow-y-auto overflow-hidden [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-orangePrimary [&::-webkit-scrollbar-track]:bg-gray-300">
           {news.map((item, index) => (
@@ -41,7 +41,7 @@ const News = () => {
               onClick={() => setSelectedNews(index)}
               key={index}
               className={`border relative  ${
-                selectedNews == index ? "bg-news-selected-gradient" : ""
+                selectedNews == index ? "bg-newsHoverColor" : ""
               } cursor-pointer news-box border-darkText min-h-[149px] sm:min-h-[196px] above-1440:min-h-[262px] p-[15px] above-1440:p-[27px] text-whiteTextSecond text-sm above-1440:text-[18px] below-1024:text-[12px] leading-4 flex flex-col justify-end gap-[5px] sm:gap-5`}
             >
               <div
@@ -69,11 +69,11 @@ const News = () => {
             </div>
           ))}
         </div>
-        <div className="right-side relative flex flex-col min-h-[415px] sm:h-[836px] items-center mt-10 sm:mt-0 font-azeretMono w-full border border-darkText">
+        <div className="right-side relative bg-newsHoverColor flex flex-col min-h-[415px] lg:h-[836px] items-center mt-10 lg:mt-0 font-azeretMono w-full border border-darkText">
           {news.map((item, index) => (
             <div
               key={index}
-              className={` flex-col px-[22px] sm:px-0 mt-[120px] sm:mt-72 ${
+              className={` flex-col px-[22px]  mt-[120px] lg:mt-72 ${
                 item.id === selectedNews ? "flex" : "hidden"
               }`}
             >
@@ -94,7 +94,7 @@ const News = () => {
           <div className="absolute bottom-[10px] sm:bottom-[25px] sm:right-[25px]">
             <div className="flex items-center gap-2 cursor-pointer">
               <img
-                className="w-6 h-6"
+                className="w-6 h-6 sm:w-[34px] sm:h-[34px]"
                 src="/assets/images/news/viewMore.svg"
                 alt=""
               />

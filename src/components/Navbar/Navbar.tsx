@@ -135,10 +135,10 @@ const Navbar = () => {
         </div>
         <img
           src="./assets/animation/muonGif.webp"
-          className=" muon-gif mt-10"
+          className=" muon-gif absolute flex left-0 w-full mt-10"
           alt=""
         />
-        <div className="text-whiteText flex flex-col items-center justify-center mt-16">
+        <div className="text-whiteText flex flex-col items-center justify-center mt-56">
           <div className="text-[20px] font-normal ">
             General-Purpose,Request-Based, Validation Layer
           </div>
@@ -148,13 +148,51 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* <div className="fixed flex top-0 bottom-0 left-0 right-0 bg-[#8E8888] z-[1000]">
+      <div
+        className={`${
+          isMenuOpen ? "flex" : "hidden"
+        } fixed flex top-0 bottom-0 left-0 right-0 bg-[#8E8888] z-[1000]`}
+      >
+        <div className="absolute flex w-full items-center justify-center bottom-5 right-0 left-0">
+          <img src="./assets/images/menu/mbMenuLogo.svg" alt="" />
+        </div>
         <img
-          className="w-[14px] h-[14px]"
+          onClick={() => handleOpenMenu()}
+          className="w-[18px] h-[18px] ml-10 mt-9"
           src="/assets/images/menu/close.svg"
           alt=""
         />
-      </div> */}
+
+        <div className="flex flex-col justify-center gap-5 ml-2">
+          <div>
+            {menuItems.map((item) => (
+              <div key={item.id} className="border-l border-darkText">
+                <p
+                  className="py-2 pl-4"
+                  onClick={
+                    item.src.length < 2
+                      ? () => scrollToSection(item.src)
+                      : () => window.open(item.src, "_blank")
+                  }
+                >
+                  {item.title}
+                </p>
+                <div className="flex flex-col gap-1">
+                  {item.subItems.map((item, index) => (
+                    <div
+                      className="ml-4 text-whiteText"
+                      key={index}
+                      onClick={() => window.open(item.src, "_blank")}
+                    >
+                      {item.title}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

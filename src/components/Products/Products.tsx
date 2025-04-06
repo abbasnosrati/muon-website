@@ -36,7 +36,7 @@ const Products = () => {
   return (
     <div id="4" className="pb-[200px] sm:pb-[270px] border-b border-b-darkText">
       <div>
-        <BlackButton btnNum={"04"} btnText="Ecosystem" />
+        <BlackButton btnNum={"03"} btnText="Ecosystem" />
         <div className="section-title-text font-azeretMono hidden sm:flex">
           Muon’s versatile validation layer fuels innovative <br /> solutions
           across a wide range of use-cases. <br /> Here are some of the dApps
@@ -68,7 +68,7 @@ const Products = () => {
               />
             </div>
             <div className="flex flex-col sm:flex-row h-full w-full justify-end below-1024:pb-20">
-              <div className="right-side w-full flex flex-col gap-5 justify-center p-5 sm:p-0 below-1024:!w-full lg:max-w-[392px] above-1440:max-w-[694px]">
+              <div className="right-side w-full flex flex-col gap-5 justify-center p-5 sm:p-0 below-1024:!w-full above-1440:max-w-[694px]">
                 <div className="font-azeretMono text-whiteTextSecond !leading-[32px] below-1024:!leading-5  text-[12px] sm:text-[14px] lg:text-base above-1440:text-[20px] 1024-1279:text-sm">
                   A modular, chain-agnostic and cost-efficient verifiable random
                   number generator that can be used with on-chain and off-chain
@@ -93,7 +93,7 @@ const Products = () => {
           <div
             className={`collapse-content ${
               selectedItem === 1
-                ? "h-[243px] above-1440:h-[320px] below-1024:h-[440px] opacity-100"
+                ? "h-[440px] lg:h-[240px] above-1440:h-[320px] sm:h-[350px] opacity-100"
                 : "h-0 opacity-0"
             }`}
           >
@@ -117,7 +117,7 @@ const Products = () => {
           <div
             className={`collapse-content ${
               selectedItem === 2
-                ? "h-[243px] above-1440:h-[320px] below-1024:h-[440px] opacity-100"
+                ? "h-[440px] lg:h-[240px] above-1440:h-[320px] sm:h-[350px] opacity-100"
                 : "h-0 opacity-0"
             }`}
           >
@@ -141,7 +141,7 @@ const Products = () => {
           <div
             className={`collapse-content ${
               selectedItem === 3
-                ? "h-[243px] above-1440:h-[320px] below-1024:h-[440px] opacity-100"
+                ? "h-[440px] lg:h-[240px] above-1440:h-[320px] sm:h-[350px] opacity-100"
                 : "h-0 opacity-0"
             }`}
           >
@@ -170,7 +170,7 @@ const Products = () => {
           <div
             className={`collapse-content ${
               selectedItem === 5
-                ? "h-[243px] above-1440:h-[320px] below-1024:h-[440px] opacity-100"
+                ? "h-[440px] lg:h-[240px] above-1440:h-[320px] sm:h-[350px] opacity-100"
                 : "h-0 opacity-0"
             }`}
           >
@@ -211,7 +211,7 @@ const EcosystemCard = ({
 }: EcosystemCardProp) => {
   return (
     <div className="flex below-1024:flex-col w-full items-center justify-between">
-      <div className="w-full flex ">
+      <div className="w-full flex justify-center lg:justify-start">
         <img
           className={`w-[300px] h-[200px] above-1440:w-[450px] below-1024:-mt-16 ${
             title == "MetaBridge" ? "" : "above-1440:h-[154px]"
@@ -220,10 +220,10 @@ const EcosystemCard = ({
           alt=""
         />
       </div>
-      <div className="w-full max-w-[750px]">
+      <div className="w-full max-w-[550px]">
         <div className="flex flex-col sm:flex-row h-full w-full justify-end">
           <div
-            className={`right-side w-full flex flex-col gap-5  justify-center p-5 sm:p-0 below-1024:!w-full lg:max-w-[392px] ${
+            className={`right-side w-full flex flex-col gap-5 justify-center p-5 sm:p-0 below-1024:!w-full lg:max-w-[392px] ${
               title === "MetaBridge"
                 ? "above-1440:max-w-[865px]"
                 : title === "LayerZero DVN"
@@ -231,10 +231,10 @@ const EcosystemCard = ({
                 : "above-1440:max-w-[825px]"
             } `}
           >
-            <div className="font-azeretMono text-whiteTextSecond text-center !leading-[28px] below-1024:!leading-5 text-[11px] sm:text-[14px] lg:text-base above-1440:text-[20px] 1024-1279:text-sm">
+            <div className="font-azeretMono text-whiteTextSecond text-center md:text-left !leading-[28px] below-1024:!leading-5 text-[11px] sm:text-[14px] lg:text-base above-1440:text-[20px] 1024-1279:text-sm">
               {content}
             </div>
-            <div className="flex w-full justify-end">
+            <div className="flex w-full justify-center lg:justify-end">
               <DiscoverMoreBtn src={buttonSrc} />
             </div>
           </div>

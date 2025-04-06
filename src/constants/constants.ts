@@ -1,25 +1,33 @@
 export const menuItems = [
-  { id: "0", title: "What is Muon", subItems: [], src: "2" },
+  {
+    id: "0",
+    title: "What is Muon",
+    subItems: [],
+    src: "https://docs.muon.net/muon-protocol/what-is-muon/elevator-pitch",
+  },
   {
     id: "1",
     title: "Resources",
 
     subItems: [
-      { title: "Docs", src: "" },
-      { title: "Lightpaper", src: "" },
+      { title: "Docs", src: "https://docs.muon.net/muon-protocol" },
+      {
+        title: "Lightpaper",
+        src: "https://files.muon.net/Muon-Litepaper-v01.pdf",
+      },
     ],
     src: "",
   },
   { id: "2", title: "Ecosystem", subItems: [], src: "4" },
-  { id: "3", title: "About us", subItems: [], src: "" },
+  // { id: "3", title: "About us", subItems: [], src: "" },
   {
-    id: "4",
+    id: "3",
     title: "Dashboard",
     subItems: [],
     src: "https://app.muon.net/dashboard/",
   },
   {
-    id: "5",
+    id: "4",
     title: "Socials",
     subItems: [
       { title: "X", src: "https://x.com/muon_net" },

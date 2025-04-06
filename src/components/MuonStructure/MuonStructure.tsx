@@ -65,7 +65,7 @@ const MuonStructure = () => {
         <div className="section-title-text"></div>
       </div>
 
-      <div className="flex below-1024:flex-col  justify-between">
+      <div className="flex below-1024:flex-col justify-between">
         <div className="right-side flex sm:flex-col flex-col-reverse gap-8  above-1440:gap-10 w-full below-1024:w-full max-w-[400px] above-1440:max-w-[470px]">
           <div>
             {structureItems.map((item, index) => (
@@ -82,10 +82,58 @@ const MuonStructure = () => {
                   className="w-[86%] sm:w-[60%] above-1440:w-[70%] hidden sm:flex"
                 />
 
-                <img
-                  src={item.descriptionImgSrc}
-                  className="w-[86%] flex sm:hidden sm:w-[60%] above-1440:w-[70%]"
-                />
+                <div className="flex flex-col sm:hidden">
+                  <img
+                    src={
+                      selectedItem == 3
+                        ? "./assets/images/structure/item-3.svg"
+                        : item.descriptionImgSrc
+                    }
+                    className="w-[86%] flex sm:hidden sm:w-[60%] above-1440:w-[70%]"
+                  />
+
+                  {selectedItem === 3 ? (
+                    <div
+                      className={`mt-20 font-azeretMono text-whiteTextSecond below-1024:flex flex-col gap-3 hidden`}
+                    >
+                      <div className="border-b border-whiteTextSecond pb-5">
+                        <div className="text-[15px] font-semibold pb-5">
+                          1.Threshold Signature Scheme
+                        </div>
+                        <div className="text-[11px] font-normal">
+                          Randomly selected nodes form a subnet to produce a
+                          single signature, reducing costs while maintaining
+                          security. Muon’s TSS network.
+                        </div>
+                      </div>
+                      <div className="border-b border-whiteTextSecond pb-5">
+                        <div className="text-[15px] font-semibold pb-5">
+                          2.Muon AVS on EigenLayer
+                        </div>
+                        <div className="text-[11px] font-normal">
+                          Muon utilizes EigenLayer for additional security.
+                          Execute MuonApps, process requests, and provide
+                          proofs. Muon AVS on EigenLayer.
+                        </div>
+                      </div>
+                      <div className="border-b border-whiteTextSecond pb-5">
+                        <div className="text-[15px] font-semibold pb-5">
+                          3.Shield Nodes
+                        </div>
+                        <div className="text-[11px] font-normal">
+                          Additional security layers run by dApps or trusted
+                          third parties.
+                        </div>
+                      </div>
+
+                      <p className="mt-[45px] border-b cursor-pointer border-whiteText w-fit pb-1 relative after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg]">
+                        Read More
+                      </p>
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                </div>
               </div>
             ))}
           </div>
