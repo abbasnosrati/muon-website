@@ -148,13 +148,13 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="fixed flex top-0 bottom-0 left-0 right-0 bg-[#8E8888] z-[1000]">
+      {/* <div className="fixed flex top-0 bottom-0 left-0 right-0 bg-[#8E8888] z-[1000]">
         <img
           className="w-[14px] h-[14px]"
           src="/assets/images/menu/close.svg"
           alt=""
         />
-      </div>
+      </div> */}
     </div>
   );
 };
