@@ -56,11 +56,11 @@ body {
 }
 
 .section-title-text {
-  @apply text-sm lg:text-[17px] above-1440:text-[23px] font-medium leading-[18px] lg:leading-[26px] above-1440:leading-[38px] text-whiteText max-w-[380px] lg:max-w-[650px] above-1440:max-w-[900px] mt-7 font-azeretMono;
+  @apply text-[11px] lg:text-[17px] above-1440:text-[23px] font-semibold leading-[18px] lg:leading-[26px] above-1440:leading-[38px] text-whiteText max-w-[380px] lg:max-w-[650px] above-1440:max-w-[900px] mt-7 font-azeretMono;
 }
 
 .collapse-title {
-  @apply font-azeretMono text-nowrap text-base tracking-[1px] above-1440:text-[18px] font-semibold leading-[18px] text-whiteText  border-darkText w-[144px] h-12 above-1440:h-[60px] flex justify-start items-center -mt-[1px] cursor-pointer;
+  @apply font-azeretMono text-nowrap text-sm sm:text-base tracking-[1px] above-1440:text-[18px] font-medium sm:font-semibold leading-[18px] text-whiteText  border-darkText w-[144px] h-12 above-1440:h-[60px] flex justify-start items-center -mt-[1px] cursor-pointer;
 }
 
 .collapse-title p {

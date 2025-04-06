@@ -65,22 +65,31 @@ const MuonStructure = () => {
         <div className="section-title-text"></div>
       </div>
 
-      <div className="flex below-1024:flex-col justify-between">
-        <div className="right-side flex flex-col gap-8  above-1440:gap-10 w-full below-1024:w-full max-w-[400px] above-1440:max-w-[470px]">
+      <div className="flex below-1024:flex-col  justify-between">
+        <div className="right-side flex sm:flex-col flex-col-reverse gap-8  above-1440:gap-10 w-full below-1024:w-full max-w-[400px] above-1440:max-w-[470px]">
           <div>
             {structureItems.map((item, index) => (
               <div
                 key={index}
-                className={`${selectedItem === index ? "flex" : "hidden"}`}
+                className={`${
+                  selectedItem === index
+                    ? "flex justify-center sm:justify-start"
+                    : "hidden"
+                }`}
               >
                 <img
                   src={item.titleImgSrc}
-                  className="w-[80%] below-1024:w-[60%] above-1440:w-[70%]"
+                  className="w-[86%] sm:w-[60%] above-1440:w-[70%] hidden sm:flex"
+                />
+
+                <img
+                  src={item.descriptionImgSrc}
+                  className="w-[86%] flex sm:hidden sm:w-[60%] above-1440:w-[70%]"
                 />
               </div>
             ))}
           </div>
-          <div className="structure-titles below-1024:text-[12px] ml-5 font-azeretMono text-sm above-1440:text-[23px] 1024-1279:text-[12px] font-semibold tracking-[2px] leading-[10px] flex flex-col gap-[30px] mt-[3px]">
+          <div className="structure-titles below-1024:text-[14px] ml-5 font-azeretMono text-sm above-1440:text-[23px] 1024-1279:text-[12px] font-medium tracking-[2px] leading-[10px] flex flex-col gap-[20px] sm:gap-[30px] mt-[3px]">
             {structureItems.map((item, index) => (
               <div
                 key={index}
@@ -90,7 +99,7 @@ const MuonStructure = () => {
                 onClick={() => setSelectedItem(index)}
               >
                 {index === selectedItem && (
-                  <div className="w-[10px] absolute h-[10px] rounded-full -left-5 bg-orangePrimary"></div>
+                  <div className="w-[6px] h-[6px] sm:w-[10px] absolute sm:h-[10px] rounded-full top-[2px] sm:top-0 -left-3 sm:-left-5 bg-orangePrimary"></div>
                 )}
                 {item.title}
               </div>
@@ -98,13 +107,13 @@ const MuonStructure = () => {
           </div>
         </div>
 
-        <div className="flex items-center above-1440:max-w-[620px]  below-1024:w-full above-1280:max-w-[500px] 1024-1279:max-w-[250px] below-1024:my-5 ">
+        <div className="flex items-center above-1440:max-w-[620px] below-1024:w-full above-1280:max-w-[500px] 1024-1279:max-w-[250px] below-1024:my-5 ">
           {structureItems.map((item, index) => (
             <div
               key={index}
               className={`${
                 selectedItem === index
-                  ? "flex text-[12px]1024-1279:text-[10px] above-1280:text-base  !font-light below-1024:!leading-7 !leading-[32px] above-1440:text-[20px] font-azeretMono mr-5"
+                  ? "flex text-[11px] 1024-1279:text-[10px] above-1280:text-base !font-light below-1024:!leading-[22px]  above-1440:text-[20px] font-azeretMono sm:mr-5"
                   : "hidden"
               }  ${!item.description && "hidden"}`}
             >
@@ -119,7 +128,7 @@ const MuonStructure = () => {
           ))}
         </div>
 
-        <div className="flex">
+        <div className="hidden sm:flex">
           {structureItems.map((item, index) => (
             <div
               key={index}

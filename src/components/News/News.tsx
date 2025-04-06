@@ -33,7 +33,7 @@ const News = () => {
   ];
   return (
     <div className="pb-[65px] border-b border-b-darkText font-azeretMono">
-      <BlackButton btnNum={"04"} btnText="News" />
+      <BlackButton btnNum={"05"} btnText="News" />
       <div className="flex flex-col lg:flex-row news-container w-full  custom-1024:gap-10  mt-[30px]">
         <div className="left-side left-scroll w-full sm:min-w-[364px] sm:max-w-[567px] above-1440:max-w-[758px] flex flex-col gap-6 above-1440:gap-[45px] max-h-[485px] above-1440:max-h-[820px]  overflow-y-auto overflow-hidden [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-orangePrimary [&::-webkit-scrollbar-track]:bg-gray-300">
           {news.map((item, index) => (
@@ -42,16 +42,20 @@ const News = () => {
               key={index}
               className={`border relative  ${
                 selectedNews == index ? "bg-news-selected-gradient" : ""
-              } cursor-pointer news-box border-darkText min-h-[196px] above-1440:min-h-[262px] p-[20px] above-1440:p-[27px] text-whiteTextSecond text-sm above-1440:text-[18px] below-1024:text-[12px] leading-4 flex flex-col justify-end gap-5`}
+              } cursor-pointer news-box border-darkText min-h-[149px] sm:min-h-[196px] above-1440:min-h-[262px] p-[15px] above-1440:p-[27px] text-whiteTextSecond text-sm above-1440:text-[18px] below-1024:text-[12px] leading-4 flex flex-col justify-end gap-[5px] sm:gap-5`}
             >
-              <div className={`opacity-70`}>{item.date}</div>
               <div
-                className={`leading-[22px] text-[18px] above-1440:text-[24px] `}
+                className={`opacity-70 text-[10px] sm:text-sm above-1440:text-[18px]`}
+              >
+                {item.date}
+              </div>
+              <div
+                className={`leading-[22px] text-[13px] sm:text-[18px] above-1440:text-[24px] `}
               >
                 {item.title}
               </div>
               <div
-                className={`leading-[26px] above-1440:leading-[36px] text-base above-1440:text-[22px] above-1440:font-medium tracking-[1px]`}
+                className={`leading-[16px] sm:leading-[26px] above-1440:leading-[36px] text-[12px] sm:text-base above-1440:text-[22px] above-1440:font-medium tracking-[1px]`}
               >
                 {item.shortText}
               </div>
@@ -65,31 +69,35 @@ const News = () => {
             </div>
           ))}
         </div>
-        <div className="right-side relative flex flex-col h-[836px] items-center justify-center font-azeretMono w-full border border-darkText">
+        <div className="right-side relative flex flex-col min-h-[415px] sm:h-[836px] items-center mt-10 sm:mt-0 font-azeretMono w-full border border-darkText">
           {news.map((item, index) => (
             <div
               key={index}
-              className={` flex-col mt-40 ${
+              className={` flex-col px-[22px] sm:px-0 mt-[120px] sm:mt-72 ${
                 item.id === selectedNews ? "flex" : "hidden"
               }`}
             >
-              <div className="text-sm text-whiteText decoration-whiteTextSecond">
+              <div className="text-[10px] sm:text-sm text-whiteText decoration-whiteTextSecond">
                 {item.date}
               </div>
-              <div className="text-sm above-1440:text-[22px] relative text-whiteText mt-4">
+              <div className="text-[13px] sm:text-sm above-1440:text-[22px] relative text-whiteText mt-2 sm:mt-4">
                 {item.title}
               </div>
-              <div className="text-sm above-1440:text-[22px] above-1440:leading-[36px] relative text-whiteText  mt-4 max-w-[319px] above-1440:max-w-[612px]">
+              <div className="text-[12px] sm:text-sm above-1440:text-[22px] above-1440:leading-[36px] relative text-whiteText  mt-4 max-w-[319px] above-1440:max-w-[612px]">
                 {item.shortText}
               </div>
-              <div className="text-[10px] above-1440:leading-[30px] above-1440:max-w-[688px] sm:text-sm lg:text-base above-1440:text-[20px] font-medium text-whiteTextSecond mt-40 below-1024:mt-10 leading-[18px]">
+              <div className="text-[11px] above-1440:leading-[30px] above-1440:max-w-[688px] sm:text-sm lg:text-base above-1440:text-[20px] font-normal sm:font-medium text-whiteTextSecond mt-40 below-1024:mt-8 leading-[18px]">
                 {item.text}
               </div>
             </div>
           ))}
-          <div className="absolute bottom-[25px] right-[25px]">
+          <div className="absolute bottom-[10px] sm:bottom-[25px] sm:right-[25px]">
             <div className="flex items-center gap-2 cursor-pointer">
-              <img src="/assets/images/news/viewMore.svg" alt="" />
+              <img
+                className="w-6 h-6"
+                src="/assets/images/news/viewMore.svg"
+                alt=""
+              />
             </div>
           </div>
         </div>
