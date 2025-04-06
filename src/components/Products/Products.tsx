@@ -1,6 +1,33 @@
-import { useState } from "react";
+import { ReactElement, useState } from "react";
 import BlackButton from "../common/Buttons/BlackButton";
 import Partners from "../common/Parters/Partners";
+
+interface DiscoverMoreBtnProp {
+  src: string;
+}
+
+const DiscoverMoreBtn = ({ src }: DiscoverMoreBtnProp) => {
+  return (
+    <div
+      onClick={() => window.open(src, "_blank")}
+      className="group-hover w-full set-zIndex btn flex relative hover:text-darkText transition-all duration-300 hover-div ease-in-out"
+    >
+      <span className="z-50 opacity-90 text-sm xl:text-base above-1440:text-[18px] font-medium transition-all duration-300 ease-in-out  group-hover:delay-500">
+        Discover More
+      </span>
+      <svg
+        width="33"
+        height="6"
+        viewBox="0 0 33 6"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="arrow-fill-color"
+      >
+        <path d="M33 3L28 0.113251L28 5.88675L33 3ZM-4.37114e-08 3.5L28.5 3.5L28.5 2.5L4.37114e-08 2.5L-4.37114e-08 3.5Z" />
+      </svg>
+    </div>
+  );
+};
 
 const Products = () => {
   const [selectedItem, setSelectedItem] = useState(0);
@@ -8,10 +35,11 @@ const Products = () => {
   return (
     <div id="4" className="pb-[200px] sm:pb-[270px] border-b border-b-darkText">
       <div>
-        <BlackButton btnText="03 // Ecosystem" />
+        <BlackButton btnNum={"03"} btnText="Ecosystem" />
         <div className="section-title-text font-azeretMono">
-          Muon’s versatile validation layer fuels innovative solutions across a
-          wide range of use-cases. Here are some of the dApps built on Muon. 
+          Muon’s versatile validation layer fuels innovative <br /> solutions
+          across a wide range of use-cases. <br /> Here are some of the dApps
+          built on Muon. 
         </div>
       </div>
       <div className="collapse-container mt-16 sm:mt-[90px] select-none">
@@ -28,42 +56,20 @@ const Products = () => {
           >
             <div className="flex below-1024:flex-col w-full h-full items-center below-1024:!gap-2 gap-[50px] 1024-1279:gap-[25px]">
               <img
-                className="w-[165px] h-[191px] above-1440:w-[218px] above-1440:h-[30px] 1024-1279:w-[100px] custom-1280:w-[150px]"
-                src="./assets/images/products/derand-logo.svg"
-                alt=""
-              />
-              <img
                 className="w-[300px] h-[200px] above-1440:w-[450px] below-1024:-mt-24 above-1440:h-[154px] 1024-1279:w-[200px] custom-1280:w-[200px] above-1280:w-[310px]"
                 src="./assets/images/products/derand-item.svg"
                 alt=""
               />
             </div>
             <div className="flex flex-col sm:flex-row h-full w-full justify-end below-1024:pb-20">
-              <div className="right-side w-full flex flex-col gap-5 above-1440:gap-[50px] justify-center p-5 sm:p-0 below-1024:!w-full lg:max-w-[392px] above-1440:max-w-[494px]">
-                <div className="font-azeretMono text-whiteTextSecond !leading-[28px] below-1024:!leading-5 opacity-70 text-[12px] sm:text-[14px] lg:text-base above-1440:text-[20px] 1024-1279:text-sm">
+              <div className="right-side w-full flex flex-col gap-5 justify-center p-5 sm:p-0 below-1024:!w-full lg:max-w-[392px] above-1440:max-w-[694px]">
+                <div className="font-azeretMono text-whiteTextSecond !leading-[32px] below-1024:!leading-5  text-[12px] sm:text-[14px] lg:text-base above-1440:text-[20px] 1024-1279:text-sm">
                   A modular, chain-agnostic and cost-efficient verifiable random
                   number generator that can be used with on-chain and off-chain
                   tools.
                 </div>
-                <div className="border cursor-pointer border-darkText font-dmSans leading-4 flex items-center w-full max-w-[364px] above-1440:max-w-[487px] h-[47px] above-1440:h-[58px] justify-between pl-3 pr-8">
-                  <div
-                    onClick={() => window.open("https://derand.dev/", "_blank")}
-                    className="above-1440:text-[20px]"
-                  >
-                    Discover More
-                  </div>
-                  <svg
-                    width="66"
-                    height="8"
-                    viewBox="0 0 66 8"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M65.3536 4.35355C65.5488 4.15829 65.5488 3.84171 65.3536 3.64645L62.1716 0.464466C61.9763 0.269204 61.6597 0.269204 61.4645 0.464466C61.2692 0.659728 61.2692 0.976311 61.4645 1.17157L64.2929 4L61.4645 6.82843C61.2692 7.02369 61.2692 7.34027 61.4645 7.53553C61.6597 7.7308 61.9763 7.7308 62.1716 7.53553L65.3536 4.35355ZM0 4.5H65V3.5H0V4.5Z"
-                      fill="#242424"
-                    />
-                  </svg>
+                <div className="flex w-full justify-end">
+                  <DiscoverMoreBtn src={"https://derand.dev/"} />
                 </div>
               </div>
             </div>
@@ -186,7 +192,7 @@ const Products = () => {
 
 type EcosystemCardProp = {
   imageSrc: string;
-  content: string;
+  content: string | ReactElement;
   buttonSrc: string;
   title: string;
 };
@@ -199,7 +205,7 @@ const EcosystemCard = ({
 }: EcosystemCardProp) => {
   return (
     <div className="flex below-1024:flex-col w-full items-center justify-between">
-      <div className="w-full flex justify-center">
+      <div className="w-full flex ">
         <img
           className={`w-[300px] h-[200px] above-1440:w-[450px] below-1024:-mt-24 ${
             title == "MetaBridge" ? "" : "above-1440:h-[154px]"
@@ -208,44 +214,22 @@ const EcosystemCard = ({
           alt=""
         />
       </div>
-      <div className="w-full max-w-[530px]">
+      <div className="w-full max-w-[750px]">
         <div className="flex flex-col sm:flex-row h-full w-full justify-end">
           <div
-            className={`right-side w-full flex flex-col gap-5 above-1440:gap-[50px] justify-center p-5 sm:p-0 below-1024:!w-full lg:max-w-[392px] ${
+            className={`right-side w-full flex flex-col gap-5  justify-center p-5 sm:p-0 below-1024:!w-full lg:max-w-[392px] ${
               title === "MetaBridge"
-                ? "above-1440:max-w-[525px]"
+                ? "above-1440:max-w-[865px]"
                 : title === "LayerZero DVN"
-                ? "above-1440:max-w-[500px]"
-                : "above-1440:max-w-[515px]"
+                ? "above-1440:max-w-[676px]"
+                : "above-1440:max-w-[825px]"
             } `}
           >
-            <div className="font-azeretMono text-whiteTextSecond !leading-[28px] below-1024:!leading-5 opacity-70 text-[12px] sm:text-[14px] lg:text-base above-1440:text-[20px] 1024-1279:text-sm">
+            <div className="font-azeretMono text-whiteTextSecond !leading-[28px] below-1024:!leading-5 text-[12px] sm:text-[14px] lg:text-base above-1440:text-[20px] 1024-1279:text-sm">
               {content}
             </div>
-            <div
-              onClick={() => {
-                window.open(buttonSrc, "_blank");
-              }}
-              className="border cursor-pointer border-darkText font-dmSans leading-4 flex items-center w-full max-w-[364px] above-1440:max-w-[487px] h-[47px] above-1440:h-[58px] justify-between pl-3 pr-8"
-            >
-              <div
-                onClick={() => window.open(buttonSrc, "_blank")}
-                className="above-1440:text-[20px]"
-              >
-                Discover More
-              </div>
-              <svg
-                width="66"
-                height="8"
-                viewBox="0 0 66 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M65.3536 4.35355C65.5488 4.15829 65.5488 3.84171 65.3536 3.64645L62.1716 0.464466C61.9763 0.269204 61.6597 0.269204 61.4645 0.464466C61.2692 0.659728 61.2692 0.976311 61.4645 1.17157L64.2929 4L61.4645 6.82843C61.2692 7.02369 61.2692 7.34027 61.4645 7.53553C61.6597 7.7308 61.9763 7.7308 62.1716 7.53553L65.3536 4.35355ZM0 4.5H65V3.5H0V4.5Z"
-                  fill="#242424"
-                />
-              </svg>
+            <div className="flex w-full justify-end">
+              <DiscoverMoreBtn src={buttonSrc} />
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import "./App.css";
 import Features from "./components/Features/Features";
 import Navbar from "./components/Navbar/Navbar";
-// import MuonSection from "./components/MuonSection/MuonSection";
+import MuonSection from "./components/MuonSection/MuonSection";
 import Products from "./components/Products/Products";
 import News from "./components/News/News";
 import MoveTopButton from "./components/common/Buttons/MoveTopButton";
@@ -16,7 +16,7 @@ function App() {
           <Navbar />
           <Features />
           <MuonStructure />
-          {/* <MuonSection /> */}
+          <MuonSection />
           <Products />
           <News />
           <div className="mt-[120px] above-1440:mt-[170px] below-1024:mt-10">

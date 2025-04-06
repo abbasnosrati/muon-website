@@ -5,49 +5,53 @@ const News = () => {
   const news = [
     {
       id: 0,
-      date: "2024/5/6",
-      title: "",
-      shortText:
-        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-      text: "Verify, process & access your critical app-data on a permissionless oracle network and enjoy its fast modular security architecture.‍Verify, process & access your critical app-data on a permissionless oracle network and enjoy its fast modular security architecture.‍Verify, process & access your critical app-data on a permissionless oracle network and enjoy its fast modular security architecture.‍",
+      date: "December 15, 2025",
+      title: (
+        <>
+          <span className="font-bold">Auri</span> powered by Muon AI-Safe.
+        </>
+      ),
+      shortText: "An Autonomous AI Agent for Trustless Transactions.",
+      text: "She transacts, Interacts and Transacts autonomously. In the upcoming phase, Auri will Manage a liquid token on an AI agent launchpad.",
       imgSrc: "./assets/images/products/AIsafe.svg",
+      imgScrHover: "./assets/images/products/AIsafeHover.svg",
     },
-    { id: 1, date: "2024/5/7", title: "", shortText: "", imgSrc: "", text: "" },
-    { id: 2, date: "2024/5/8", title: "", shortText: "", imgSrc: "", text: "" },
-    { id: 3, date: "2024/5/9", title: "", shortText: "", imgSrc: "", text: "" },
     {
-      id: 4,
-      date: "2024/5/10",
-      title: "",
-      shortText: "",
+      id: 1,
+      date: "December 16, 2025",
+      title: (
+        <>
+          <span className="font-bold">MuonDVN</span>
+        </>
+      ),
+      shortText:
+        "Separation of Verification and Execution in Cross-Chain Transactions",
       imgSrc: "",
-      text: "",
+      imgScrHover: "",
+      text: "Muon has been deployed as a LayerZero Decentralized Verification Network (DVN), introducing a trustless, modular and multichain framework for transaction validation",
     },
   ];
   return (
     <div className="pb-[65px] border-b border-b-darkText font-azeretMono">
-      <BlackButton btnText="04 // News" />
-      <div className="flex flex-col lg:flex-row news-container w-full justify-between custom-1024:gap-10 above-1024:gap-[158px] above-1024::pr-[80px]">
-        <div className="left-side left-scroll w-full sm:min-w-[364px] sm:max-w-[364px] above-1440:max-w-[484px] mt-3 flex flex-col gap-6 above-1440:gap-[45px] max-h-[385px] above-1440:max-h-[520px]  overflow-y-auto overflow-hidden [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-orangePrimary [&::-webkit-scrollbar-track]:bg-gray-300">
+      <BlackButton btnNum={"04"} btnText="News" />
+      <div className="flex flex-col lg:flex-row news-container w-full  custom-1024:gap-10  mt-[30px]">
+        <div className="left-side left-scroll w-full sm:min-w-[364px] sm:max-w-[567px] above-1440:max-w-[758px] flex flex-col gap-6 above-1440:gap-[45px] max-h-[485px] above-1440:max-h-[820px]  overflow-y-auto overflow-hidden [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-orangePrimary [&::-webkit-scrollbar-track]:bg-gray-300">
           {news.map((item, index) => (
             <div
               onClick={() => setSelectedNews(index)}
               key={index}
-              className={`border relative ml-2 cursor-pointer news-box border-darkText min-h-[112px] above-1440:min-h-[143px] p-[10px] text-darkTextOpacity ${
-                selectedNews == index && "text-whiteTextSecond"
-              } text-sm above-1440:text-[18px] below-1024:text-[12px] leading-4 flex flex-col gap-5`}
+              className={`border relative  ${
+                selectedNews == index ? "bg-news-selected-gradient" : ""
+              } cursor-pointer news-box border-darkText min-h-[196px] above-1440:min-h-[262px] p-[20px] above-1440:p-[27px] text-whiteTextSecond text-sm above-1440:text-[18px] below-1024:text-[12px] leading-4 flex flex-col justify-end gap-5`}
             >
+              <div className={`opacity-70`}>{item.date}</div>
               <div
-                className={`opacity-70 ${
-                  selectedNews == index ? "hidden" : "flex"
-                }`}
+                className={`leading-[22px] text-[18px] above-1440:text-[24px] `}
               >
-                {item.date}
+                {item.title}
               </div>
               <div
-                className={`leading-[22px] opacity-70  ${
-                  selectedNews == index ? "hidden" : "flex"
-                }`}
+                className={`leading-[26px] above-1440:leading-[36px] text-base above-1440:text-[22px] above-1440:font-medium tracking-[1px]`}
               >
                 {item.shortText}
               </div>
@@ -56,56 +60,36 @@ const News = () => {
                   selectedNews == index ? "flex" : "hidden"
                 }`}
               >
-                <img src={item.imgSrc} className="w-full h-full" />
+                {/* <img src={item.imgSrc} className="w-full h-full" /> */}
               </div>
             </div>
           ))}
         </div>
-        <div className="right-side flex flex-col items-center justify-center font-azeretMono w-full ">
+        <div className="right-side relative flex flex-col h-[836px] items-center justify-center font-azeretMono w-full border border-darkText">
           {news.map((item, index) => (
             <div
               key={index}
-              className={` flex-col mt-10 ${
+              className={` flex-col mt-40 ${
                 item.id === selectedNews ? "flex" : "hidden"
               }`}
             >
-              <div className="text-sm text-darkTextOpacity opacity-70 underline decoration-whiteTextSecond underline-offset-4">
+              <div className="text-sm text-whiteText decoration-whiteTextSecond">
                 {item.date}
               </div>
-              <div className="text-sm above-1440:text-[18px] relative text-darkTextOpacity opacity-70 above-1440:text-whiteTextSecond mt-4 max-w-[319px] above-1440:max-w-[412px]">
-                <div className="absolute -left-3">-</div>
+              <div className="text-sm above-1440:text-[22px] relative text-whiteText mt-4">
+                {item.title}
+              </div>
+              <div className="text-sm above-1440:text-[22px] above-1440:leading-[36px] relative text-whiteText  mt-4 max-w-[319px] above-1440:max-w-[612px]">
                 {item.shortText}
               </div>
-              <div className="text-[10px] above-1440:leading-[30px] above-1440:max-w-[688px] sm:text-sm lg:text-base above-1440:text-[22px] text-whiteTextSecond mt-20 below-1024:mt-10 leading-[18px]">
-                {item.text.split(".").map((sentence, index) => (
-                  <span key={index}>
-                    {sentence}
-                    {index < item.text.split(".").length - 1 && (
-                      <>
-                        . <br />
-                      </>
-                    )}
-                  </span>
-                ))}
+              <div className="text-[10px] above-1440:leading-[30px] above-1440:max-w-[688px] sm:text-sm lg:text-base above-1440:text-[20px] font-medium text-whiteTextSecond mt-40 below-1024:mt-10 leading-[18px]">
+                {item.text}
               </div>
             </div>
           ))}
-          <div className="flex items-end w-full font-azeretMono justify-end text-sm text-darkTextOpacity above-1440:text-whiteTextSecond above-1440:underline opacity-70 above-1440:text-[18px] h-full above-1024:mr-24 above-1440:mr-48 ">
+          <div className="absolute bottom-[25px] right-[25px]">
             <div className="flex items-center gap-2 cursor-pointer">
-              View More
-              <svg
-                width="22"
-                height="6"
-                viewBox="0 0 33 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="arrow-fill-color"
-              >
-                <path
-                  d="M33 3L28 0.113251L28 5.88675L33 3ZM-4.37114e-08 3.5L28.5 3.5L28.5 2.5L4.37114e-08 2.5L-4.37114e-08 3.5Z"
-                  fill="#FFFFFF"
-                />
-              </svg>
+              <img src="/assets/images/news/viewMore.svg" alt="" />
             </div>
           </div>
         </div>

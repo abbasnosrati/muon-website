@@ -4,7 +4,7 @@ import BlackButton from "../common/Buttons/BlackButton";
 const structureItems = [
   {
     id: 0,
-    title: "02.1 Muon Network",
+    title: "Muon Network",
     titleImgSrc: "./assets/images/structure/muon-network.svg",
     description:
       "A decentralized network of nodes that deploy and run MuonApps. Each app runs on a dynamic subnet where nodes collaborate to operate and provide TSS signatures as proof, verifiable on-chain and off-chain.",
@@ -13,18 +13,24 @@ const structureItems = [
   },
   {
     id: 1,
-    title: "02.2 MuonApp",
+    title: "MuonApp",
     titleImgSrc: "./assets/images/structure/muon-app.svg",
-    description: `MuonApps are applications that projects can develop and deploy on the network to run their micro-
-    validators. Unlike smart contracts, which operate on the blockchain and are isolated from real-world
-    data, MuonApps have access to real-world data and function similarly to services running on a computer
-    or cloud platform.`,
+    description: (
+      <>
+        MuonApps are applications that projects can develop and deploy on the
+        network to run their micro-validators.
+        <br />
+        Unlike smart contracts, which operate on the blockchain and are isolated
+        from real-world data, MuonApps have access to real-world data and
+        function similarly to services running on a computer or cloud platform.
+      </>
+    ),
     descriptionImgSrc: "./assets/images/structure/muon-apps.svg",
     readeMoreSrc: "",
   },
   {
     id: 2,
-    title: "02.3 Muon Client SDK",
+    title: "Muon Client SDK",
     titleImgSrc: "./assets/images/structure/muon-sdk.svg",
 
     description:
@@ -34,10 +40,10 @@ const structureItems = [
   },
   {
     id: 3,
-    title: "02.4 Muon Security",
+    title: "Muon Security",
     titleImgSrc: "./assets/images/structure/muon-security.svg",
 
-    description: "",
+    description: null,
     descriptionImgSrc: "./assets/images/structure/muon-security-stack.svg",
     readeMoreSrc: "",
   },
@@ -55,12 +61,12 @@ const MuonStructure = () => {
       }`}
     >
       <div>
-        <BlackButton btnText={"02 // Muon Structure"} />
+        <BlackButton btnNum={"02"} btnText={"Muon Structure"} />
         <div className="section-title-text"></div>
       </div>
 
       <div className="flex below-1024:flex-col justify-between">
-        <div className="right-side flex  above-1440:gap-3 w-full below-1024:w-full max-w-[400px] above-1440:max-w-[500px]">
+        <div className="right-side flex flex-col gap-8  above-1440:gap-10 w-full below-1024:w-full max-w-[400px] above-1440:max-w-[470px]">
           <div>
             {structureItems.map((item, index) => (
               <div
@@ -69,38 +75,41 @@ const MuonStructure = () => {
               >
                 <img
                   src={item.titleImgSrc}
-                  className="w-[80%] below-1024:w-[60%] above-1440:w-full"
+                  className="w-[80%] below-1024:w-[60%] above-1440:w-[70%]"
                 />
               </div>
             ))}
           </div>
-          <div className="structure-titles below-1024:text-[12px] below-1024:-ml-12 -ml-8 above-1440:ml-0 font-azeretMono text-sm above-1440:text-[18px] 1024-1279:text-[12px] font-light leading-[10px] flex flex-col gap-[14px] above-1440:gap-6 mt-[3px]">
+          <div className="structure-titles below-1024:text-[12px] ml-5 font-azeretMono text-sm above-1440:text-[23px] 1024-1279:text-[12px] font-semibold tracking-[2px] leading-[10px] flex flex-col gap-[30px] mt-[3px]">
             {structureItems.map((item, index) => (
               <div
                 key={index}
-                className={`${
-                  index === selectedItem ? "underline" : "text-darkText"
-                } cursor-pointer text-nowrap`}
+                className={` relative ${
+                  index === selectedItem ? "" : "text-darkText"
+                } cursor-pointer text-nowrap hover:text-whiteText`}
                 onClick={() => setSelectedItem(index)}
               >
+                {index === selectedItem && (
+                  <div className="w-[10px] absolute h-[10px] rounded-full -left-5 bg-orangePrimary"></div>
+                )}
                 {item.title}
               </div>
             ))}
           </div>
         </div>
 
-        <div className="flex items-end above-1440:max-w-[620px]  below-1024:w-full above-1280:max-w-[500px] 1024-1279:max-w-[250px] below-1024:my-5 ">
+        <div className="flex items-center above-1440:max-w-[620px]  below-1024:w-full above-1280:max-w-[500px] 1024-1279:max-w-[250px] below-1024:my-5 ">
           {structureItems.map((item, index) => (
             <div
               key={index}
               className={`${
                 selectedItem === index
-                  ? "flex text-[12px] 1024-1279:text-[10px] above-1280:text-base !font-light below-1024:!leading-5 !leading-[28px] above-1440:text-[20px] font-azeretMono mr-5"
+                  ? "flex text-[12px]1024-1279:text-[10px] above-1280:text-base  !font-light below-1024:!leading-7 !leading-[32px] above-1440:text-[20px] font-azeretMono mr-5"
                   : "hidden"
-              }  ${item.description.length == 0 && "hidden"}`}
+              }  ${!item.description && "hidden"}`}
             >
               <div>
-                <p>{item.description}</p>
+                <p className="">{item.description}</p>
 
                 <p className="mt-[45px] border-b cursor-pointer border-whiteText w-fit pb-[4px] relative after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg]">
                   Read More
@@ -116,7 +125,7 @@ const MuonStructure = () => {
               key={index}
               className={`${
                 selectedItem === index ? "flex flex-col w-full" : "hidden"
-              } items-center justify-center`}
+              } items-center `}
             >
               <div className="relative">
                 <img
