@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="font-azeretMono pb-[30px]">
       <div className="top-side border-t border-darkText flex flex-col lg:flex-row justify-between pt-[8px]">
         <div className="right-side ite pb-2 text-whiteTextSecond pt-[18px] lg:pr-[38px] flex flex-col justify-between">
-          <div className="leading-[26px] text-whiteText above-1440:leading-[36px]  w-[560px] above-1440:w-[700px] lg:text-[20px] above-1440:text-[25px] below-1024:text-[12px] below-1024:w-full below-1024:mb-5">
+          <div className="leading-[26px] text-whiteText above-1440:leading-[36px] w-[560px] above-1440:w-[700px] lg:text-[20px] above-1440:text-[25px] below-1024:text-[12px] below-1024:w-full below-1024:mb-5">
             Join the Muon Ecosystem and enjoy using its tamper-resistant proofs
             on any chain. 
           </div>

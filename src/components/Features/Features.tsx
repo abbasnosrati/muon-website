@@ -115,7 +115,7 @@ const Features = () => {
           <div className="lg:border-t lg:border-whiteTextSecond w-full custom-1920:min-w-[1007px] lg:min-w-[600px] 1024-1439:min-w-[685px] custom-1440:min-w-[720px]">
             <div className="lg:max-w-[580px] text-[12px] 1024-1439:text-[12px] custom-1440:text-base custom-1920:text-[20px] !leading-[32px]  below-1024:!leading-5 font-light mt-[10px] above-1280:mt-[26px] 1024-1439:mt-[10px] text-whiteTextSecond 1024-1439:ml-14 custom-1440:ml-14 custom-1920:ml-14">
               MuonApps – micro-validators <br /> built on Muon using high-level
-              languages, are fully programmable, offering developers the
+              languages - are fully programmable, offering developers the
               convenience and flexibility of Web2.
             </div>
           </div>
@@ -186,7 +186,7 @@ const Features = () => {
           </div>
           <div className="text-[11px] font-medium relative border-r border-whiteTextSecond h-[156px] -mt-[1px] flex items-end  pr-2 leading-[32px]">
             MuonApps – micro-validators built on Muon using high-level languages
-            are fully programmable, offering developers the convenience and
+            - are fully programmable, offering developers the convenience and
             flexibility of Web2.
           </div>
         </div>
