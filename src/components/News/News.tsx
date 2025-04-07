@@ -63,7 +63,7 @@ const News = () => {
                 {item.date}
               </div>
               <div
-                className={`leading-[16px] text-[13px] sm:text-[18px] above-1440:text-[24px] font-bold`}
+                className={`leading-[16px] text-[13px] sm:text-[18px] above-1440:text-[24px] font-semibold`}
               >
                 {item.title}
               </div>

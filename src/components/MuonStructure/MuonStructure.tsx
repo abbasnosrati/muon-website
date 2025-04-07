@@ -127,7 +127,7 @@ const MuonStructure = () => {
                         </div>
                       </div>
 
-                      <p className="mt-[45px] text-[18px] font-medium  border-b cursor-pointer border-whiteText w-fit pb-1 relative after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg]">
+                      <p className="mt-[45px] text-sm above-1440:text-[18px] font-medium  border-b cursor-pointer border-whiteText w-fit pb-1 relative after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg]">
                         Read More
                       </p>
                     </div>
@@ -144,7 +144,7 @@ const MuonStructure = () => {
                 key={index}
                 className={` relative ${
                   index === selectedItem ? "" : "text-darkText"
-                } cursor-pointer text-nowrap hover:text-whiteText`}
+                } cursor-pointer text-nowrap `}
                 onClick={() => setSelectedItem(index)}
                 onMouseEnter={() => setHoveredItem(item.id)}
                 onMouseOut={() => setHoveredItem(null)}
@@ -171,7 +171,7 @@ const MuonStructure = () => {
               <div>
                 <p className="">{item.description}</p>
 
-                <p className="mt-[45px] text-[18px] font-medium border-b cursor-pointer border-whiteText w-fit pb-[4px] relative after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg]">
+                <p className="mt-[45px] text-sm above-1440:text-[18px] font-medium border-b cursor-pointer border-whiteText w-fit pb-[4px] relative after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg]">
                   Read More
                 </p>
               </div>
@@ -196,7 +196,7 @@ const MuonStructure = () => {
                   }`}
                 />
                 {selectedItem == 3 ? (
-                  <p className="mt-[45px] text-[18px] font-medium flex below-1024:hidden absolute border-b cursor-pointer border-whiteText w-fit pb-[4px] left-0 bottom-[7%] after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg] 1024-1279:text-[10px]  below-1024:!leading-5 !leading-[28px] font-azeretMono ">
+                  <p className="mt-[45px] text-sm above-1440:text-[18px] font-medium flex below-1024:hidden absolute border-b cursor-pointer border-whiteText w-fit pb-[4px] left-0 bottom-[7%] after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg] 1024-1279:text-[10px]  below-1024:!leading-5 !leading-[28px] font-azeretMono ">
                     Read More
                   </p>
                 ) : (
@@ -248,7 +248,7 @@ const MuonStructure = () => {
                     </div>
                   </div>
 
-                  <p className="mt-[45px] text-[18px] font-medium  border-b cursor-pointer border-whiteText w-fit pb-1 relative after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg]">
+                  <p className="mt-[45px] text-sm above-1440:text-[18px] font-medium  border-b cursor-pointer border-whiteText w-fit pb-1 relative after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg]">
                     Read More
                   </p>
                 </div>
