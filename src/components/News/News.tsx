@@ -38,7 +38,7 @@ const News = () => {
     },
   ];
   return (
-    <div className="pb-[65px] border-b border-b-darkText font-azeretMono">
+    <div className="pb-[65px] font-azeretMono">
       <BlackButton btnNum={"04"} btnText="News" />
       <div className="flex flex-col lg:flex-row news-container w-full  custom-1024:gap-10  mt-[30px]">
         <div className="left-side left-scroll w-full sm:min-w-[364px] sm:max-w-[567px] above-1440:max-w-[758px] flex flex-col gap-6 above-1440:gap-[45px] max-h-[485px] above-1440:max-h-[820px]  overflow-y-auto overflow-hidden [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-orangePrimary [&::-webkit-scrollbar-track]:bg-gray-300">

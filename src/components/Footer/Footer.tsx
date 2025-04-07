@@ -12,7 +12,7 @@ const Footer = () => {
           {/* <div className=" below-1024:hidden border border-darkText w-full max-w-[300px] above-1440:max-w-[400px] above-1440:h-[59px] h-12 mb-7"></div> */}
         </div>
         <div className="left-side text-[12px] above-1024:text-base above-1440:text-[20px] font-light !leading-[18px] above-1024:pl-[140px] pt-[20px] text-darkText">
-          <div className="flex flex-col gap-[20px] below-1024:gap-[5px] mt-14">
+          <div className="flex flex-col gap-[24px] below-1024:gap-[10px] mt-14">
             {menuItems.map((item, index) => (
               <div className="flex" key={index}>
                 {item.title !== "Socials" && (
@@ -27,7 +27,7 @@ const Footer = () => {
                     >
                       {item.title}
                     </div>
-                    <div className="flex gap-5 below-1024:gap-3 ml-[44px] below-1024:ml-[25px]">
+                    <div className="flex gap-6 below-1024:gap-3 ml-[30px] below-1024:ml-[25px]">
                       {item.subItems.length > 0 &&
                         item.title != "Socials" &&
                         item.subItems.map((sub, index) => (
