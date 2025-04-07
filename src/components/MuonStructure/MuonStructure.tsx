@@ -82,7 +82,7 @@ const MuonStructure = () => {
                   className="w-[86%] sm:w-[60%] above-1440:w-[70%] hidden sm:flex"
                 />
 
-                <div className="flex flex-col sm:hidden">
+                <div className="flex flex-col items-center sm:hidden">
                   <img
                     src={
                       selectedItem == 3
