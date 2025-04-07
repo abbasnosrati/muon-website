@@ -61,7 +61,7 @@ const News = () => {
                 {item.date}
               </div>
               <div
-                className={`leading-[16px] text-[13px] sm:text-[18px] above-1440:text-[24px] `}
+                className={`leading-[16px] text-[13px] sm:text-[18px] above-1440:text-[24px] font-bold`}
               >
                 {item.title}
               </div>
@@ -80,7 +80,7 @@ const News = () => {
             </div>
           ))}
         </div>
-        <div className="right-side relative bg-newsHoverColor flex flex-col min-h-[415px] lg:h-[836px] items-center mt-10 lg:mt-0 font-azeretMono w-full border border-darkText">
+        <div className="right-side relative bg-newsHoverColor flex flex-col min-h-[415px] lg:h-[754px] items-center mt-10 lg:mt-0 font-azeretMono w-full border border-darkText">
           {news.map((item, index) => (
             <div
               key={index}
