@@ -161,7 +161,7 @@ const MuonStructure = () => {
               key={index}
               className={`${
                 selectedItem === index
-                  ? "flex text-[11px] 1024-1279:text-[10px] above-1280:text-base !font-light below-1024:!leading-[22px]  above-1440:text-[20px] font-azeretMono sm:mr-5"
+                  ? "flex text-[11px] 1024-1279:text-[10px] above-1280:text-base !font-light below-1024:!leading-[22px] above-1440:leading-[32px] lg:leading-[22px] custom-1440:leading-[28px]  above-1440:text-[20px] font-azeretMono sm:mr-5"
                   : "hidden"
               }  ${!item.description && "hidden"}`}
             >
