@@ -58,7 +58,7 @@ const BigMenu = () => {
                   {menu.title}
                 </div>
                 <div
-                  className={`text-whiteTextSecond sub-menu-items ${
+                  className={`text-whiteTextSecond sub-menu-items mt-[2 px] ${
                     menu.id == hoveredMenu ? "flex" : "hidden"
                   }  gap-5 above-1440:gap-6 overflow-hidden hover:transition-all duration-500`}
                 >

@@ -68,7 +68,7 @@ const News = () => {
                 {item.title}
               </div>
               <div
-                className={`leading-[16px] sm:leading-[22px] above-1440:leading-[24px] text-[12px] sm:text-sm above-1440:text-[18px] above-1440:font-medium tracking-[1px]`}
+                className={`leading-[16px] sm:leading-[22px] above-1440:leading-[28px] text-[12px] sm:text-sm above-1440:text-[18px] above-1440:font-medium tracking-[1px]`}
               >
                 {item.description}
               </div>
@@ -96,7 +96,7 @@ const News = () => {
               <div className="text-[13px] above-1440:mb-1 sm:text-sm above-1440:text-[24px] font-bold relative text-whiteTextSecond mt-2 above-1440:mt-4">
                 {item.title}
               </div>
-              <div className="text-[12px] sm:text-sm above-1440:text-[18px] above-1440:leading-[24px] relative text-whiteTextSecond above-1440:font-semibold  above-1440:mt-4 max-w-[500px] mt-2 above-1440:max-w-[612px]">
+              <div className="text-[12px] sm:text-sm above-1440:text-[18px] above-1440:leading-[32px] relative text-whiteTextSecond above-1440:font-semibold  above-1440:mt-4 max-w-[500px] mt-2 above-1440:max-w-[612px]">
                 {item.description}
               </div>
               <div className="flex-grow"></div>
