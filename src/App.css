@@ -134,6 +134,36 @@ body {
   }
 }
 
+@keyframes expandMobile {
+  100% {
+    width: 110px;
+  }
+}
+.expand-animation-mobile {
+  animation: expandMobile 2s ease-in-out forwards;
+  animation-play-state: paused;
+}
+
+@keyframes expandMobile1 {
+  100% {
+    width: 162px;
+  }
+}
+.expand-animation-mobile1 {
+  animation: expandMobile1 2s ease-in-out forwards;
+  animation-play-state: paused;
+}
+
+@keyframes expandMobile2 {
+  100% {
+    width: 142px;
+  }
+}
+.expand-animation-mobile2 {
+  animation: expandMobile2 2s ease-in-out forwards;
+  animation-play-state: paused;
+}
+
 .expand-animation-fast {
   animation: expandWidth 2s ease-in-out forwards;
   animation-play-state: paused;
