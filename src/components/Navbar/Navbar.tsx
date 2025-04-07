@@ -108,7 +108,7 @@ const Navbar = () => {
               General-Purpose, <br /> Request-Based Validation Layer
             </div>
             <div className=" inline-flex flex-col items-end">
-              <div className="text-[24px] below-1024:text-sm above-1440:text-[32px] above-1440:leading-[42px] text-whiteTextSecond leading-5 mt-4 lg:mt-[40px] font-dmSans  !font-normal">
+              <div className="text-[24px] below-1024:text-sm above-1440:text-[32px] above-1440:leading-[42px] text-whiteTextSecond leading-5 mt-4 lg:mt-[30px] font-dmSans  !font-normal">
                 Powering the Intent-Centric Economy of the Future
               </div>
             </div>
