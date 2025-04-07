@@ -101,7 +101,12 @@ const Products = () => {
               <EcosystemCard
                 imageSrc={"./assets/images/products/AIsafe.svg"}
                 content={
-                  "The first secure wallet for agents. With access to trustless data, agents can interact with blockchain ecosystems and transact in a verifiably autonomous way. "
+                  <>
+                    The first secure wallet for agents.
+                    <br /> With access to trustless data, agents can interact
+                    with blockchain ecosystems and transact in <br /> a
+                    verifiably autonomous way.
+                  </>
                 }
                 buttonSrc={"https://x.com/Auri_agent "}
                 title="AI Safe"
@@ -149,7 +154,11 @@ const Products = () => {
               <EcosystemCard
                 imageSrc={"./assets/images/products/layerzerodvn.svg"}
                 content={
-                  "A permissionless and chain-agnostic DVN (Decentralized Verifier Network) that leverages Muon Validation Layer to verify LayerZero transactions."
+                  <>
+                    A permissionless and chain-agnostic DVN <br />{" "}
+                    (Decentralized Verifier Network) that leverages Muon
+                    Validation Layer to verify LayerZero transactions.
+                  </>
                 }
                 buttonSrc={
                   "https://github.com/meta-bridge-protocol/muon-layer0-dvn"
@@ -220,14 +229,14 @@ const EcosystemCard = ({
           alt=""
         />
       </div>
-      <div className="w-full max-w-[550px]">
+      <div className="w-full max-w-[700px]">
         <div className="flex flex-col sm:flex-row h-full w-full justify-end">
           <div
             className={`right-side w-full flex flex-col gap-5 justify-center p-5 sm:p-0 below-1024:!w-full lg:max-w-[392px] ${
               title === "MetaBridge"
                 ? "above-1440:max-w-[865px]"
                 : title === "LayerZero DVN"
-                ? "above-1440:max-w-[676px]"
+                ? "above-1440:max-w-[876px]"
                 : "above-1440:max-w-[825px]"
             } `}
           >
