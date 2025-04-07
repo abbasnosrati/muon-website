@@ -114,5 +114,5 @@ body {
 }
 
 .footer-social {
-  @apply font-azeretMono font-medium text-[18px] tracking-[4px];
+  @apply font-azeretMono font-medium text-sm above-1440:text-[18px] tracking-[2px] above-1440:tracking-[4px];
 }

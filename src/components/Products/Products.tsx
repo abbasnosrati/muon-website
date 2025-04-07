@@ -104,8 +104,9 @@ const Products = () => {
                   <>
                     The first secure wallet for agents.
                     <br /> With access to trustless data, agents can interact
-                    with blockchain ecosystems and transact in <br /> a
-                    verifiably autonomous way.
+                    with blockchain ecosystems and transact in{" "}
+                    <br className="hidden above-1440:flex" /> a verifiably
+                    autonomous way.
                   </>
                 }
                 buttonSrc={"https://x.com/Auri_agent "}
@@ -232,7 +233,7 @@ const EcosystemCard = ({
       <div className="w-full max-w-[700px]">
         <div className="flex flex-col sm:flex-row h-full w-full justify-end">
           <div
-            className={`right-side w-full flex flex-col gap-5 justify-center p-5 sm:p-0 below-1024:!w-full lg:max-w-[392px] ${
+            className={`right-side w-full flex flex-col gap-5 justify-center p-5 sm:p-0 below-1024:!w-full lg:max-w-[892px] ${
               title === "MetaBridge"
                 ? "above-1440:max-w-[865px]"
                 : title === "LayerZero DVN"
