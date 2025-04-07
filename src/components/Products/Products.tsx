@@ -131,7 +131,7 @@ const Products = () => {
               <EcosystemCard
                 imageSrc={"./assets/images/products/metabridge.svg"}
                 content={
-                  "Employing Muon as a chain-agnostic validation layer, this chain-independant bridge uses a novel approach for securing multi-chain transactions."
+                  "Employing Muon as a chain-agnostic validation layer, this chain-independent bridge uses a novel approach for securing multi-chain transactions."
                 }
                 buttonSrc={"https://metabridge.space/"}
                 title="MetaBridge"
