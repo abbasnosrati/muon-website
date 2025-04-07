@@ -5,30 +5,36 @@ const News = () => {
   const news = [
     {
       id: 0,
-      date: "December 15, 2025",
-      title: (
-        <>
-          <span className="font-bold">Auri</span> powered by Muon AI-Safe.
-        </>
-      ),
-      shortText: "An Autonomous AI Agent for Trustless Transactions.",
-      text: "She transacts, Interacts and Transacts autonomously. In the upcoming phase, Auri will Manage a liquid token on an AI agent launchpad.",
-      imgSrc: "./assets/images/products/AIsafe.svg",
-      imgScrHover: "./assets/images/products/AIsafeHover.svg",
+      date: "April 9, 2025",
+      title: <>Launch of Muon Protocol</>,
+      description:
+        "The long-anticipated Muon Protocol and its native token $MUON officially launched on April 9th on the Avalanche network.",
+      text: "To ensure a smooth transition from Pion and minimize disruption for our dedicated community, Pion nodes and PION/bonPION tokens are  automatically migrated by the Muon team.",
+      imgSrc: "./assets/images/news/0.svg",
+      bgImgSrc: "./assets/images/news/0Big.svg",
+      imgSrcSelected: "./assets/images/news/0Selected.svg",
     },
     {
       id: 1,
-      date: "December 16, 2025",
-      title: (
-        <>
-          <span className="font-bold">MuonDVN</span>
-        </>
-      ),
-      shortText:
-        "Separation of Verification and Execution in Cross-Chain Transactions",
-      imgSrc: "",
-      imgScrHover: "",
-      text: "Muon has been deployed as a LayerZero Decentralized Verification Network (DVN), introducing a trustless, modular and multichain framework for transaction validation",
+      date: "March 10, 2025",
+      title: <>Muon is Moving to Avalanche!</>,
+      description:
+        "The community has spoken—following a successful Snapshot vote, Muon will launch on AVAX on April 9th.",
+      imgSrc: "./assets/images/news/1.svg",
+      bgImgSrc: "./assets/images/news/1Big.svg",
+      imgSrcSelected: "./assets/images/news/1Selected.svg",
+      text: "This marks the beginning of an exciting new chapter as we integrate deeper into the Avalanche ecosystem. ",
+    },
+    {
+      id: 2,
+      date: "March 4, 2025",
+      title: <>MuonDVN is Live</>,
+      description:
+        "MuonDVN is already live on 10 chains, expanding trustless interoperability in the LayerZero ecosystem.",
+      imgSrc: "./assets/images/news/2.svg",
+      bgImgSrc: "./assets/images/news/2Big.svg",
+      imgSrcSelected: "./assets/images/news/2Selected.svg",
+      text: "The Muon DVN on LayerZero is now live, offering a decentralized, configurable, chain-agnostic, permissionless, and trustless solution for data validation. MuonDVN is already live on 10 chains, expanding trustless interoperability in the LayerZero ecosystem.",
     },
   ];
   return (
@@ -42,22 +48,27 @@ const News = () => {
               key={index}
               className={`border relative  ${
                 selectedNews == index ? "bg-newsHoverColor" : ""
-              } cursor-pointer news-box border-darkText min-h-[149px] sm:min-h-[196px] above-1440:min-h-[262px] p-[15px] above-1440:p-[27px] text-whiteTextSecond text-sm above-1440:text-[18px] below-1024:text-[12px] leading-4 flex flex-col justify-end gap-[5px] sm:gap-5`}
+              } cursor-pointer news-box border-darkText min-h-[149px] sm:min-h-[196px] above-1440:min-h-[262px] p-[15px] above-1440:p-[25px] text-whiteTextSecond text-sm above-1440:text-[18px] below-1024:text-[12px] leading-4 flex flex-col justify-end gap-[5px] sm:gap-5`}
             >
+              <img
+                src={selectedNews == index ? item.imgSrcSelected : item.imgSrc}
+                className="absolute right-0 top-0"
+                alt=""
+              />
               <div
                 className={`opacity-70 text-[10px] sm:text-sm above-1440:text-[18px]`}
               >
                 {item.date}
               </div>
               <div
-                className={`leading-[22px] text-[13px] sm:text-[18px] above-1440:text-[24px] `}
+                className={`leading-[16px] text-[13px] sm:text-[18px] above-1440:text-[24px] `}
               >
                 {item.title}
               </div>
               <div
-                className={`leading-[16px] sm:leading-[26px] above-1440:leading-[36px] text-[12px] sm:text-base above-1440:text-[22px] above-1440:font-medium tracking-[1px]`}
+                className={`leading-[16px] sm:leading-[26px] above-1440:leading-[24px] text-[12px] sm:text-base above-1440:text-[18px] above-1440:font-medium tracking-[1px]`}
               >
-                {item.shortText}
+                {item.description}
               </div>
               <div
                 className={`absolute  left-0 right-0 top-0 bottom-0 ${
@@ -77,16 +88,21 @@ const News = () => {
                 item.id === selectedNews ? "flex" : "hidden"
               }`}
             >
-              <div className="text-[10px] sm:text-sm text-whiteText decoration-whiteTextSecond">
+              <img
+                src={item.bgImgSrc}
+                className="absolute right-0 top-0"
+                alt=""
+              />
+              <div className="text-[10px] sm:text-sm above-1440:text-[18px] text-whiteTextSecond font-normal decoration-whiteTextSecond">
                 {item.date}
               </div>
-              <div className="text-[13px] sm:text-sm above-1440:text-[22px] relative text-whiteText mt-2 sm:mt-4">
+              <div className="text-[13px] sm:text-sm above-1440:text-[24px] font-bold relative text-whiteTextSecond mt-2 sm:mt-4">
                 {item.title}
               </div>
-              <div className="text-[12px] sm:text-sm above-1440:text-[22px] above-1440:leading-[36px] relative text-whiteText  mt-4 max-w-[319px] above-1440:max-w-[612px]">
-                {item.shortText}
+              <div className="text-[12px] sm:text-sm above-1440:text-[18px] above-1440:leading-[24px] relative text-whiteTextSecond above-1440:font-semibold  mt-4 max-w-[319px] above-1440:max-w-[612px]">
+                {item.description}
               </div>
-              <div className="text-[11px] above-1440:leading-[30px] above-1440:max-w-[688px] sm:text-sm lg:text-base above-1440:text-[20px] font-normal sm:font-medium text-whiteTextSecond mt-40 below-1024:mt-8 leading-[18px]">
+              <div className="text-[11px] above-1440:leading-[34px] above-1440:max-w-[688px] sm:text-sm lg:text-base above-1440:text-[20px] font-normal sm:font-medium text-whiteTextSecond mt-40 below-1024:mt-8 leading-[18px]">
                 {item.text}
               </div>
             </div>

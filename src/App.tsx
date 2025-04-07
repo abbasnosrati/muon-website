@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="background-container overflow-hidden">
       <div className="content relative pt-[60px] flex items-center justify-center">
-        <div className="max-w-[1920px] w-full px-10 sm:px-[70px] custom-1280:px-[100px] above-1024:px-[136px] above-1440:px-[182px]">
+        <div className="max-w-[1920px] w-full px-8 sm:px-[70px] custom-1280:px-[100px] above-1024:px-[136px] above-1440:px-[182px]">
           <Navbar />
           <Features />
           <MuonStructure />

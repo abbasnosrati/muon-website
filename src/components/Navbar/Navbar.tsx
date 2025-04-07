@@ -139,10 +139,10 @@ const Navbar = () => {
           alt=""
         />
         <div className="text-whiteText flex flex-col items-center justify-center mt-56">
-          <div className="text-[20px] font-normal ">
+          <div className="text-[24px] font-normal font-dosis">
             General-Purpose,Request-Based, Validation Layer
           </div>
-          <div className="text-[12px] mt-5">
+          <div className="text-[13px] mt-5 font-dmSans">
             Powering the Intent-Centric Economy of the Future
           </div>
         </div>
