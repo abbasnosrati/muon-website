@@ -13,7 +13,7 @@ export const DiscoverMoreBtn = ({ src, btnText }: DiscoverMoreBtnProp) => {
       onClick={() => window.open(src, "_blank")}
       className="group-hover w-full set-zIndex btn flex relative hover:text-darkText transition-all duration-300 hover-div ease-in-out"
     >
-      <span className="z-50 opacity-90 text-sm xl:text-base above-1440:text-[18px] font-medium transition-all duration-300 ease-in-out group-hover:delay-500">
+      <span className="z-50 opacity-90 text-[11px] sm:text-sm xl:text-base above-1440:text-[18px] font-medium transition-all duration-300 ease-in-out group-hover:delay-500">
         {btnText ? btnText : "Discover More"}
       </span>
       <svg

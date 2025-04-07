@@ -152,7 +152,7 @@ const Navbar = () => {
         </div>
         <img
           onClick={() => handleOpenMenu()}
-          className="w-[18px] h-[18px] ml-10 mt-9"
+          className="w-[18px] h-[18px] ml-8 mt-9"
           src="/assets/images/menu/close.svg"
           alt=""
         />

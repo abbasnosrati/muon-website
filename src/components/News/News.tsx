@@ -41,7 +41,7 @@ const News = () => {
     },
   ];
   return (
-    <div className="pb-[65px] font-azeretMono">
+    <div className=" sm:pb-[65px] font-azeretMono">
       <BlackButton btnNum={"04"} btnText="News" />
       <div className="flex flex-col lg:flex-row news-container w-full custom-1024:gap-10 mt-[30px]">
         <div className="left-side left-scroll w-full sm:min-w-[364px] sm:max-w-[567px] above-1440:max-w-[758px] flex flex-col gap-[19px] above-1440:gap-[25px] max-h-[636px] above-1440:max-h-[836px]  overflow-y-auto overflow-hidden [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-orangePrimary [&::-webkit-scrollbar-track]:bg-gray-300">
@@ -51,13 +51,15 @@ const News = () => {
               key={index}
               className={`border relative  ${
                 selectedNews == index ? "bg-newsHoverColor" : ""
-              } cursor-pointer news-box border-darkText min-h-[149px] sm:min-h-[196px] above-1440:min-h-[262px] p-[15px] above-1440:p-[25px] text-whiteTextSecond text-sm above-1440:text-[18px] below-1024:text-[12px] leading-4 flex flex-col justify-end gap-[5px] sm:gap-5`}
+              } cursor-pointer news-box border-darkText min-h-[160px] sm:min-h-[196px] above-1440:min-h-[262px] p-[15px] above-1440:p-[25px] text-whiteTextSecond text-sm above-1440:text-[18px] below-1024:text-[12px] leading-4 flex flex-col justify-end gap-[5px] sm:gap-5`}
             >
               <img
                 src={selectedNews == index ? item.imgSrcSelected : item.imgSrc}
                 className={`absolute ${
-                  index === 2 ? "-top-[26px] above-1440:top-0" : "top-0"
-                } right-0 top-0 w-[100px] h-[100px] above-1440:w-auto  above-1440:h-auto`}
+                  index === 2
+                    ? "-top-[14px] sm:-top-[26px] above-1440:top-0"
+                    : "top-0"
+                } right-0 top-0 w-[60px] h-[60px] sm:w-[100px] sm:h-[100px] above-1440:w-auto  above-1440:h-auto`}
                 alt=""
               />
               <div
@@ -71,26 +73,28 @@ const News = () => {
                 {item.title}
               </div>
               <div
-                className={`leading-[16px] sm:leading-[22px] above-1440:leading-[28px] text-[12px] sm:text-sm above-1440:text-[18px] above-1440:font-medium tracking-[1px]`}
+                className={`leading-[16px] sm:leading-[22px] above-1440:leading-[28px] text-[10px] sm:text-sm above-1440:text-[18px] above-1440:font-medium tracking-[1px]`}
               >
                 {item.description}
               </div>
             </div>
           ))}
         </div>
-        <div className="right-side relative bg-newsHoverColor flex flex-col min-h-[415px] lg:h-[627px] above-1440:h-[836px] px-[28px] above-1440:px-[49px] mt-10 lg:mt-0 font-azeretMono w-full border border-darkText">
+        <div className="right-side relative bg-newsHoverColor flex flex-col h-[428px] lg:h-[627px] above-1440:h-[836px] px-2 sm:px-[28px] above-1440:px-[49px] mt-10 lg:mt-0 font-azeretMono w-full border border-darkText">
           {news.map((item, index) => (
             <div
               key={index}
-              className={`pb-[100px] above-1440:pb-24 mt-[270px] above-1440:mt-[348px] h-full ${
+              className={`pb-[70px] sm:pb-[100px] above-1440:pb-24 mt-[102px] sm:mt-[270px] above-1440:mt-[348px] h-full ${
                 item.id === selectedNews ? "flex flex-col" : "hidden"
               }`}
             >
               <img
                 src={item.bgImgSrc}
                 className={`absolute right-0 ${
-                  index == 2 ? "above-1440:top-0 -top-[64px]" : "top-0"
-                } top-0 h-[250px] w-[250px] above-1440:w-auto above-1440:h-auto`}
+                  index == 2
+                    ? "above-1440:top-0 -top-[25px] sm:-top-[64px]"
+                    : "top-0"
+                } top-0 w-[100px] h-[100px] sm:h-[250px] sm:w-[250px] above-1440:w-auto above-1440:h-auto`}
                 alt=""
               />
               <div className="text-[10px] above-1440:mb-1 sm:text-sm above-1440:text-[18px] text-whiteTextSecond font-normal decoration-whiteTextSecond ">
@@ -99,16 +103,16 @@ const News = () => {
               <div className="text-[13px] above-1440:mb-1 sm:text-sm above-1440:text-[24px] font-bold relative text-whiteTextSecond mt-2 above-1440:mt-4">
                 {item.title}
               </div>
-              <div className="text-[12px] sm:text-sm above-1440:text-[18px] above-1440:leading-[32px] relative text-whiteTextSecond above-1440:font-semibold  above-1440:mt-4 max-w-[500px] mt-2 above-1440:max-w-[612px]">
+              <div className="text-[10px] sm:text-sm above-1440:text-[18px] above-1440:leading-[32px] relative text-whiteTextSecond above-1440:font-semibold  above-1440:mt-4 max-w-[500px] mt-2 above-1440:max-w-[612px]">
                 {item.description}
               </div>
               <div className="flex-grow"></div>
-              <div className="text-[11px] above-1440:leading-[34px] above-1440:max-w-[688px] sm:text-sm  above-1440:text-[20px] font-normal sm:font-medium text-whiteTextSecond  leading-[18px]">
+              <div className="text-[10px] above-1440:leading-[34px] above-1440:max-w-[688px] sm:text-sm  above-1440:text-[20px] font-normal sm:font-medium text-whiteTextSecond  leading-[18px]">
                 {item.text}
               </div>
-              <div className="absolute bottom-[10px] sm:bottom-[25px] sm:right-[25px]">
+              <div className="flex w-full justify-center">
                 <div
-                  className="flex items-center gap-2 cursor-pointer"
+                  className="flex items-center gap-2 cursor-pointer sm:bottom-[25px] absolute bottom-[14px] sm:right-[25px]"
                   onClick={() => window.open(item.src, "_blank")}
                 >
                   <img
