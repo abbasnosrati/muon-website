@@ -44,7 +44,7 @@ const News = () => {
     <div className=" sm:pb-[65px] font-azeretMono">
       <BlackButton btnNum={"04"} btnText="News" />
       <div className="flex flex-col lg:flex-row news-container w-full custom-1024:gap-10 mt-[30px]">
-        <div className="left-side left-scroll w-full sm:min-w-[364px] sm:max-w-[567px] above-1440:max-w-[758px] flex flex-col gap-[19px] above-1440:gap-[25px] max-h-[636px] above-1440:max-h-[836px]  overflow-y-auto overflow-hidden [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-orangePrimary [&::-webkit-scrollbar-track]:bg-gray-300">
+        <div className="left-side left-scroll w-full sm:min-w-[364px] lg:max-w-[567px] above-1440:max-w-[758px] flex flex-col gap-[19px] above-1440:gap-[25px] max-h-[636px] above-1440:max-h-[836px]  overflow-y-auto overflow-hidden [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-orangePrimary [&::-webkit-scrollbar-track]:bg-gray-300">
           {news.map((item, index) => (
             <div
               onClick={() => setSelectedNews(index)}
@@ -80,7 +80,7 @@ const News = () => {
             </div>
           ))}
         </div>
-        <div className="right-side relative bg-newsHoverColor flex flex-col h-[428px] lg:h-[627px] above-1440:h-[836px] px-2 sm:px-[28px] above-1440:px-[49px] mt-10 lg:mt-0 font-azeretMono w-full border border-darkText">
+        <div className="right-side relative bg-newsHoverColor flex flex-col h-[428px] sm:h-[627px] above-1440:h-[836px] px-2 sm:px-[28px] above-1440:px-[49px] mt-10 lg:mt-0 font-azeretMono w-full border border-darkText">
           {news.map((item, index) => (
             <div
               key={index}
