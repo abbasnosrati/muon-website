@@ -13,7 +13,7 @@ const structureItems = [
   },
   {
     id: 1,
-    title: "MuonApp",
+    title: "MuonApps",
     titleImgSrc: "./assets/images/structure/muon-app.svg",
     description: (
       <>
