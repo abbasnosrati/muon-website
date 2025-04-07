@@ -51,6 +51,7 @@ const structureItems = [
 
 const MuonStructure = () => {
   const [selectedItem, setSelectedItem] = useState<number>(0);
+  const [hoveredItem, setHoveredItem] = useState<number | null>(null);
   return (
     <div
       id="2"
@@ -145,8 +146,10 @@ const MuonStructure = () => {
                   index === selectedItem ? "" : "text-darkText"
                 } cursor-pointer text-nowrap hover:text-whiteText`}
                 onClick={() => setSelectedItem(index)}
+                onMouseEnter={() => setHoveredItem(item.id)}
+                onMouseOut={() => setHoveredItem(null)}
               >
-                {index === selectedItem && (
+                {(index === selectedItem || index === hoveredItem) && (
                   <div className="w-[6px] h-[6px] sm:w-[10px] absolute sm:h-[10px] rounded-full top-[2px] sm:top-0 -left-3 sm:-left-5 bg-orangePrimary"></div>
                 )}
                 {item.title}
