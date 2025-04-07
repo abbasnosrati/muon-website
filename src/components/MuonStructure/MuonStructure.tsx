@@ -9,7 +9,8 @@ const structureItems = [
     description:
       "A decentralized network of nodes that deploy and run MuonApps. Each app runs on a dynamic subnet where nodes collaborate to operate and provide TSS signatures as proof, verifiable on-chain and off-chain.",
     descriptionImgSrc: " ./assets/images/structure/muon-ill-network.svg",
-    readeMoreSrc: "",
+    readeMoreSrc:
+      "https://docs.muon.net/muon-protocol/muon-protocol/modular-security-stack/tss-network",
   },
   {
     id: 1,
@@ -26,7 +27,7 @@ const structureItems = [
       </>
     ),
     descriptionImgSrc: "./assets/images/structure/muon-apps.svg",
-    readeMoreSrc: "",
+    readeMoreSrc: "https://docs.muon.net/muon-protocol/muonapps-build-on-muon",
   },
   {
     id: 2,
@@ -45,7 +46,8 @@ const structureItems = [
 
     description: null,
     descriptionImgSrc: "./assets/images/structure/muon-security-stack.svg",
-    readeMoreSrc: "",
+    readeMoreSrc:
+      "https://docs.muon.net/muon-protocol/muon-protocol/modular-security-stack",
   },
 ];
 
@@ -127,7 +129,10 @@ const MuonStructure = () => {
                         </div>
                       </div>
 
-                      <p className="mt-[45px] text-sm above-1440:text-[18px] font-medium  border-b cursor-pointer border-whiteText w-fit pb-1 relative after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg]">
+                      <p
+                        onClick={() => window.open(item.readeMoreSrc, "_black")}
+                        className="mt-[45px] text-sm above-1440:text-[18px] font-medium  border-b cursor-pointer border-whiteText w-fit pb-1 relative after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg]"
+                      >
                         Read More
                       </p>
                     </div>
@@ -171,9 +176,16 @@ const MuonStructure = () => {
               <div>
                 <p className="">{item.description}</p>
 
-                <p className="mt-[45px] text-sm above-1440:text-[18px] font-medium border-b cursor-pointer border-whiteText w-fit pb-[4px] relative after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg]">
-                  Read More
-                </p>
+                {item.readeMoreSrc.length < 2 ? (
+                  ""
+                ) : (
+                  <p
+                    onClick={() => window.open(item.readeMoreSrc, "_blank")}
+                    className="mt-[45px] text-sm above-1440:text-[18px] font-medium border-b cursor-pointer border-whiteText w-fit pb-[4px] relative after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg]"
+                  >
+                    Read More
+                  </p>
+                )}
               </div>
             </div>
           ))}
@@ -196,7 +208,10 @@ const MuonStructure = () => {
                   }`}
                 />
                 {selectedItem == 3 ? (
-                  <p className="mt-[45px] text-sm above-1440:text-[18px] font-medium flex below-1024:hidden absolute border-b cursor-pointer border-whiteText w-fit pb-[4px] left-0 bottom-[7%] after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg] 1024-1279:text-[10px]  below-1024:!leading-5 !leading-[28px] font-azeretMono ">
+                  <p
+                    onClick={() => window.open(item.readeMoreSrc, "_black")}
+                    className="mt-[45px] text-sm above-1440:text-[18px] font-medium flex below-1024:hidden absolute border-b cursor-pointer border-whiteText w-fit pb-[4px] left-0 bottom-[7%] after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg] 1024-1279:text-[10px]  below-1024:!leading-5 !leading-[28px] font-azeretMono "
+                  >
                     Read More
                   </p>
                 ) : (
@@ -248,7 +263,10 @@ const MuonStructure = () => {
                     </div>
                   </div>
 
-                  <p className="mt-[45px] text-sm above-1440:text-[18px] font-medium  border-b cursor-pointer border-whiteText w-fit pb-1 relative after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg]">
+                  <p
+                    onClick={() => window.open(item.readeMoreSrc, "_black")}
+                    className="mt-[45px] text-sm above-1440:text-[18px] font-medium  border-b cursor-pointer border-whiteText w-fit pb-1 relative after:absolute after:-bottom-1 after:h-2 after:w-2 after:border-r after:right-[0px] after:border-b after:-rotate-[45deg]"
+                  >
                     Read More
                   </p>
                 </div>

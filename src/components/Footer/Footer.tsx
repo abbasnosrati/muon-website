@@ -72,9 +72,7 @@ const Footer = () => {
                 Discord
               </div>
               <div
-                onClick={() =>
-                  window.open("https://docs.muon.net/muon-network", "_blank")
-                }
+                onClick={() => window.open("https://medium.com/muon", "_blank")}
                 className="social-media footer-social"
               >
                 Medium
@@ -112,9 +110,7 @@ const Footer = () => {
               Discord
             </div>
             <div
-              onClick={() =>
-                window.open("https://docs.muon.net/muon-network", "_blank")
-              }
+              onClick={() => window.open("https://medium.com/muon", "_blank")}
               className="social-media"
             >
               Medium
