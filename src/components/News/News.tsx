@@ -40,8 +40,8 @@ const News = () => {
   return (
     <div className="pb-[65px] font-azeretMono">
       <BlackButton btnNum={"04"} btnText="News" />
-      <div className="flex flex-col lg:flex-row news-container w-full  custom-1024:gap-10  mt-[30px]">
-        <div className="left-side left-scroll w-full sm:min-w-[364px] sm:max-w-[567px] above-1440:max-w-[758px] flex flex-col gap-6 above-1440:gap-[45px] max-h-[485px] above-1440:max-h-[820px]  overflow-y-auto overflow-hidden [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-orangePrimary [&::-webkit-scrollbar-track]:bg-gray-300">
+      <div className="flex flex-col lg:flex-row news-container w-full custom-1024:gap-10 mt-[30px]">
+        <div className="left-side left-scroll w-full sm:min-w-[364px] sm:max-w-[567px] above-1440:max-w-[758px] flex flex-col gap-6 above-1440:gap-[25px] max-h-[485px] above-1440:max-h-[836px]  overflow-y-auto overflow-hidden [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-orangePrimary [&::-webkit-scrollbar-track]:bg-gray-300">
           {news.map((item, index) => (
             <div
               onClick={() => setSelectedNews(index)}
@@ -80,12 +80,12 @@ const News = () => {
             </div>
           ))}
         </div>
-        <div className="right-side relative bg-newsHoverColor flex flex-col min-h-[415px] lg:h-[754px] items-center mt-10 lg:mt-0 font-azeretMono w-full border border-darkText">
+        <div className="right-side relative bg-newsHoverColor flex flex-col min-h-[415px] lg:h-[836px] px-[49px] mt-10 lg:mt-0 font-azeretMono w-full border border-darkText">
           {news.map((item, index) => (
             <div
               key={index}
-              className={` flex-col px-[22px]  mt-[120px] lg:mt-72 ${
-                item.id === selectedNews ? "flex" : "hidden"
+              className={`px-[22px] pb-24 mt-[348px] h-full ${
+                item.id === selectedNews ? "flex flex-col" : "hidden"
               }`}
             >
               <img
@@ -93,7 +93,7 @@ const News = () => {
                 className="absolute right-0 top-0"
                 alt=""
               />
-              <div className="text-[10px] sm:text-sm above-1440:text-[18px] text-whiteTextSecond font-normal decoration-whiteTextSecond">
+              <div className="text-[10px] sm:text-sm above-1440:text-[18px] text-whiteTextSecond font-normal decoration-whiteTextSecond ">
                 {item.date}
               </div>
               <div className="text-[13px] sm:text-sm above-1440:text-[24px] font-bold relative text-whiteTextSecond mt-2 sm:mt-4">
@@ -102,7 +102,8 @@ const News = () => {
               <div className="text-[12px] sm:text-sm above-1440:text-[18px] above-1440:leading-[24px] relative text-whiteTextSecond above-1440:font-semibold  mt-4 max-w-[319px] above-1440:max-w-[612px]">
                 {item.description}
               </div>
-              <div className="text-[11px] above-1440:leading-[34px] above-1440:max-w-[688px] sm:text-sm lg:text-base above-1440:text-[20px] font-normal sm:font-medium text-whiteTextSecond mt-40 below-1024:mt-8 leading-[18px]">
+              <div className="flex-grow"></div>
+              <div className="text-[11px]  above-1440:leading-[34px] above-1440:max-w-[688px] sm:text-sm lg:text-base above-1440:text-[20px] font-normal sm:font-medium text-whiteTextSecond  leading-[18px]">
                 {item.text}
               </div>
             </div>
