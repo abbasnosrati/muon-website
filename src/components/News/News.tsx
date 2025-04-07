@@ -93,10 +93,10 @@ const News = () => {
                 className="absolute right-0 top-0"
                 alt=""
               />
-              <div className="text-[10px] sm:text-sm above-1440:text-[18px] text-whiteTextSecond font-normal decoration-whiteTextSecond ">
+              <div className="text-[10px] mb-1 sm:text-sm above-1440:text-[18px] text-whiteTextSecond font-normal decoration-whiteTextSecond ">
                 {item.date}
               </div>
-              <div className="text-[13px] sm:text-sm above-1440:text-[24px] font-bold relative text-whiteTextSecond mt-2 sm:mt-4">
+              <div className="text-[13px] mb-1 sm:text-sm above-1440:text-[24px] font-bold relative text-whiteTextSecond mt-2 sm:mt-4">
                 {item.title}
               </div>
               <div className="text-[12px] sm:text-sm above-1440:text-[18px] above-1440:leading-[24px] relative text-whiteTextSecond above-1440:font-semibold  mt-4 max-w-[319px] above-1440:max-w-[612px]">
