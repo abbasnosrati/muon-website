@@ -61,17 +61,11 @@ const BigMenu = () => {
                   className={`text-whiteTextSecond sub-menu-items ${
                     menu.id == hoveredMenu ? "flex" : "hidden"
                   }  gap-5 above-1440:gap-6 overflow-hidden hover:transition-all duration-500`}
-                  // style={{
-                  //   height:
-                  //     hoveredMenu === index && menu.subItems.length > 0
-                  //       ? `${menu.subItems.length * 24}px`
-                  //       : "0px",
-                  // }}
                 >
                   {menu.subItems.map((sub, subIndex) => (
                     <div
                       key={subIndex}
-                      className="cursor-pointer hover:underline text-sm above-1440:text-[16px] font-medium font-azeretMono"
+                      className="cursor-pointer hover:underline text-sm above-1440:text-[18px] font-medium font-azeretMono"
                       onClick={() => window.open(sub.src, "_blank")}
                     >
                       {sub.title}
