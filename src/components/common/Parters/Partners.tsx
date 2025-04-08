@@ -16,9 +16,12 @@ const Partners = () => {
 
   return (
     <div className="scroller absolute left-0 w-full">
-      <div className="tag_list scroller__inner w-full">
-        <div className="1 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
-          <div className="img-box">
+      <div className="tag_list scroller__inner w-full ">
+        <div className="1 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[16%]">
+          <div
+            className="img-box"
+            onClick={() => window.open("https://zellular.xyz/", "_blank")}
+          >
             <img
               src="./assets/images/partners/zellular logo.svg"
               className="w-full"
@@ -26,17 +29,23 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="2 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
-          <div className="img-box">
+        <div className="2 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[16%]">
+          <div
+            className="img-box"
+            onClick={() => window.open("https://derand.dev/", "_blank")}
+          >
             <img
-              src="./assets/images/partners/thena.svg"
+              src="./assets/images/partners/derand.svg"
               alt=""
               className="w-full"
             />
           </div>
         </div>
-        <div className="3 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
-          <div className="img-box">
+        <div className="3 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[16%]">
+          <div
+            className="img-box"
+            onClick={() => window.open("https://www.symm.io/", "_blank")}
+          >
             <img
               src="./assets/images/partners/symmio.svg"
               className="w-full"
@@ -44,8 +53,11 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="4 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
-          <div className="img-box">
+        <div className="4 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[16%]">
+          <div
+            className="img-box"
+            onClick={() => window.open("https://arbitrum.io/", "_blank")}
+          >
             <img
               src="./assets/images/partners/arbitrum.svg"
               className="w-full"
@@ -53,8 +65,11 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="5 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
-          <div className="img-box">
+        <div className="5 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[16%]">
+          <div
+            className="img-box"
+            onClick={() => window.open("https://layerzero.network/", "_blank")}
+          >
             <img
               src="./assets/images/partners/layerzero.svg"
               className="w-full"
@@ -62,8 +77,8 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="6 img-container min-w-[21%] md:min-w-[16%] above-1280:min-w-[12%]">
-          <div className="img-box">
+        <div className="6 img-container min-w-[21%] md:min-w-[16%] lg:min-w-[12%]">
+          <div className="img-box" onClick={() => window.open("", "_blank")}>
             <img
               src="./assets/images/partners/XDC.svg"
               className="w-full"
@@ -71,8 +86,11 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="7 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
-          <div className="img-box">
+        <div className="7 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[16%]">
+          <div
+            className="img-box"
+            onClick={() => window.open("https://linea.build/", "_blank")}
+          >
             <img
               src="./assets/images/partners/linea.svg"
               className="w-full"
@@ -80,8 +98,11 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="8 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
-          <div className="img-box min-w-full">
+        <div className="8 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[16%]">
+          <div
+            className="img-box min-w-full"
+            onClick={() => window.open("https://www.avax.network/", "_blank")}
+          >
             <img
               src="./assets/images/partners/avalanche.svg"
               className="w-full"
@@ -89,18 +110,71 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="9 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[12%]">
-          <div className="img-box">
+        <div className="9 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[16%]">
+          <div className="img-box" onClick={() => window.open("", "_blank")}>
             <img
-              src="./assets/images/partners/eigen.svg"
+              src="./assets/images/partners/qorpo.svg"
               className="w-full"
               alt=""
             />
           </div>
         </div>
 
-        <div className="1 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
-          <div className="img-box">
+        <div className="10 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[17%]">
+          <div className="img-box" onClick={() => window.open("", "_blank")}>
+            <img
+              src="./assets/images/partners/daoMaker.svg"
+              className="w-full"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="11 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[12%]">
+          <div className="img-box" onClick={() => window.open("", "_blank")}>
+            <img
+              src="./assets/images/partners/fear.svg"
+              className="w-full"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="12 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[12%]">
+          <div className="img-box" onClick={() => window.open("", "_blank")}>
+            <img
+              src="./assets/images/partners/jfl.svg"
+              className="w-full"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="13 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[15%]">
+          <div className="img-box" onClick={() => window.open("", "_blank")}>
+            <img
+              src="./assets/images/partners/arthera.svg"
+              className="w-full"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="14 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[15%]">
+          <div className="img-box" onClick={() => window.open("", "_blank")}>
+            <img
+              src="./assets/images/partners/thena.svg"
+              className="w-full"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="1 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[16%]">
+          <div
+            className="img-box"
+            onClick={() => window.open("https://zellular.xyz/", "_blank")}
+          >
             <img
               src="./assets/images/partners/zellular logo.svg"
               className="w-full"
@@ -108,17 +182,23 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="2 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
-          <div className="img-box">
+        <div className="2 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[16%]">
+          <div
+            className="img-box"
+            onClick={() => window.open("https://derand.dev/", "_blank")}
+          >
             <img
-              src="./assets/images/partners/thena.svg"
+              src="./assets/images/partners/derand.svg"
               alt=""
               className="w-full"
             />
           </div>
         </div>
-        <div className="3 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
-          <div className="img-box">
+        <div className="3 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[16%]">
+          <div
+            className="img-box"
+            onClick={() => window.open("https://www.symm.io/", "_blank")}
+          >
             <img
               src="./assets/images/partners/symmio.svg"
               className="w-full"
@@ -127,8 +207,11 @@ const Partners = () => {
           </div>
         </div>
 
-        <div className="4 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
-          <div className="img-box">
+        <div className="4 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[16%]">
+          <div
+            className="img-box"
+            onClick={() => window.open("https://arbitrum.io/", "_blank")}
+          >
             <img
               src="./assets/images/partners/arbitrum.svg"
               className="w-full"
@@ -137,8 +220,11 @@ const Partners = () => {
           </div>
         </div>
 
-        <div className="5 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
-          <div className="img-box">
+        <div className="5 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[16%]">
+          <div
+            className="img-box"
+            onClick={() => window.open("https://layerzero.network/", "_blank")}
+          >
             <img
               src="./assets/images/partners/layerzero.svg"
               className="w-full"
@@ -147,8 +233,8 @@ const Partners = () => {
           </div>
         </div>
 
-        <div className="6 img-container min-w-[21%] md:min-w-[16%] above-1280:min-w-[12%]">
-          <div className="img-box">
+        <div className="6 img-container min-w-[21%] md:min-w-[16%] lg:min-w-[12%]">
+          <div className="img-box" onClick={() => window.open("", "_blank")}>
             <img
               src="./assets/images/partners/XDC.svg"
               className="w-full"
@@ -157,8 +243,11 @@ const Partners = () => {
           </div>
         </div>
 
-        <div className="7 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
-          <div className="img-box">
+        <div className="7 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[16%]">
+          <div
+            className="img-box"
+            onClick={() => window.open("https://linea.build/", "_blank")}
+          >
             <img
               src="./assets/images/partners/linea.svg"
               className="w-full"
@@ -167,8 +256,11 @@ const Partners = () => {
           </div>
         </div>
 
-        <div className="8 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[16%]">
-          <div className="img-box min-w-full">
+        <div className="8 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[16%]">
+          <div
+            className="img-box min-w-full"
+            onClick={() => window.open("https://www.avax.network/", "_blank")}
+          >
             <img
               src="./assets/images/partners/avalanche.svg"
               className="w-full"
@@ -176,184 +268,65 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="9 img-container min-w-[35%] md:min-w-[20%] above-1280:min-w-[12%]">
-          <div className="img-box">
+        <div className="9 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[16%]">
+          <div className="img-box" onClick={() => window.open("", "_blank")}>
             <img
-              src="./assets/images/partners/eigen.svg"
+              src="./assets/images/partners/qorpo.svg"
               className="w-full"
               alt=""
             />
           </div>
         </div>
 
-        {/* <div className="9">
-          <div className="">
+        <div className="10 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[17%]">
+          <div className="img-box" onClick={() => window.open("", "_blank")}>
             <img
-              src="./assets/images/partners/zellular logo.svg"
-              className=""
+              src="./assets/images/partners/daoMaker.svg"
+              className="w-full"
               alt=""
             />
           </div>
-        </div> */}
-        {/* <div className="">
-          <div className="img-box min-w-[280px] below-1024:min-w-[40px] ml-5 min-h-[20px]">
+        </div>
+
+        <div className="11 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[12%]">
+          <div className="img-box" onClick={() => window.open("", "_blank")}>
+            <img
+              src="./assets/images/partners/fear.svg"
+              className="w-full"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="12 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[12%]">
+          <div className="img-box" onClick={() => window.open("", "_blank")}>
+            <img
+              src="./assets/images/partners/jfl.svg"
+              className="w-full"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="13 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[15%]">
+          <div className="img-box" onClick={() => window.open("", "_blank")}>
+            <img
+              src="./assets/images/partners/arthera.svg"
+              className="w-full"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="14 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[15%]">
+          <div className="img-box" onClick={() => window.open("", "_blank")}>
             <img
               src="./assets/images/partners/thena.svg"
-              alt=""
-              className="w-[110px] below-430:w-[100px] above-1440:w-[580px] "
-            />
-          </div>
-        </div>
-        <div className=" ">
-          <div className="">
-            <img
-              src="./assets/images/partners/symmio.svg"
-              className="w-[110px] below-430:w-[100px] above-1440:w-[580px] "
+              className="w-full"
               alt=""
             />
           </div>
         </div>
-        <div className="img-container below-1024:hidden other-images ">
-          <div className="">
-            <img
-              src="./assets/images/partners/arbitrum.svg"
-              className="w-[110px] below-430:w-[100px] above-1440:w-[580px] "
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="img-container below-1024:hidden other-images ">
-          <div className="img-box min-w-[280px] below-1024:min-w-[40px] min-h-[20px]">
-            <img
-              src="./assets/images/partners/layerzero.svg"
-              className="w-[110px] below-430:w-[100px] above-1440:w-[580px] "
-              alt=""
-            />
-          </div>
-        </div>
-
-        <div className="img-container below-1024:hidden other-images  largeImgBottomPadding">
-          <div className="img-box min-w-[280px] below-1024:min-w-[40px] min-h-[20px]">
-            <img
-              src="./assets/images/partners/XDC.svg"
-              className="w-[110px] below-430:w-[100px] above-1440:w-[580px] "
-              alt=""
-            />
-          </div>
-        </div>
-
-        <div className="img-container below-1024:hidden other-images ">
-          <div className="img-box min-w-[280px] below-1024:min-w-[70px] min-h-[20px]">
-            <img
-              src="./assets/images/partners/linea.svg"
-              className="w-[110px] below-430:w-[100px] above-1440:w-[580px] "
-              alt=""
-            />
-          </div>
-        </div>
-
-        <div className="img-container below-1024:hidden other-images ">
-          <div className="img-box min-w-[280px] below-1024:min-w-[40px] min-h-[20px]">
-            <img
-              src="./assets/images/partners/avalanche.svg"
-              className="w-[110px] below-430:w-[100px] above-1440:w-[580px] "
-              alt=""
-            />
-          </div>
-        </div>
-
-        <div className="img-container below-1024:hidden other-images ">
-          <div className="img-box min-w-[280px] below-1024:min-w-[40px] min-h-[20px]">
-            <img
-              src="./assets/images/partners/eigen.svg"
-              className="w-[110px] below-430:w-[100px] above-1440:w-[580px] "
-              alt=""
-            />
-          </div>
-        </div>
-
-        <div className="img-container zelullar_img ">
-          <div className="img-box min-w-[280px] below-1024:min-w-[40px] h-[20px] ">
-            <img
-              src="./assets/images/partners/zellular logo.svg"
-              className="w-[110px] below-430:w-[100px] above-1440:w-[580px] "
-              alt=""
-            />
-          </div>
-        </div> */}
-
-        {/* <div className="img-container other-images ">
-          <div className="img-box min-w-[280px] below-1024:min-w-[40px] ml-5 min-h-[20px]">
-            <img
-              src="./assets/images/partners/thena.svg"
-              alt=""
-              className="w-[110px] below-430:w-[100px] above-1440:w-[580px] "
-            />
-          </div>
-        </div> */}
-        {/* <div className="img-container other-images ">
-          <div className="img-box min-w-[280px] below-1024:min-w-[40px] min-h-[20px]">
-            <img
-              src="./assets/images/partners/symmio.svg"
-              className="w-[110px] below-430:w-[100px] above-1440:w-[580px] "
-              alt=""
-            />
-          </div>
-        </div> */}
-        {/* <div className="img-container other-images ">
-          <div className="img-box min-w-[280px] below-1024:min-w-[40px] min-h-[20px]">
-            <img
-              src="./assets/images/partners/arbitrum.svg"
-              className="w-[110px] below-430:w-[100px] above-1440:w-[580px] "
-              alt=""
-            />
-          </div>
-        </div> */}
-        {/* <div className="img-container other-images ">
-          <div className="img-box min-w-[280px] below-1024:min-w-[40px] min-h-[20px]">
-            <img
-              src="./assets/images/partners/layerzero.svg"
-              className="w-[110px] below-430:w-[100px] above-1440:w-[580px] "
-              alt=""
-            />
-          </div>
-        </div> */}
-        {/* <div className="img-container other-images largeImgBottomPadding">
-          <div className="img-box min-w-[280px] below-1024:min-w-[40px] min-h-[20px]">
-            <img
-              src="./assets/images/partners/XDC.svg"
-              className="w-[110px] below-430:w-[100px] above-1440:w-[580px] "
-              alt=""
-            />
-          </div>
-        </div> */}
-        {/* <div className="img-container other-images ">
-          <div className="img-box min-w-[280px] below-1024:min-w-[40px] min-h-[20px]">
-            <img
-              src="./assets/images/partners/linea.svg"
-              className="w-[110px] below-430:w-[100px] above-1440:w-[580px] "
-              alt=""
-            />
-          </div>
-        </div> */}
-        {/* <div className="img-container other-images ">
-          <div className="img-box min-w-[280px] below-1024:min-w-[40px] min-h-[20px]">
-            <img
-              src="./assets/images/partners/avalanche.svg"
-              className="w-[110px] below-430:w-[100px] above-1440:w-[580px] "
-              alt=""
-            />
-          </div>
-        </div> */}
-        {/* <div className="img-container other-images ">
-          <div className="img-box min-w-[280px] below-1024:min-w-[40px] min-h-[20px]">
-            <img
-              src="./assets/images/partners/eigen.svg"
-              className="w-[110px] below-430:w-[100px] above-1440:w-[580px] "
-              alt=""
-            />
-          </div>
-        </div> */}
       </div>
     </div>
   );

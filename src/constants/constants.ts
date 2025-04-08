@@ -12,7 +12,7 @@ export const menuItems = [
     subItems: [
       { title: "Docs", src: "https://docs.muon.net/muon-protocol" },
       {
-        title: "Lightpaper",
+        title: "Litepaper",
         src: "https://files.muon.net/Muon-Litepaper-v01.pdf",
       },
     ],
@@ -24,7 +24,8 @@ export const menuItems = [
     id: "3",
     title: "Dashboard",
     subItems: [],
-    src: "https://app.muon.net/dashboard/",
+    src: "",
+    // src: "https://app.muon.net/dashboard/",
   },
   {
     id: "4",
