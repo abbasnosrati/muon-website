@@ -127,12 +127,12 @@ function AccordionItem({ item, isOpen, onToggle }: AccordionItemProps) {
     <div className="">
       <button
         onClick={onToggle}
-        className=" lg:text-[18px] above-1440:text-[23px] tracking-[2px] font-semibold text-whiteText -mt-[1px]"
+        className=" lg:text-[18px] above-1440:text-[23px] tracking-[1px] font-semibold text-whiteText -mt-[1px]"
       >
         <p
           className={`${
             isOpen ? "border-b-0" : ""
-          } border border-darkText px-[20px] py-[10px]`}
+          } border border-darkText px-[20px] py-[12px]`}
         >
           {item.title}
         </p>
