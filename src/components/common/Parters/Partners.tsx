@@ -153,9 +153,12 @@ const Partners = () => {
         </div>
 
         <div className="12 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[12%]">
-          <div className="img-box" onClick={() => window.open("", "_blank")}>
+          <div
+            className="img-box"
+            onClick={() => window.open("https://lfj.gg/", "_blank")}
+          >
             <img
-              src="./assets/images/partners/jfl.svg"
+              src="./assets/images/partners/lfj.svg"
               className="w-full"
               alt=""
             />
@@ -329,9 +332,12 @@ const Partners = () => {
         </div>
 
         <div className="12 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[12%]">
-          <div className="img-box" onClick={() => window.open("", "_blank")}>
+          <div
+            className="img-box"
+            onClick={() => window.open("https://lfj.gg/", "_blank")}
+          >
             <img
-              src="./assets/images/partners/jfl.svg"
+              src="./assets/images/partners/lfj.svg"
               className="w-full"
               alt=""
             />
