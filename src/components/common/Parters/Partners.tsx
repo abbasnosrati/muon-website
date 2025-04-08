@@ -78,7 +78,10 @@ const Partners = () => {
           </div>
         </div>
         <div className="6 img-container min-w-[21%] md:min-w-[16%] lg:min-w-[12%]">
-          <div className="img-box" onClick={() => window.open("", "_blank")}>
+          <div
+            className="img-box"
+            onClick={() => window.open("https://xdc.org/", "_blank")}
+          >
             <img
               src="./assets/images/partners/XDC.svg"
               className="w-full"
@@ -111,7 +114,10 @@ const Partners = () => {
           </div>
         </div>
         <div className="9 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[16%]">
-          <div className="img-box" onClick={() => window.open("", "_blank")}>
+          <div
+            className="img-box"
+            onClick={() => window.open("https://qorpo.world/", "_blank")}
+          >
             <img
               src="./assets/images/partners/qorpo.svg"
               className="w-full"
@@ -121,7 +127,10 @@ const Partners = () => {
         </div>
 
         <div className="10 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[17%]">
-          <div className="img-box" onClick={() => window.open("", "_blank")}>
+          <div
+            className="img-box"
+            onClick={() => window.open("https://app.daomaker.com/", "_blank")}
+          >
             <img
               src="./assets/images/partners/daoMaker.svg"
               className="w-full"
@@ -131,7 +140,10 @@ const Partners = () => {
         </div>
 
         <div className="11 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[12%]">
-          <div className="img-box" onClick={() => window.open("", "_blank")}>
+          <div
+            className="img-box"
+            onClick={() => window.open("https://www.fear.io/", "_blank")}
+          >
             <img
               src="./assets/images/partners/fear.svg"
               className="w-full"
@@ -151,7 +163,10 @@ const Partners = () => {
         </div>
 
         <div className="13 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[15%]">
-          <div className="img-box" onClick={() => window.open("", "_blank")}>
+          <div
+            className="img-box"
+            onClick={() => window.open("https://www.arthera.net/", "_blank")}
+          >
             <img
               src="./assets/images/partners/arthera.svg"
               className="w-full"
@@ -161,7 +176,10 @@ const Partners = () => {
         </div>
 
         <div className="14 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[15%]">
-          <div className="img-box" onClick={() => window.open("", "_blank")}>
+          <div
+            className="img-box"
+            onClick={() => window.open("https://thena.fi/", "_blank")}
+          >
             <img
               src="./assets/images/partners/thena.svg"
               className="w-full"
@@ -234,7 +252,10 @@ const Partners = () => {
         </div>
 
         <div className="6 img-container min-w-[21%] md:min-w-[16%] lg:min-w-[12%]">
-          <div className="img-box" onClick={() => window.open("", "_blank")}>
+          <div
+            className="img-box"
+            onClick={() => window.open("https://xdc.org/", "_blank")}
+          >
             <img
               src="./assets/images/partners/XDC.svg"
               className="w-full"
@@ -269,7 +290,10 @@ const Partners = () => {
           </div>
         </div>
         <div className="9 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[16%]">
-          <div className="img-box" onClick={() => window.open("", "_blank")}>
+          <div
+            className="img-box"
+            onClick={() => window.open("https://qorpo.world/", "_blank")}
+          >
             <img
               src="./assets/images/partners/qorpo.svg"
               className="w-full"
@@ -279,7 +303,10 @@ const Partners = () => {
         </div>
 
         <div className="10 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[17%]">
-          <div className="img-box" onClick={() => window.open("", "_blank")}>
+          <div
+            className="img-box"
+            onClick={() => window.open("https://app.daomaker.com/", "_blank")}
+          >
             <img
               src="./assets/images/partners/daoMaker.svg"
               className="w-full"
@@ -289,7 +316,10 @@ const Partners = () => {
         </div>
 
         <div className="11 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[12%]">
-          <div className="img-box" onClick={() => window.open("", "_blank")}>
+          <div
+            className="img-box"
+            onClick={() => window.open("https://www.fear.io/", "_blank")}
+          >
             <img
               src="./assets/images/partners/fear.svg"
               className="w-full"
@@ -309,7 +339,10 @@ const Partners = () => {
         </div>
 
         <div className="13 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[15%]">
-          <div className="img-box" onClick={() => window.open("", "_blank")}>
+          <div
+            className="img-box"
+            onClick={() => window.open("https://www.arthera.net/", "_blank")}
+          >
             <img
               src="./assets/images/partners/arthera.svg"
               className="w-full"
@@ -319,7 +352,10 @@ const Partners = () => {
         </div>
 
         <div className="14 img-container min-w-[35%] md:min-w-[20%] lg:min-w-[15%]">
-          <div className="img-box" onClick={() => window.open("", "_blank")}>
+          <div
+            className="img-box"
+            onClick={() => window.open("https://thena.fi/", "_blank")}
+          >
             <img
               src="./assets/images/partners/thena.svg"
               className="w-full"

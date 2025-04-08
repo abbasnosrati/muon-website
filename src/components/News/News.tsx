@@ -54,8 +54,22 @@ const News = () => {
               } cursor-pointer news-box border-darkText min-h-[160px] sm:min-h-[196px] above-1440:min-h-[262px] p-[15px] above-1440:p-[25px] text-whiteTextSecond text-sm above-1440:text-[18px] below-1024:text-[12px] leading-4 flex flex-col justify-end gap-[5px] sm:gap-5`}
             >
               <img
-                src={selectedNews == index ? item.imgSrcSelected : item.imgSrc}
+                src={item.imgSrc}
                 className={`absolute ${
+                  selectedNews == index ? "hidden" : "flex"
+                } ${
+                  index === 2
+                    ? "-top-[14px] sm:-top-[26px] above-1440:top-0"
+                    : "top-0"
+                } right-0 top-0 w-[60px] h-[60px] sm:w-[100px] sm:h-[100px] above-1440:w-auto  above-1440:h-auto`}
+                alt=""
+              />
+
+              <img
+                src={item.imgSrcSelected}
+                className={`absolute ${
+                  selectedNews == index ? "flex" : "hidden"
+                } ${
                   index === 2
                     ? "-top-[14px] sm:-top-[26px] above-1440:top-0"
                     : "top-0"
@@ -103,11 +117,11 @@ const News = () => {
               <div className="text-[13px] above-1440:mb-1 sm:text-sm above-1440:text-[24px] font-bold relative text-whiteTextSecond mt-2 above-1440:mt-4">
                 {item.title}
               </div>
-              <div className="text-[10px] sm:text-sm above-1440:text-[18px] above-1440:leading-[32px] relative text-whiteTextSecond above-1440:font-semibold  above-1440:mt-4 max-w-[500px] mt-2 above-1440:max-w-[612px]">
+              <div className="text-[10px] sm:text-sm above-1440:text-[18px] above-1440:leading-[32px] relative text-whiteTextSecond above-1440:font-medium  above-1440:mt-4 max-w-[500px] mt-2 above-1440:max-w-[612px]">
                 {item.description}
               </div>
               <div className="flex-grow"></div>
-              <div className="text-[10px] above-1440:leading-[34px] above-1440:max-w-[688px] sm:text-sm  above-1440:text-[20px] font-normal sm:font-medium text-whiteTextSecond  leading-[18px]">
+              <div className="text-[10px] above-1440:leading-[34px] above-1440:max-w-[688px] sm:text-sm  above-1440:text-[20px] font-normal  text-whiteTextSecond  leading-[18px]">
                 {item.text}
               </div>
               <div className="flex w-full justify-center">

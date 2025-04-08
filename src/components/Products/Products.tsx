@@ -5,13 +5,22 @@ import Partners from "../common/Parters/Partners";
 interface DiscoverMoreBtnProp {
   src: string;
   btnText?: string;
+  size?: string;
 }
 
-export const DiscoverMoreBtn = ({ src, btnText }: DiscoverMoreBtnProp) => {
+export const DiscoverMoreBtn = ({
+  src,
+  btnText,
+  size,
+}: DiscoverMoreBtnProp) => {
   return (
     <div
       onClick={() => window.open(src, "_blank")}
-      className="group-hover w-full set-zIndex btn flex relative hover:text-darkText transition-all duration-300 hover-div ease-in-out"
+      className={`${
+        size === "small"
+          ? "!w-[196px] !h-[41px] !text-[18px] !font-normal !mt-16"
+          : ""
+      } group-hover  set-zIndex btn flex relative hover:text-darkText transition-all duration-300 hover-div ease-in-out`}
     >
       <span className="z-50 opacity-90 text-[11px] sm:text-sm xl:text-base above-1440:text-[18px] font-medium transition-all duration-300 ease-in-out group-hover:delay-500">
         {btnText ? btnText : "Discover More"}

@@ -38,7 +38,7 @@ const Features = () => {
       <div className="hidden md:flex flex-col font-azeretMono text-base border-b border-b-darkText padding-between-section">
         <div>
           <BlackButton btnNum={"01"} btnText={"Features"} />
-          <div className="section-title-text">
+          <div className="section-title-text relative">
             Muon delivers trustless security with a modular stack, universal
             interoperability with chain-agnostic signatures, and Web2-level
             flexibility for developers.
@@ -125,7 +125,7 @@ const Features = () => {
       <div className="flex md:hidden gap-[43px] flex-col font-azeretMono text-whiteText border-b border-darkText pb-[109px]">
         <div>
           <BlackButton btnNum={"01"} btnText={"Features"} />
-          <div className="text-[11px] font-semibold leading-[22px] mt-4">
+          <div className="text-[11px] leading-[22px] mt-4">
             Muon delivers trustless security with a modular stack, universal
             interoperability with chain-agnostic signatures, and Web2-level
             flexibility for developers.
