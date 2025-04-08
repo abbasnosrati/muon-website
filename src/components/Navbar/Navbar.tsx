@@ -115,7 +115,7 @@ const Navbar = () => {
         />
       </div>
 
-      <div className="flex flex-col md:hidden -mt-8  border-darkText border-b pb-[121px]">
+      <div className="flex flex-col md:hidden -mt-8  border-darkText border-b pb-[121px] ">
         <div
           onClick={() => handleOpenMenu()}
           className="flex items-center justify-between w-full"
@@ -143,7 +143,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`${
+        className={`z-[5000] ${
           isMenuOpen ? "flex" : "hidden"
         } fixed flex top-0 bottom-0 left-0 right-0 bg-[#8E8888] z-[1000]`}
       >
