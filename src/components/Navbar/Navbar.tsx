@@ -65,7 +65,7 @@ const BigMenu = () => {
                   {menu.subItems.map((sub, subIndex) => (
                     <div
                       key={subIndex}
-                      className="cursor-pointer hover:underline text-sm above-1440:text-[18px] font-medium font-azeretMono"
+                      className="cursor-pointer hover:underline text-sm above-1440:text-[18px] font-medium font-azeretMono tracking-[1.5px]"
                       onClick={() => window.open(sub.src, "_blank")}
                     >
                       {sub.title}
