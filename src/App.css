@@ -1,5 +1,5 @@
 body {
-  background-image: url("./public/assets/images/bg/1.png");
+  background-image: url("/assets/images/bg/1.png");
   position: relative;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
