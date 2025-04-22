@@ -157,7 +157,7 @@ const Navbar = () => {
           alt=""
         />
 
-        <div className="flex flex-col justify-center gap-5 ml-2">
+        <div className="flex flex-col justify-center gap-5 ml-2 font-azeretMono">
           <div>
             {menuItems.map((item) => (
               <div key={item.id} className="border-l border-darkText">
