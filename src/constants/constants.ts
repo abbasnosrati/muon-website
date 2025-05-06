@@ -24,7 +24,7 @@ export const menuItems = [
     id: "3",
     title: "Dashboard",
     subItems: [
-      { title: "Node dashboard", src: "https://app.muon.net/" },
+      { title: "Node", src: "https://app.muon.net/" },
       { title: "Delegation", src: "https://delegate.muon.net/" },
       { title: "Vesting", src: "https://vesting.muon.net/" },
     ],
