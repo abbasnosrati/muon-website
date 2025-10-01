@@ -24,8 +24,19 @@ const News = () => {
       id: 1,
       date: "Aug 28, 2025",
       title: <>Muon Integrating with NeurochainAI</>,
-      description:
-        "NeurochainAI (https://www.neurochain.ai/) has integrated with Muon Protocol to bring Forknet , NeuroChainAI's OP-Stack-based L2, to life.",
+      description: (
+        <>
+          <a
+            className="text-darkText  underline"
+            href="https://www.neurochain.ai/"
+            target="_blank"
+          >
+            NeurochainAI
+          </a>{" "}
+          has integrated with Muon Protocol to bring Forknet, NeuroChainAI's
+          OP-Stack-based L2, to life.
+        </>
+      ),
       text: "Its bridges, oracles, trustless data feeds for AI agents, trustless AI infrastructure, etc will go live after its L@ launch and will be secured by Muon micro validators.",
       imgSrc: "./assets/images/news/4.svg",
       bgImgSrc: "./assets/images/news/4Big.svg",

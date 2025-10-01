@@ -1,11 +1,11 @@
-<svg width="165" height="158" viewBox="0 0 165 158" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<path d="M16.7053 17.0529C16.7053 33.4823 23.6235 49.2388 35.9378 60.8561C48.2522 72.4735 64.9541 79 82.3693 79C99.7844 79 116.486 72.4735 128.801 60.8561C141.115 49.2388 148.033 33.4823 148.033 17.0529" stroke="#EDEDED" stroke-width="2" stroke-linecap="round"/>
-<path d="M148.034 140.947C148.034 124.518 141.116 108.761 128.801 97.1439C116.487 85.5266 99.7852 79 82.37 79C64.9548 79 48.253 85.5266 35.9386 97.1439C23.6242 108.761 16.706 124.518 16.706 140.947" stroke="#EDEDED" stroke-width="2" stroke-linecap="round"/>
-<line x1="83.4805" y1="1" x2="83.4805" y2="157" stroke="#FE3402" stroke-width="2" stroke-linecap="round"/>
-<line x1="163.961" y1="80" x2="1.00058" y2="80" stroke="#FE3402" stroke-width="2" stroke-linecap="round"/>
-<circle cx="82.3691" cy="79.0019" r="32.832" fill="#EDEDED"/>
-<rect x="53.873" y="50.5039" width="56.969" height="56.969" fill="url(#pattern0_59_222)"/>
-<rect x="53.873" y="50.5039" width="56.969" height="56.969" fill="url(#pattern1_59_222)"/>
+<svg width="147" height="140" viewBox="0 0 147 140" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M15.7052 15.4662C15.7052 29.9823 21.8177 43.9039 32.698 54.1683C43.5783 64.4327 58.3352 70.1992 73.7222 70.1992C89.1093 70.1992 103.866 64.4327 114.746 54.1683C125.627 43.9039 131.739 29.9823 131.739 15.4662" stroke="#EDEDED" stroke-width="2" stroke-linecap="round"/>
+<path d="M131.739 124.932C131.739 110.416 125.627 96.4946 114.746 86.2302C103.866 75.9657 89.1092 70.1992 73.7221 70.1992C58.335 70.1992 43.5782 75.9657 32.6979 86.2302C21.8176 96.4946 15.7051 110.416 15.7051 124.932" stroke="#EDEDED" stroke-width="2" stroke-linecap="round"/>
+<line x1="74.8203" y1="1.40039" x2="74.8203" y2="139" stroke="#FE3402" stroke-width="2" stroke-linecap="round"/>
+<line x1="145.694" y1="71.1992" x2="1.94455" y2="71.1992" stroke="#FE3402" stroke-width="2" stroke-linecap="round"/>
+<circle cx="73.7214" cy="70.2019" r="29.0085" fill="#EDEDED"/>
+<rect x="48.5439" y="45.0215" width="50.3346" height="50.3346" fill="url(#pattern0_59_222)"/>
+<rect x="48.5439" y="45.0215" width="50.3346" height="50.3346" fill="url(#pattern1_59_222)"/>
 <defs>
 <pattern id="pattern0_59_222" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_59_222" transform="scale(0.002)"/>
