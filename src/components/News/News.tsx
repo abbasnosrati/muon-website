@@ -5,6 +5,47 @@ const News = () => {
   const news = [
     {
       id: 0,
+      date: "Oct 1, 2025",
+      title: <>Muon at BRAINS 2025</>,
+      description: (
+        <>
+          The paper titled “Muon, a General-Purpose <br /> Validation Layer for
+          Web3” has been accepted at the 7th Conference on Blockchain Research &
+          Applications for Innovative Networks and Services.
+        </>
+      ),
+      text: "The academic paper presents how Muon micro-validators can efficiently address one of blockchain's biggest challenges: isolation.",
+      imgSrc: "./assets/images/news/3.svg",
+      bgImgSrc: "./assets/images/news/3Big.svg",
+      imgSrcSelected: "./assets/images/news/3Selected.svg",
+      src: "https://x.com/muon_net/status/1973037400185086458",
+    },
+    {
+      id: 1,
+      date: "Aug 28, 2025",
+      title: <>Muon Integrating with NeurochainAI</>,
+      description:
+        "NeurochainAI (https://www.neurochain.ai/) has integrated with Muon Protocol to bring Forknet , NeuroChainAI's OP-Stack-based L2, to life.",
+      text: "Its bridges, oracles, trustless data feeds for AI agents, trustless AI infrastructure, etc will go live after its L@ launch and will be secured by Muon micro validators.",
+      imgSrc: "./assets/images/news/4.svg",
+      bgImgSrc: "./assets/images/news/4Big.svg",
+      imgSrcSelected: "./assets/images/news/4Selected.svg",
+      src: "https://x.com/muon_net/status/1961082799055622311",
+    },
+    {
+      id: 2,
+      date: "Jun 11, 2025",
+      title: <>MuonAVS is LIVE</>,
+      description:
+        "The long anticipated MuonAVS is finally live. It operates as a micro-validator service for EigenCloud.",
+      text: "MuonAVS makes it simple for protocols to leverage EigenCloud security by deploying a MuonApp on MuonAVS.",
+      imgSrc: "./assets/images/news/5.svg",
+      bgImgSrc: "./assets/images/news/5Big.svg",
+      imgSrcSelected: "./assets/images/news/5Selected.svg",
+      src: "https://x.com/muon_net/status/1932807916274512247",
+    },
+    {
+      id: 3,
       date: "April 9, 2025",
       title: <>Launch of Muon Protocol</>,
       description:
@@ -16,7 +57,7 @@ const News = () => {
       src: "https://x.com/muon_net/status/1900578193238831204",
     },
     {
-      id: 1,
+      id: 4,
       date: "March 10, 2025",
       title: <>Muon is Moving to Avalanche!</>,
       description:
@@ -28,7 +69,7 @@ const News = () => {
       src: "https://x.com/muon_net/status/1899143315167293816",
     },
     {
-      id: 2,
+      id: 5,
       date: "March 4, 2025",
       title: <>MuonDVN is Live</>,
       description:
